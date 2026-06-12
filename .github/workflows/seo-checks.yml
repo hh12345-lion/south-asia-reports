@@ -1,0 +1,32 @@
+name: SEO checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generate sitemap and robots.txt
+        run: npm run seo:generate
+
+      - name: Verify sitemap matches URL inventory
+        run: npm run seo:verify
+
+      - name: Check generated files are committed
+        run: |
+          git diff --exit-code public/sitemap.xml public/robots.txt || (
+            echo "public/sitemap.xml or public/robots.txt differ from generated output."
+            echo "Run: npm run seo:generate && git add public/"
+            exit 1
+          )
