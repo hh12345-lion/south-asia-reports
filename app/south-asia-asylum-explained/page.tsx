@@ -2,6 +2,7 @@ import Link from "next/link";
 import { PageShell } from "@/components/layout/PageShell";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { RelatedLinks } from "@/components/ui/RelatedLinks";
+import { UkServiceScope } from "@/components/ui/UkServiceScope";
 import { getPillarRelatedLinks } from "@/data/related-links";
 import { createMetadata } from "@/lib/metadata";
 import { countries } from "@/data/countries";
@@ -41,8 +42,11 @@ export default function SouthAsiaAsylumExplainedPage() {
           South Asia is the second most significant asylum claim region in the UK after Sub-Saharan Africa. In the year
           ending September 2025, Bangladesh, India, and Sri Lanka were among the nationalities with the highest number
           of asylum claims from visa holders. This guide explains the legal landscape, key profiles, country guidance
-          framework, and the critical role of expert evidence for UK immigration solicitors.
+          framework, and the critical role of expert evidence for UK immigration solicitors instructing reports for
+          First-tier Tribunal and Upper Tribunal proceedings only.
         </p>
+
+        <UkServiceScope className="mt-8" />
 
         <h2 className="mt-10 text-xl font-bold text-[#1B2A4A]">South Asia: Key Asylum Statistics</h2>
         <div className="mt-4 table-scroll overflow-x-auto">

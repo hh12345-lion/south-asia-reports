@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CTASection } from "@/components/ui/CTASection";
 import { CardGrid } from "@/components/ui/CardGrid";
 import { JsonLd } from "@/components/ui/JsonLd";
+import { UkServiceScope } from "@/components/ui/UkServiceScope";
 import { homepageGraph, websiteSchema } from "@/lib/schema";
 import { asylumProfiles } from "@/data/asylum-profiles";
 import { services } from "@/data/services";
@@ -13,7 +14,7 @@ export const metadata = createMetadata({
   title:
     "South Asia Expert Reports UK | Bangladesh, India, Sri Lanka & Nepal Country Condition Reports",
   description:
-    "Commission qualified South Asian country expert reports in the UK: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Country condition reports for asylum appeals and immigration tribunals. Legal Aid compatible.",
+    "United Kingdom South Asia expert reports for asylum appeals: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. UK immigration tribunals, CPINs, and Legal Aid.",
   path: "/",
 });
 
@@ -43,7 +44,8 @@ export default function HomePage() {
           <p className="mt-6 max-w-2xl text-base text-white/80 sm:text-lg">
             South Asia Reports connects UK immigration solicitors, law firms, and Legal Aid practitioners with qualified
             South Asian country experts for tribunal-ready expert reports: Bangladesh political persecution, India Hindutva
-            minorities, Sri Lanka Tamil claims, Nepal caste discrimination, and Bhutan Lhotshampa persecution.
+            minorities, Sri Lanka Tamil claims, Nepal caste discrimination, and Bhutan Lhotshampa persecution. This
+            service is designed exclusively for the United Kingdom asylum and immigration system.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             <Link
@@ -59,6 +61,12 @@ export default function HomePage() {
               How to Instruct
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-[#D1DCE6] bg-white py-12 sm:py-16">
+        <div className="mx-auto min-w-0 max-w-6xl px-4 sm:px-6 lg:px-8">
+          <UkServiceScope />
         </div>
       </section>
 

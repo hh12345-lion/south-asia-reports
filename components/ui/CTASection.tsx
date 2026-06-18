@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function CTASection({
   title = "Instruct a South Asia Country Expert Report",
-  description = "Submit your case details for a confidential response within one business day. Legal Aid compatible rates available for all major South Asian asylum profiles.",
+  description = "Submit your case details for a confidential response within one business day. UK immigration tribunal reports only — Legal Aid compatible rates available for all major South Asian asylum profiles.",
 }: {
   title?: string;
   description?: string;

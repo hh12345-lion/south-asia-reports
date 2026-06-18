@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CookieSettingsButton } from "@/components/cookies";
-import { PAKISTAN_REPORTS_URL, SITE_EMAIL } from "@/lib/constants";
+import { PAKISTAN_REPORTS_URL, SITE_EMAIL, UK_SERVICE_SCOPE_DETAIL } from "@/lib/constants";
 import { asylumProfiles } from "@/data/asylum-profiles";
 import { countries } from "@/data/countries";
 
@@ -58,6 +58,7 @@ export function Footer() {
           <div>
             <h3 className="mb-4 font-semibold text-[#C4793A]">Contact</h3>
             <ul className="space-y-2 text-sm text-white/80">
+              <li className="text-white/70">United Kingdom enquiries only</li>
               <li>
                 <a href={`mailto:${SITE_EMAIL}`} className="hover:text-white">
                   {SITE_EMAIL}
@@ -67,8 +68,10 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <p className="mt-10 border-t border-white/20 pt-6 text-center text-xs text-white/60">
-          South Asia Reports connects UK solicitors with qualified South Asia country experts. We are not a law firm and do not provide legal advice.
+        <p className="mt-10 border-t border-white/20 pt-6 text-center text-xs leading-relaxed text-white/60">
+          South Asia Reports connects UK solicitors with qualified South Asia country experts for First-tier Tribunal
+          and Upper Tribunal asylum and immigration proceedings. We are not a law firm and do not provide legal advice.{" "}
+          {UK_SERVICE_SCOPE_DETAIL}
         </p>
         <p className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center text-xs text-white/50">
           <Link href="/privacy" className="inline-flex min-h-[44px] items-center hover:text-white">

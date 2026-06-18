@@ -2,6 +2,7 @@ import Link from "next/link";
 import { PageShell } from "@/components/layout/PageShell";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { RelatedLinks } from "@/components/ui/RelatedLinks";
+import { UkServiceScope } from "@/components/ui/UkServiceScope";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
@@ -60,6 +61,7 @@ export default function HowToInstructPage() {
         subtitle="Seven steps for UK immigration solicitors and Legal Aid practitioners."
         breadcrumbs={crumbs}
       >
+        <UkServiceScope className="mb-8" />
         <div className="space-y-6">
           {steps.map((s) => (
             <div key={s.n} className="flex gap-4 rounded-[8px] border border-[#D1DCE6] bg-white p-6">

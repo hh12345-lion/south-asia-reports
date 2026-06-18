@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PageShell } from "@/components/layout/PageShell";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
+import { UkServiceScope } from "@/components/ui/UkServiceScope";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
@@ -34,10 +35,12 @@ export default function WhatIsSouthAsiaExpertReportPage() {
       >
         <p className="text-[#374151] leading-relaxed">
           A South Asia expert report is an independent, written analysis of country conditions in
-          Bangladesh, India, Sri Lanka, Nepal, or Bhutan, prepared for UK immigration tribunals. It
-          assesses whether an appellant faces a real risk on return based on their specific profile,
-          with OSCOLA-cited sources and Practice Direction compliant methodology.
+          Bangladesh, India, Sri Lanka, Nepal, or Bhutan, prepared for UK immigration tribunals in England, Wales,
+          Scotland, and Northern Ireland. It assesses whether an appellant faces a real risk on return based on their
+          specific profile, with OSCOLA-cited sources and Practice Direction compliant methodology.
         </p>
+
+        <UkServiceScope className="mt-8" showDetail={false} />
 
         <h2 className="mt-10 text-xl font-bold text-[#1B2A4A]">
           What a Tribunal-Ready South Asia Expert Report Should Contain

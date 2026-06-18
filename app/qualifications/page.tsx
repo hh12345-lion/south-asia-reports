@@ -20,7 +20,9 @@ export default function QualificationsPage() {
         <p className="mt-4 text-[#374151] leading-relaxed">
           A qualified South Asia expert witness holds academic credentials (PhD, MA, or equivalent research background) in
           South Asian Studies, Political Science, Anthropology, International Relations, Religious Studies, or a related
-          discipline. Field research experience in the relevant South Asian country is essential, not optional.
+          discipline. Field research experience in the relevant South Asian country is essential, not optional. Experts
+          instructed through this service are matched for UK Immigration and Asylum Chamber proceedings and Upper Tribunal
+          appeals.
         </p>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Language expertise demonstrates the ability to assess conditions beyond English-language sources. Current

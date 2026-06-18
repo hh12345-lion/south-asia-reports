@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | South Asia Reports",
   },
   description:
-    "Commission qualified South Asian country expert reports in the UK: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Country condition reports for asylum appeals and immigration tribunals. Legal Aid compatible.",
+    "United Kingdom expert reports for South Asian asylum appeals: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. For UK immigration solicitors, FTT/UT proceedings, and Legal Aid practitioners only.",
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
     other: process.env.BING_SITE_VERIFICATION
