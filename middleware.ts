@@ -5,7 +5,6 @@ import { SEO_SLUG_REDIRECTS } from "@/lib/seo/slug-redirects";
 const PRIMARY_ORIGIN = "https://www.southasiareports.com";
 
 const REDIRECT_HOSTS = new Set([
-  "southasiareports.com",
   "southasiaexpert.com",
   "www.southasiaexpert.com",
 ]);
