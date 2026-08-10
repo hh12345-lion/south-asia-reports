@@ -23,7 +23,7 @@ export default function AsylumProfilesPage() {
         subtitle="Dedicated expert witness evidence for each major South Asian asylum profile in UK immigration tribunals."
         breadcrumbs={crumbs}
       >
-        <p className="mb-8 text-[#374151] leading-relaxed">
+        <p className="mb-8 text-body leading-relaxed">
           South Asia generates significant asylum claim volumes across Bangladesh, India, Sri Lanka, Nepal, and Bhutan.
           Each profile below links to a dedicated page with country-specific analysis, CPIN references, and
           profile-specific expert evidence guidance for solicitors and Legal Aid practitioners.
@@ -35,9 +35,9 @@ export default function AsylumProfilesPage() {
             href: `/asylum-profiles/${p.slug}`,
           }))}
         />
-        <p className="mt-8 text-[#374151]">
+        <p className="mt-8 text-body">
           For a complete overview, see our{" "}
-          <Link href="/south-asia-asylum-explained" className="font-semibold text-[#C4793A] hover:underline">
+          <Link href="/south-asia-asylum-explained" className="font-semibold text-ochre hover:underline">
             South Asia asylum explained pillar page
           </Link>
           .

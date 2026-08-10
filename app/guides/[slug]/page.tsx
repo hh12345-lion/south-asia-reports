@@ -40,7 +40,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       />
       <PageShell title={guide.h1} breadcrumbs={crumbs}>
         {guide.content.map((p, i) => (
-          <p key={i} className="mb-4 text-[#374151] leading-relaxed">
+          <p key={i} className="mb-4 text-body leading-relaxed">
             {p}
           </p>
         ))}
@@ -48,7 +48,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         <RelatedLinks links={getGuideRelatedLinks(slug)} />
         <Link
           href="/contact"
-          className="mt-8 inline-flex min-h-[44px] items-center rounded-[8px] bg-[#C4793A] px-6 py-3 font-semibold text-white"
+          className="mt-8 inline-flex min-h-[50px] items-center rounded-[10px] bg-indigo px-7 font-medium text-paper transition-colors hover:bg-indigo-deep"
         >
           Instruct an Expert
         </Link>

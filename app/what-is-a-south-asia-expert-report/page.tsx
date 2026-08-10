@@ -33,7 +33,7 @@ export default function WhatIsSouthAsiaExpertReportPage() {
         subtitle="Independent country condition analysis for UK asylum appeals and immigration tribunal proceedings."
         breadcrumbs={crumbs}
       >
-        <p className="text-[#374151] leading-relaxed">
+        <p className="text-body leading-relaxed">
           A South Asia expert report is an independent, written analysis of country conditions in
           Bangladesh, India, Sri Lanka, Nepal, or Bhutan, prepared for UK immigration tribunals in England, Wales,
           Scotland, and Northern Ireland. It assesses whether an appellant faces a real risk on return based on their
@@ -42,17 +42,17 @@ export default function WhatIsSouthAsiaExpertReportPage() {
 
         <UkServiceScope className="mt-8" showDetail={false} />
 
-        <h2 className="mt-10 text-xl font-bold text-[#1B2A4A]">
+        <h2 className="mt-10 font-display text-xl text-ink">
           What a Tribunal-Ready South Asia Expert Report Should Contain
         </h2>
-        <ol className="mt-4 list-decimal space-y-2 pl-6 text-[#374151]">
+        <ol className="mt-4 list-decimal space-y-2 pl-6 text-body">
           {checklist.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ol>
 
-        <h2 className="mt-10 text-xl font-bold text-[#1B2A4A]">When to Instruct a South Asia Expert Report</h2>
-        <p className="mt-4 text-[#374151] leading-relaxed">
+        <h2 className="mt-10 font-display text-xl text-ink">When to Instruct a South Asia Expert Report</h2>
+        <p className="mt-4 text-body leading-relaxed">
           Instruct a South Asia expert report when the Home Office refusal relies on generic CPIN
           positions that do not address the appellant&apos;s specific country, profile, or personal risk
           factors. Expert reports are particularly valuable in post-August 2024 Bangladesh claims,
@@ -61,15 +61,15 @@ export default function WhatIsSouthAsiaExpertReportPage() {
         </p>
 
         <p className="mt-8">
-          <Link href="/how-to-instruct" className="font-semibold text-[#C4793A] hover:underline">
+          <Link href="/how-to-instruct" className="font-semibold text-ochre hover:underline">
             How to instruct
           </Link>
           {" · "}
-          <Link href="/services" className="font-semibold text-[#C4793A] hover:underline">
+          <Link href="/services" className="font-semibold text-ochre hover:underline">
             View services
           </Link>
           {" · "}
-          <Link href="/contact" className="font-semibold text-[#C4793A] hover:underline">
+          <Link href="/contact" className="font-semibold text-ochre hover:underline">
             Instruct a report
           </Link>
         </p>

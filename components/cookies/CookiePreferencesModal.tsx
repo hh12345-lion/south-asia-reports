@@ -27,13 +27,9 @@ function CategoryToggle({
   return (
     <div className="flex items-start justify-between gap-4">
       <div className="min-w-0">
-        <p className="font-semibold text-[#1B2A4A]">{label}</p>
-        <p className="mt-1 text-sm text-[#374151] leading-relaxed">{description}</p>
-        {disabled && (
-          <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#C4793A]">
-            Always active
-          </p>
-        )}
+        <p className="font-display text-[1.05rem] text-ink">{label}</p>
+        <p className="mt-1 text-[14.5px] leading-relaxed text-body">{description}</p>
+        {disabled && <p className="kicker mt-2 text-[14px]">Always active</p>}
       </div>
       <button
         type="button"
@@ -43,12 +39,16 @@ function CategoryToggle({
         aria-label={`${label} cookies`}
         disabled={disabled}
         onClick={() => !disabled && onChange(!checked)}
-        className={`relative mt-0.5 inline-flex h-7 w-12 shrink-0 rounded-full transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C4793A] focus-visible:ring-offset-2 ${
-          disabled ? "cursor-not-allowed bg-[#1B2A4A]/30" : checked ? "bg-[#1B2A4A]" : "bg-[#D1DCE6]"
+        className={`relative mt-0.5 inline-flex h-7 w-12 shrink-0 rounded-full transition-colors ${
+          disabled
+            ? "cursor-not-allowed bg-ink/25"
+            : checked
+              ? "cursor-pointer bg-indigo"
+              : "cursor-pointer bg-rule"
         }`}
       >
         <span
-          className={`pointer-events-none inline-block h-6 w-6 translate-y-0.5 rounded-full bg-white shadow transition-transform ${
+          className={`pointer-events-none inline-block h-6 w-6 translate-y-0.5 rounded-full bg-surface shadow transition-transform ${
             checked ? "translate-x-5" : "translate-x-0.5"
           }`}
           aria-hidden
@@ -69,14 +69,19 @@ export function CookiePreferencesModal() {
   } = useCookieConsent();
 
   const [draft, setDraft] = useState<CategoryConsent>(choices);
+  const [wasOpen, setWasOpen] = useState(false);
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeBtnRef = useRef<HTMLButtonElement>(null);
 
   useFocusTrap(dialogRef, isPreferencesOpen);
 
-  useEffect(() => {
-    if (isPreferencesOpen) setDraft(choices);
-  }, [isPreferencesOpen, choices]);
+  // Reset draft when the modal opens (adjust state during render — React-recommended).
+  if (isPreferencesOpen !== wasOpen) {
+    setWasOpen(isPreferencesOpen);
+    if (isPreferencesOpen) {
+      setDraft(choices);
+    }
+  }
 
   useEffect(() => {
     if (!isPreferencesOpen) return;
@@ -105,7 +110,7 @@ export function CookiePreferencesModal() {
     <div className="fixed inset-0 z-[110] flex items-end justify-center sm:items-center sm:p-4">
       <button
         type="button"
-        className="absolute inset-0 bg-[#1B2A4A]/60 backdrop-blur-[3px] animate-[fadeIn_0.2s_ease-out]"
+        className="absolute inset-0 bg-ink/60 backdrop-blur-[3px] animate-[fadeIn_0.2s_ease-out]"
         aria-label="Close cookie preferences"
         onClick={closePreferences}
       />
@@ -114,22 +119,18 @@ export function CookiePreferencesModal() {
         role="dialog"
         aria-modal="true"
         aria-labelledby="cookie-prefs-title"
-        className="relative z-10 flex max-h-[min(90vh,720px)] w-full max-w-lg flex-col overflow-hidden rounded-t-[8px] border border-[#D1DCE6] bg-white shadow-[0_24px_64px_rgba(27,42,74,0.28)] sm:rounded-[8px] cookie-banner-enter"
+        className="cookie-banner-enter relative z-10 flex max-h-[min(90vh,720px)] w-full max-w-lg flex-col overflow-hidden rounded-t-[14px] bg-surface shadow-[0_24px_64px_rgba(23,17,31,0.28)] sm:rounded-[14px]"
       >
-        <div className="border-b border-[#D1DCE6] bg-[#1B2A4A] px-5 py-4 sm:px-6">
-          <div className="h-0.5 w-12 rounded-full bg-[#C4793A] mb-3" aria-hidden />
-          <h2 id="cookie-prefs-title" className="text-lg font-bold text-white sm:text-xl">
-            Customize cookie preferences
+        <div className="bg-ink px-5 py-5 sm:px-6">
+          <h2 id="cookie-prefs-title" className="font-display text-xl text-paper">
+            Choose your cookies
           </h2>
-          <p className="mt-1 text-sm text-white/75">
-            Manage how we use cookies.{" "}
-            <Link
-              href="/cookie-policy"
-              className="font-medium text-[#C4793A] hover:underline"
-              onClick={closePreferences}
-            >
-              Cookie Policy
-            </Link>
+          <p className="mt-1.5 text-[15px] text-paper/70">
+            Read the{" "}
+            <Link href="/cookie-policy" className="link-rule text-ochre-pale" onClick={closePreferences}>
+              cookie policy
+            </Link>{" "}
+            for the detail.
           </p>
         </div>
 
@@ -138,7 +139,7 @@ export function CookiePreferencesModal() {
             {CATEGORIES.map((key) => {
               const meta = CATEGORY_META[key];
               return (
-                <li key={key} className="rounded-[8px] border border-[#D1DCE6] bg-[#F0F4F8]/50 p-4">
+                <li key={key} className="rounded-[12px] border border-rule bg-oat/50 p-4">
                   <CategoryToggle
                     id={`cookie-toggle-${key}`}
                     label={meta.label}
@@ -153,35 +154,35 @@ export function CookiePreferencesModal() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-[#D1DCE6] bg-[#F0F4F8] p-4 sm:flex-row sm:flex-wrap sm:justify-end">
+        <div className="flex flex-col gap-2 border-t border-rule bg-oat p-4 sm:flex-row sm:flex-wrap sm:justify-end">
           <button
             type="button"
             ref={closeBtnRef}
             onClick={closePreferences}
-            className="min-h-[44px] rounded-[8px] border border-[#D1DCE6] bg-white px-4 py-2 text-sm font-medium text-[#374151] hover:bg-[#F0F4F8]"
+            className="min-h-[46px] cursor-pointer rounded-[10px] px-4 text-[15px] text-ink-soft hover:text-ink"
           >
             Cancel
           </button>
           <button
             type="button"
             onClick={rejectNonEssential}
-            className="min-h-[44px] rounded-[8px] border border-[#1B2A4A] bg-white px-4 py-2 text-sm font-semibold text-[#1B2A4A] hover:bg-[#F0F4F8]"
+            className="min-h-[46px] cursor-pointer rounded-[10px] border border-rule bg-surface px-4 text-[15px] text-ink hover:border-ink"
           >
-            Reject Non-Essential
+            Reject non-essential
           </button>
           <button
             type="button"
             onClick={() => savePreferences(draft)}
-            className="min-h-[44px] rounded-[8px] bg-[#1B2A4A] px-4 py-2 text-sm font-semibold text-white hover:bg-[#152238]"
+            className="min-h-[46px] cursor-pointer rounded-[10px] border border-ink px-4 text-[15px] text-ink hover:bg-surface"
           >
-            Save preferences
+            Save
           </button>
           <button
             type="button"
             onClick={acceptAll}
-            className="min-h-[44px] rounded-[8px] bg-[#C4793A] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a8682f]"
+            className="min-h-[46px] cursor-pointer rounded-[10px] bg-indigo px-4 text-[15px] font-medium text-paper hover:bg-indigo-deep"
           >
-            Accept All
+            Accept all
           </button>
         </div>
       </div>

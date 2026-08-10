@@ -8,6 +8,7 @@ import {
   useMemo,
   useRef,
   useState,
+  useSyncExternalStore,
   type ReactNode,
 } from "react";
 import { CookieBanner } from "./CookieBanner";
@@ -18,7 +19,11 @@ import {
   syncTrackingScripts,
   type TrackingScriptConfig,
 } from "@/lib/cookies/script-registry";
-import { readStoredConsent, writeStoredConsent } from "@/lib/cookies/storage";
+import {
+  readStoredConsent,
+  subscribeConsentStore,
+  writeStoredConsent,
+} from "@/lib/cookies/storage";
 import {
   ACCEPT_ALL_CONSENT,
   REJECT_NON_ESSENTIAL_CONSENT,
@@ -48,52 +53,68 @@ export function useCookieConsent(): CookieConsentContextValue {
   return ctx;
 }
 
+/** Client-only gate without setState-in-effect (React-recommended pattern). */
+function useIsClient() {
+  return useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
+}
+
 export function CookieConsentProvider({ children }: { children: ReactNode }) {
-  const [mounted, setMounted] = useState(false);
-  const [status, setStatus] = useState<ConsentStatus>("pending");
-  const [choices, setChoices] = useState<CategoryConsent>(DEFAULT_CATEGORY_CONSENT);
+  const isClient = useIsClient();
+  const stored = useSyncExternalStore(
+    subscribeConsentStore,
+    readStoredConsent,
+    () => null
+  );
+
+  const status: ConsentStatus = stored ? "granted" : "pending";
+  const choices: CategoryConsent = stored?.choices ?? DEFAULT_CATEGORY_CONSENT;
+
   const [isPreferencesOpen, setIsPreferencesOpen] = useState(false);
   const registryRef = useRef<TrackingScriptConfig[] | null>(null);
+  const syncedKeyRef = useRef<string | null>(null);
 
   const applyConsent = useCallback((next: CategoryConsent) => {
     const normalized: CategoryConsent = { ...next, necessary: true };
     writeStoredConsent(normalized);
-    setChoices(normalized);
-    setStatus("granted");
     updateGoogleConsent(normalized);
     if (!registryRef.current) {
       registryRef.current = createScriptRegistry();
     }
     syncTrackingScripts(normalized, registryRef.current);
+    syncedKeyRef.current = JSON.stringify(normalized);
+    setIsPreferencesOpen(false);
   }, []);
 
+  // Side effects only — no setState. Re-run when stored consent changes (e.g. hydration).
   useEffect(() => {
     initGoogleConsentDefaults();
-    registryRef.current = createScriptRegistry();
-    const stored = readStoredConsent();
-    if (stored) {
-      setChoices(stored.choices);
-      setStatus("granted");
-      updateGoogleConsent(stored.choices);
-      syncTrackingScripts(stored.choices, registryRef.current);
+    if (!registryRef.current) {
+      registryRef.current = createScriptRegistry();
     }
-    setMounted(true);
-  }, []);
+    if (!stored) return;
+
+    const key = JSON.stringify(stored.choices);
+    if (syncedKeyRef.current === key) return;
+    syncedKeyRef.current = key;
+    updateGoogleConsent(stored.choices);
+    syncTrackingScripts(stored.choices, registryRef.current);
+  }, [stored]);
 
   const acceptAll = useCallback(() => {
     applyConsent(ACCEPT_ALL_CONSENT);
-    setIsPreferencesOpen(false);
   }, [applyConsent]);
 
   const rejectNonEssential = useCallback(() => {
     applyConsent(REJECT_NON_ESSENTIAL_CONSENT);
-    setIsPreferencesOpen(false);
   }, [applyConsent]);
 
   const savePreferences = useCallback(
     (draft: CategoryConsent) => {
       applyConsent(draft);
-      setIsPreferencesOpen(false);
     },
     [applyConsent]
   );
@@ -115,7 +136,7 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
   return (
     <CookieConsentContext.Provider value={value}>
       {children}
-      {mounted && (
+      {isClient && (
         <>
           <CookieBanner />
           <CookiePreferencesModal />

@@ -30,7 +30,7 @@ export default function ServicesPage() {
         subtitle="Practice Direction compliant country condition reports for all major South Asian asylum profiles."
         breadcrumbs={crumbs}
       >
-        <p className="mb-8 text-[#374151] leading-relaxed">
+        <p className="mb-8 text-body leading-relaxed">
           South Asia Reports provides eight specialist expert report services for UK immigration solicitors, law firms,
           and Legal Aid practitioners. All reports are prepared by qualified South Asia country experts with current CPIN
           knowledge, country guidance expertise, and field research experience across Bangladesh, India, Sri Lanka,
@@ -44,13 +44,13 @@ export default function ServicesPage() {
             href: `/services/${s.id}`,
           }))}
         />
-        <p className="mt-8 text-[#374151]">
+        <p className="mt-8 text-body">
           Questions about instructing an expert report? See{" "}
-          <Link href="/how-to-instruct" className="font-semibold text-[#C4793A] hover:underline">
+          <Link href="/how-to-instruct" className="font-semibold text-ochre hover:underline">
             how to instruct
           </Link>{" "}
           or{" "}
-          <Link href="/contact" className="font-semibold text-[#C4793A] hover:underline">
+          <Link href="/contact" className="font-semibold text-ochre hover:underline">
             instruct a report
           </Link>
           .

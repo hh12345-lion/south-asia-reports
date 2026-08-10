@@ -1,22 +1,36 @@
 import { Breadcrumbs, type Crumb } from "./Breadcrumbs";
 
+/**
+ * Page masthead set on paper rather than a dark band: breadcrumb, section
+ * kicker, display-serif title and a standfirst carried on an ochre rule.
+ */
 export function PageHero({
   title,
   subtitle,
   breadcrumbs,
+  kicker,
 }: {
   title: string;
   subtitle?: string;
   breadcrumbs?: Crumb[];
+  kicker?: string;
 }) {
   return (
-    <section className="bg-[#1B2A4A] py-12 sm:py-14 md:py-20">
-      <div className="mx-auto max-w-6xl min-w-0 px-4 sm:px-6 lg:px-8">
+    <section className="border-b border-rule bg-oat/60">
+      <div className="mx-auto min-w-0 max-w-[1180px] px-4 pb-10 pt-6 sm:px-6 sm:pb-12 sm:pt-8 lg:px-8">
         {breadcrumbs && breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
-        <h1 className="break-words text-2xl font-bold tracking-tight text-white min-[375px]:text-3xl sm:text-4xl lg:text-5xl">
+
+        {kicker && <p className="kicker mt-6">{kicker}</p>}
+
+        <h1 className="mt-4 max-w-4xl text-balance break-words font-display text-[1.85rem] leading-[1.12] text-ink min-[375px]:text-[2.1rem] sm:text-[2.6rem] lg:text-[3.1rem]">
           {title}
         </h1>
-        {subtitle && <p className="mt-4 max-w-3xl text-base text-white/80 sm:text-lg">{subtitle}</p>}
+
+        {subtitle && (
+          <p className="measure-wide mt-6 border-l-2 border-ochre pl-5 text-[17px] leading-relaxed text-ink-soft sm:text-lg">
+            {subtitle}
+          </p>
+        )}
       </div>
     </section>
   );

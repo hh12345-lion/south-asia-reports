@@ -44,9 +44,9 @@ export default function HomePage() {
               { title: "Investment Treaty Arbitration", desc: "ICSID and UNCITRAL disputes in mining, oil, gas, and infrastructure. Highest value per case.", href: "/expertise-areas/investment-treaty-arbitration-africa" },
               { title: "LGBTQI+ Asylum", desc: "Specialist evidence for Uganda, Nigeria, Ghana, and 30+ criminalising states. Fast-growing niche.", href: "/expertise-areas/lgbtqi-asylum-africa" },
             ].map((m) => (
-              <Link key={m.href} href={m.href} className="rounded-[8px] border border-[#D1E3D8] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.08),0_4px_16px_rgba(0,0,0,0.06)] hover:border-[#0D3B2E]">
+              <Link key={m.href} href={m.href} className="rounded-[12px] border border-[#D1E3D8] bg-[#FFFDF9] p-6 hover:border-[#0D3B2E]">
                 <h3 className="font-semibold text-[#0D3B2E]">{m.title}</h3>
-                <p className="mt-2 text-sm text-[#374151]">{m.desc}</p>
+                <p className="mt-2 text-sm text-[#453F4E]">{m.desc}</p>
               </Link>
             ))}
           </motion>
@@ -56,7 +56,7 @@ export default function HomePage() {
       <section className="py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-[#0D3B2E]">Expert Witness Services</h2>
-          <p className="mt-2 text-[#374151]">CPR Part 35 compliant reports accepted by UK tribunals and arbitration panels.</p>
+          <p className="mt-2 text-[#453F4E]">CPR Part 35 compliant reports accepted by UK tribunals and arbitration panels.</p>
           <div className="mt-8">
             <CardGrid items={services.map((s) => ({ title: s.title, description: s.description, href: s.href }))} />
           </motion>
@@ -113,10 +113,10 @@ export default async function RegionPage({ params }: { params: Promise<{ slug: s
   <>
     <JsonLd data={[faqSchema(region.faqs), breadcrumbSchema(crumbs)]} />
     <PageShell title={region.h1} subtitle={`Expert witnesses covering ${region.countries}.`} breadcrumbs={crumbs}>
-      {region.overview.map((p, i) => <p key={i} className="mb-4 text-[#374151] leading-relaxed">{p}</p>)}
+      {region.overview.map((p, i) => <p key={i} className="mb-4 text-[#453F4E] leading-relaxed">{p}</p>)}
       <h2 className="mt-10 text-xl font-bold text-[#0D3B2E]">Key Issues</h2>
-      <ul className="mt-4 list-disc space-y-2 pl-6 text-[#374151]">{region.keyIssues.map((k) => <li key={k}>{k}</li>)}</ul>
-      {region.countryGuidance && <p className="mt-6 rounded-[8px] border border-[#D1E3D8] bg-[#F7F9F7] p-4 text-sm"><strong>Country guidance:</strong> {region.countryGuidance}</p>}
+      <ul className="mt-4 list-disc space-y-2 pl-6 text-[#453F4E]">{region.keyIssues.map((k) => <li key={k}>{k}</li>)}</ul>
+      {region.countryGuidance && <p className="mt-6 rounded-[12px] border border-[#D1E3D8] bg-[#F7F9F7] p-4 text-sm"><strong>Country guidance:</strong> {region.countryGuidance}</p>}
       <FAQSection faqs={region.faqs} />
       <Link href="/contact" className="mt-8 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white">Instruct an Expert</Link>
     </PageShell>
@@ -155,13 +155,13 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     <JsonLd data={[faqSchema(country.faqs), breadcrumbSchema(crumbs)]} />
     <PageShell title={country.h1} subtitle={`Country-specific expert witness evidence for UK solicitors.`} breadcrumbs={crumbs}>
       <h2 className="text-xl font-bold text-[#0D3B2E]">Overview</h2>
-      {country.overview.map((p, i) => <p key={i} className="mt-4 text-[#374151] leading-relaxed">{p}</p>)}
+      {country.overview.map((p, i) => <p key={i} className="mt-4 text-[#453F4E] leading-relaxed">{p}</p>)}
       <h2 className="mt-10 text-xl font-bold text-[#0D3B2E]">Key Issues</h2>
       <ul className="mt-4 space-y-4">{country.keyIssues.map((k) => (
-        <li key={k.title} className="rounded-[8px] border border-[#D1E3D8] p-4"><strong className="text-[#0D3B2E]">{k.title}:</strong> <span className="text-[#374151]">{k.description}</span></li>
+        <li key={k.title} className="rounded-[12px] border border-[#D1E3D8] p-4"><strong className="text-[#0D3B2E]">{k.title}:</strong> <span className="text-[#453F4E]">{k.description}</span></li>
       ))}</ul>
-      {country.countryGuidance && <p className="mt-6 rounded-[8px] border border-[#D1E3D8] bg-[#F7F9F7] p-4"><strong>Country guidance:</strong> {country.countryGuidance}</p>}
-      {country.investmentContext && <p className="mt-4 rounded-[8px] border border-[#D1E3D8] bg-[#F7F9F7] p-4"><strong>Investment arbitration:</strong> {country.investmentContext}</p>}
+      {country.countryGuidance && <p className="mt-6 rounded-[12px] border border-[#D1E3D8] bg-[#F7F9F7] p-4"><strong>Country guidance:</strong> {country.countryGuidance}</p>}
+      {country.investmentContext && <p className="mt-4 rounded-[12px] border border-[#D1E3D8] bg-[#F7F9F7] p-4"><strong>Investment arbitration:</strong> {country.investmentContext}</p>}
       <FAQSection faqs={country.faqs} />
       <Link href={`/regions/${country.regionSlug}`} className="mt-6 inline-block text-[#C8922A] hover:underline">View {country.regionSlug.replace(/-/g, " ")} region →</Link>
     </PageShell>
@@ -199,8 +199,8 @@ export default async function ExpertisePage({ params }: { params: Promise<{ slug
   <>
     <JsonLd data={[faqSchema(area.faqs), breadcrumbSchema(crumbs)]} />
     <PageShell title={area.h1} breadcrumbs={crumbs}>
-      {area.content.map((p, i) => <p key={i} className="mb-4 text-[#374151] leading-relaxed">{p}</p>)}
-      {area.keyPoints && <ul className="my-6 list-disc space-y-2 pl-6 text-[#374151]">{area.keyPoints.map((k) => <li key={k}>{k}</li>)}</ul>}
+      {area.content.map((p, i) => <p key={i} className="mb-4 text-[#453F4E] leading-relaxed">{p}</p>)}
+      {area.keyPoints && <ul className="my-6 list-disc space-y-2 pl-6 text-[#453F4E]">{area.keyPoints.map((k) => <li key={k}>{k}</li>)}</ul>}
       <FAQSection faqs={area.faqs} />
       {area.relatedSlugs && area.relatedSlugs.length > 0 && (
         <div className="mt-8"><h3 className="font-semibold text-[#0D3B2E]">Related case types</h3>
@@ -241,7 +241,7 @@ export default async function CaseTypePage({ params }: { params: Promise<{ slug:
   <>
     <JsonLd data={[faqSchema(ct.faqs), breadcrumbSchema(crumbs)]} />
     <PageShell title={ct.h1} breadcrumbs={crumbs}>
-      {ct.content.map((p, i) => <p key={i} className="mb-4 text-[#374151] leading-relaxed">{p}</p>)}
+      {ct.content.map((p, i) => <p key={i} className="mb-4 text-[#453F4E] leading-relaxed">{p}</p>)}
       <FAQSection faqs={ct.faqs} />
       <h3 className="mt-8 font-semibold text-[#0D3B2E]">Related expertise areas</h3>
       <ul className="mt-2 space-y-1">{ct.relatedExpertise.map((s) => <li key={s}><Link href={`/expertise-areas/${s}`} className="text-[#C8922A] hover:underline">{s.replace(/-/g, " ")}</Link></li>)}</ul>
@@ -283,7 +283,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       {guide.sections.map((s) => (
         <section key={s.heading} className="mb-10">
           <h2 className="text-xl font-bold text-[#0D3B2E]">{s.heading}</h2>
-          {s.content.map((p, i) => <p key={i} className="mt-4 text-[#374151] leading-relaxed">{p}</p>)}
+          {s.content.map((p, i) => <p key={i} className="mt-4 text-[#453F4E] leading-relaxed">{p}</p>)}
         </section>
       ))}
       <Link href="/contact" className="inline-flex min-h-[44px] items-center rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white">Instruct an Expert</Link>

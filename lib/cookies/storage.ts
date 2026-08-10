@@ -9,10 +9,18 @@ import {
   DEFAULT_CATEGORY_CONSENT,
 } from "./types";
 
+/** Same-tab notify channel for useSyncExternalStore subscribers */
+const CONSENT_CHANGE_EVENT = "sar-cookie-consent-change";
+
 function addDays(date: Date, days: number): Date {
   const d = new Date(date);
   d.setDate(d.getDate() + days);
   return d;
+}
+
+function notifyConsentSubscribers() {
+  if (typeof window === "undefined") return;
+  window.dispatchEvent(new Event(CONSENT_CHANGE_EVENT));
 }
 
 export function isConsentExpired(stored: StoredConsent): boolean {
@@ -55,6 +63,7 @@ export function writeStoredConsent(choices: CategoryConsent): StoredConsent {
   };
   if (typeof window !== "undefined") {
     window.localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(stored));
+    notifyConsentSubscribers();
   }
   return stored;
 }
@@ -62,5 +71,22 @@ export function writeStoredConsent(choices: CategoryConsent): StoredConsent {
 export function clearStoredConsent(): void {
   if (typeof window !== "undefined") {
     window.localStorage.removeItem(CONSENT_STORAGE_KEY);
+    notifyConsentSubscribers();
   }
+}
+
+/** Subscribe to consent storage changes (same tab + cross-tab). */
+export function subscribeConsentStore(onStoreChange: () => void): () => void {
+  if (typeof window === "undefined") return () => {};
+
+  const onStorage = (e: StorageEvent) => {
+    if (e.key === CONSENT_STORAGE_KEY || e.key === null) onStoreChange();
+  };
+
+  window.addEventListener("storage", onStorage);
+  window.addEventListener(CONSENT_CHANGE_EVENT, onStoreChange);
+  return () => {
+    window.removeEventListener("storage", onStorage);
+    window.removeEventListener(CONSENT_CHANGE_EVENT, onStoreChange);
+  };
 }

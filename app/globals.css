@@ -1,35 +1,207 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   Almanac design system
+   Warm oat paper, aubergine ink, indigo actions, ochre marginalia.
+   Type: Newsreader (display) over Archivo (text).
+--------------------------------------------------------------------------- */
+
 @theme inline {
-  --color-primary: #1b2a4a;
-  --color-accent: #c4793a;
-  --color-highlight: #00796b;
-  --color-section-alt: #f0f4f8;
-  --color-border: #d1dce6;
-  --color-body: #374151;
-  --font-sans: var(--font-inter);
-  --radius-card: 8px;
-  --radius-sm: 8px;
-  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.06);
+  --color-ink: #241c33;
+  --color-ink-deep: #17111f;
+  --color-ink-soft: #5b5268;
+  --color-body: #453f4e;
+  --color-paper: #fbf9f5;
+  --color-oat: #efeae0;
+  --color-surface: #fffdf9;
+  --color-rule: #dad2c4;
+  --color-rule-soft: #e9e2d6;
+  --color-indigo: #4b3fa7;
+  --color-indigo-deep: #3c3290;
+  --color-indigo-pale: #b3a9f0;
+  --color-ochre: #9c6b1a;
+  --color-ochre-pale: #d9a94a;
+
+  /* Aliases kept so older utility names keep resolving */
+  --color-primary: #241c33;
+  --color-accent: #9c6b1a;
+  --color-highlight: #4b3fa7;
+  --color-section-alt: #efeae0;
+  --color-border: #dad2c4;
+
+  --font-sans: var(--font-archivo);
+  --font-display: var(--font-newsreader);
+
+  --radius-card: 14px;
+  --radius-sm: 10px;
   --breakpoint-xs: 375px;
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+/* Base element styling lives in @layer base so Tailwind utilities still win.
+   Unlayered rules would beat every layered utility regardless of specificity. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    background: #fbf9f5;
+    color: #453f4e;
+    font-family: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    overflow-x: hidden;
+    min-width: 320px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  main,
+  section {
+    min-width: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-newsreader), ui-serif, Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    line-height: 1.15;
+    color: #241c33;
+    font-variant-ligatures: common-ligatures;
+  }
+
+  ::selection {
+    background: #d9a94a;
+    color: #17111f;
+  }
+
+  :focus-visible {
+    outline: 2px solid #4b3fa7;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  img,
+  video,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-body {
-  background: #ffffff;
-  color: #374151;
-  font-family: var(--font-inter), system-ui, sans-serif;
-  overflow-x: hidden;
-  min-width: 320px;
+@layer components {
+  /* Serif-italic kicker on a hanging ochre rule — replaces uppercase eyebrows */
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-family: var(--font-newsreader), ui-serif, Georgia, serif;
+    font-style: italic;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    color: #9c6b1a;
+  }
+
+  .kicker::before {
+    content: "";
+    width: 1.75rem;
+    height: 1px;
+    background: #9c6b1a;
+    flex: none;
+  }
+
+  .kicker-pale {
+    color: #d9a94a;
+  }
+
+  .kicker-pale::before {
+    background: #d9a94a;
+  }
+
+  /* Comfortable reading measure for long-form legal prose */
+  .measure {
+    max-width: 68ch;
+  }
+
+  .measure-wide {
+    max-width: 78ch;
+  }
+
+  /* Panels replace drop-shadow cards: warm surface + hairline rule */
+  .panel {
+    background: #fffdf9;
+    border: 1px solid #dad2c4;
+    border-radius: 14px;
+  }
+
+  /* Hanging index numeral set in the display serif */
+  .numeral {
+    font-family: var(--font-newsreader), ui-serif, Georgia, serif;
+    font-size: 2rem;
+    line-height: 1;
+    color: #9c6b1a;
+    font-variant-numeric: lining-nums tabular-nums;
+  }
+
+  /* Editorial link underline: ochre rule, generous offset */
+  .link-rule {
+    text-decoration: underline;
+    text-decoration-color: #d9a94a;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+  }
+
+  .link-rule:hover {
+    text-decoration-color: #9c6b1a;
+    text-decoration-thickness: 2px;
+  }
+
+  .prose-safe {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .index-panel {
+    animation: panelIn 0.16s ease-out;
+    transform-origin: top center;
+  }
+
+  .cookie-banner-enter {
+    animation: slideUp 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* Lets wide tables bleed to the screen edge on small viewports */
+  .table-scroll {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  @media (min-width: 640px) {
+    .table-scroll {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
-main,
-section {
-  min-width: 0;
+@keyframes panelIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideUp {
@@ -52,54 +224,16 @@ section {
   }
 }
 
-/* Cookie banner — GPU-friendly transform; respects reduced motion */
-.cookie-banner-enter {
-  animation: slideUp 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
 @media (prefers-reduced-motion: reduce) {
   .cookie-banner-enter {
     animation: fadeIn 0.2s ease-out;
   }
 
+  .index-panel {
+    animation: none;
+  }
+
   html {
     scroll-behavior: auto;
   }
-}
-
-.table-scroll {
-  margin-left: -1rem;
-  margin-right: -1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  -webkit-overflow-scrolling: touch;
-}
-
-img,
-video,
-svg {
-  max-width: 100%;
-  height: auto;
-}
-
-.prose-safe {
-  overflow-wrap: anywhere;
-  word-break: break-word;
-}
-
-@media (min-width: 640px) {
-  .table-scroll {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-#mobile-nav-toggle:checked ~ .header-bar .icon-open {
-  display: none;
-}
-
-#mobile-nav-toggle:checked ~ .header-bar .icon-close {
-  display: block;
 }

@@ -2,35 +2,46 @@ import Link from "next/link";
 
 type CardItem = { id?: string; title: string; description: string; href?: string };
 
-function CardContent({ item }: { item: CardItem }) {
+function CardBody({ item }: { item: CardItem }) {
   return (
     <>
-      <h3 className="break-words font-semibold text-[#1B2A4A] group-hover:text-[#C4793A]">{item.title}</h3>
-      <p className="prose-safe mt-2 text-sm text-[#374151] leading-relaxed">{item.description}</p>
-      {item.href && <span className="mt-4 inline-block text-sm font-medium text-[#C4793A]">Learn more →</span>}
+      <span
+        aria-hidden="true"
+        className="block h-px w-10 bg-ochre transition-all duration-300 group-hover:w-full"
+      />
+      <h3 className="mt-4 break-words font-display text-lg text-ink">{item.title}</h3>
+      <p className="prose-safe mt-2 text-[14.5px] leading-relaxed text-body">{item.description}</p>
+      {item.href && (
+        <span className="mt-4 inline-flex items-center gap-1.5 text-[14px] font-medium text-indigo">
+          Read this page
+          <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">
+            &rarr;
+          </span>
+        </span>
+      )}
     </>
   );
 }
 
 export function CardGrid({ items }: { items: CardItem[] }) {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
       {items.map((item) =>
         item.href ? (
           <Link
             key={item.href ?? item.id ?? item.title}
             href={item.href}
-            className="group min-h-[44px] min-w-0 rounded-[8px] border border-[#D1DCE6] bg-white p-5 shadow-[0_1px_3px_rgba(0,0,0,0.08),0_4px_16px_rgba(0,0,0,0.06)] transition hover:border-[#1B2A4A] sm:p-6"
+            className="group flex min-w-0 flex-col rounded-[14px] border border-rule bg-surface p-5 transition-colors hover:border-ochre"
           >
-            <CardContent item={item} />
+            <CardBody item={item} />
           </Link>
         ) : (
           <div
             key={item.id ?? item.title}
             id={item.id}
-            className="scroll-mt-24 rounded-[8px] border border-[#D1DCE6] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.08),0_4px_16px_rgba(0,0,0,0.06)]"
+            className="group scroll-mt-32 rounded-[14px] border border-rule bg-surface p-5"
           >
-            <CardContent item={item} />
+            <CardBody item={item} />
           </div>
         )
       )}

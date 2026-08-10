@@ -4,16 +4,11 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { SITE_EMAIL } from "@/lib/constants";
 import { postSubmitLead } from "@/lib/submit-lead";
-import {
-  CASE_PROFILES,
-  COUNTRIES,
-  FUNDING_OPTIONS,
-  REPORT_TYPES,
-} from "@/data/contact-options";
+import { COUNTRIES } from "@/data/contact-options";
 
-const inputClass =
-  "w-full min-w-0 rounded-[8px] border border-[#D1DCE6] px-4 py-3 text-base text-[#374151] focus:border-[#1B2A4A] focus:outline-none focus:ring-1 focus:ring-[#1B2A4A] min-h-[44px]";
-const labelClass = "mb-1 block text-sm font-medium text-[#1B2A4A]";
+const fieldClass =
+  "w-full min-w-0 min-h-[48px] rounded-[10px] border border-rule bg-surface px-4 py-3 text-[16px] text-ink placeholder:text-ink-soft/60 focus:border-indigo focus:outline-none focus:ring-1 focus:ring-indigo";
+const labelClass = "mb-1.5 block font-display text-[15px] text-ink";
 
 export function ContactForm() {
   const router = useRouter();
@@ -31,29 +26,15 @@ export function ContactForm() {
       return;
     }
 
-    const reportType = String(data.get("report_type") ?? "").trim();
-    const country = String(data.get("country") ?? "").trim();
-    const profile = String(data.get("profile") ?? "").trim();
-    const funding = String(data.get("funding") ?? "").trim();
-    const summary = String(data.get("message") ?? "").trim();
-
-    const summaryParts = [
-      summary,
-      reportType && `Report type: ${reportType}`,
-      country && `Country: ${country}`,
-      profile && `Profile: ${profile}`,
-      funding && `Funding: ${funding}`,
-    ].filter(Boolean);
-
     const payload = {
       fullName: String(data.get("name") ?? "").trim(),
       organisation: String(data.get("company") ?? "").trim(),
       email: String(data.get("email") ?? "").trim(),
-      phone: String(data.get("phone") ?? "").trim(),
-      caseProfile: profile,
-      region: country,
-      funding,
-      summary: summaryParts.join("\n"),
+      phone: "",
+      caseProfile: "",
+      region: String(data.get("country") ?? "").trim(),
+      funding: "",
+      summary: String(data.get("message") ?? "").trim(),
     };
 
     const ok = await postSubmitLead(payload);
@@ -62,43 +43,49 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="min-w-0 space-y-5">
+    <form onSubmit={handleSubmit} className="min-w-0">
       <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
 
       <div className="grid min-w-0 gap-5 sm:grid-cols-2">
         <div className="min-w-0">
           <label className={labelClass} htmlFor="name">
-            Full Name *
+            Your name
           </label>
-          <input id="name" name="name" required autoComplete="name" className={inputClass} />
+          <input id="name" name="name" required autoComplete="name" className={fieldClass} />
         </div>
         <div className="min-w-0">
           <label className={labelClass} htmlFor="company">
-            Law Firm *
+            Firm
           </label>
-          <input id="company" name="company" required autoComplete="organization" className={inputClass} />
+          <input
+            id="company"
+            name="company"
+            required
+            autoComplete="organization"
+            className={fieldClass}
+          />
         </div>
         <div className="min-w-0">
           <label className={labelClass} htmlFor="email">
-            Email *
+            Email
           </label>
-          <input id="email" type="email" name="email" required autoComplete="email" className={inputClass} />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            autoComplete="email"
+            className={fieldClass}
+          />
         </div>
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="phone">
-            Telephone
-          </label>
-          <input id="phone" type="tel" name="phone" autoComplete="tel" className={inputClass} />
-        </div>
-      </div>
-
-      <div className="grid min-w-0 gap-5 sm:grid-cols-2">
         <div className="min-w-0">
           <label className={labelClass} htmlFor="country">
             Country
           </label>
-          <select id="country" name="country" className={inputClass}>
-            <option value="">Select country</option>
+          <select id="country" name="country" required className={fieldClass} defaultValue="">
+            <option value="" disabled>
+              Select
+            </option>
             {COUNTRIES.map((c) => (
               <option key={c} value={c}>
                 {c}
@@ -106,80 +93,44 @@ export function ContactForm() {
             ))}
           </select>
         </div>
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="profile">
-            Profile
-          </label>
-          <select id="profile" name="profile" className={inputClass}>
-            <option value="">Select profile</option>
-            {CASE_PROFILES.map((p) => (
-              <option key={p} value={p}>
-                {p}
-              </option>
-            ))}
-          </select>
-        </div>
       </div>
 
-      <div className="grid min-w-0 gap-5 sm:grid-cols-2">
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="funding">
-            Funding
-          </label>
-          <select id="funding" name="funding" className={inputClass}>
-            <option value="">Select funding</option>
-            {FUNDING_OPTIONS.map((f) => (
-              <option key={f} value={f}>
-                {f}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="report_type">
-            Report Type
-          </label>
-          <select id="report_type" name="report_type" className={inputClass}>
-            <option value="">Select report type</option>
-            {REPORT_TYPES.map((r) => (
-              <option key={r} value={r}>
-                {r}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-
-      <div className="min-w-0">
+      <div className="mt-5 min-w-0">
         <label className={labelClass} htmlFor="message">
-          Brief case description *
+          The case
         </label>
         <textarea
           id="message"
           name="message"
           required
-          rows={5}
-          className={`${inputClass} min-h-[120px] resize-y`}
+          rows={4}
+          placeholder="Profile, hearing date, and whether funding is Legal Aid or private."
+          className={`${fieldClass} min-h-[120px] resize-y`}
         />
       </div>
 
       {status === "error" && (
-        <p className="rounded-[8px] border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-          Something went wrong. Please try again or email us at{" "}
-          <a href={`mailto:${SITE_EMAIL}`} className="font-medium underline">
+        <p className="mt-5 rounded-[10px] border border-rule bg-oat px-4 py-3 text-[15px] text-ink">
+          That did not send. Please email{" "}
+          <a href={`mailto:${SITE_EMAIL}`} className="link-rule font-medium">
             {SITE_EMAIL}
-          </a>
-          .
+          </a>{" "}
+          instead.
         </p>
       )}
 
-      <button
-        type="submit"
-        disabled={status === "loading"}
-        className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[8px] bg-[#00796B] px-6 py-3 text-base font-semibold text-white hover:bg-[#00695C] disabled:opacity-60 sm:w-auto"
-      >
-        {status === "loading" ? "Submitting..." : "Instruct a Report"}
-      </button>
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <button
+          type="submit"
+          disabled={status === "loading"}
+          className="inline-flex min-h-[50px] w-full cursor-pointer items-center justify-center rounded-[10px] bg-indigo px-8 font-medium text-paper transition-colors hover:bg-indigo-deep disabled:opacity-60 sm:w-auto"
+        >
+          {status === "loading" ? "Sending" : "Send case details"}
+        </button>
+        <p className="text-[13.5px] text-ink-soft">
+          Confidential. Never shared with the Home Office.
+        </p>
+      </div>
     </form>
   );
 }

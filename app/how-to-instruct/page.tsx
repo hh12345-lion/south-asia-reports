@@ -64,13 +64,13 @@ export default function HowToInstructPage() {
         <UkServiceScope className="mb-8" />
         <div className="space-y-6">
           {steps.map((s) => (
-            <div key={s.n} className="flex gap-4 rounded-[8px] border border-[#D1DCE6] bg-white p-6">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1B2A4A] font-bold text-white">
+            <div key={s.n} className="flex gap-4 rounded-[12px] border border-rule bg-surface p-6">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-ink font-bold text-white">
                 {s.n}
               </span>
               <div>
-                <h2 className="font-bold text-[#1B2A4A]">{s.title}</h2>
-                <p className="mt-2 text-[#374151]">{s.body}</p>
+                <h2 className="text-ink">{s.title}</h2>
+                <p className="mt-2 text-body">{s.body}</p>
               </div>
             </div>
           ))}
@@ -85,7 +85,7 @@ export default function HowToInstructPage() {
         />
         <Link
           href="/contact"
-          className="mt-8 inline-flex min-h-[44px] items-center rounded-[8px] bg-[#C4793A] px-6 py-3 font-semibold text-white"
+          className="mt-8 inline-flex min-h-[50px] items-center rounded-[10px] bg-indigo px-7 font-medium text-paper transition-colors hover:bg-indigo-deep"
         >
           Instruct an Expert
         </Link>

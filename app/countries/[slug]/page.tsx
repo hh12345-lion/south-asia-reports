@@ -44,7 +44,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       <PageJsonLd breadcrumbs={crumbs} faqs={allFaqs} />
       <PageShell title={country.h1} breadcrumbs={crumbs}>
         {country.content.map((p, i) => (
-          <p key={i} className="mb-4 text-sm text-[#374151] leading-relaxed sm:text-base">
+          <p key={i} className="mb-4 text-sm text-body leading-relaxed sm:text-base">
             {p}
           </p>
         ))}
@@ -52,23 +52,23 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <ResponsiveTableWrap label="Swipe to view country statistics">
           <table className="w-full min-w-[320px] border-collapse text-sm">
             <tbody>
-              <tr className="border-b border-[#D1DCE6]">
-                <td className="px-3 py-3 font-semibold text-[#1B2A4A] sm:px-4">UK Asylum Claim Volume</td>
-                <td className="px-3 py-3 text-[#374151] sm:px-4">{country.claimVolume}</td>
+              <tr className="border-b border-rule">
+                <td className="px-3 py-3 text-ink sm:px-4">UK Asylum Claim Volume</td>
+                <td className="px-3 py-3 text-body sm:px-4">{country.claimVolume}</td>
               </tr>
-              <tr className="border-b border-[#D1DCE6]">
-                <td className="px-3 py-3 font-semibold text-[#1B2A4A] sm:px-4">Key Profiles</td>
-                <td className="px-3 py-3 text-[#374151] sm:px-4">{country.keyProfiles}</td>
+              <tr className="border-b border-rule">
+                <td className="px-3 py-3 text-ink sm:px-4">Key Profiles</td>
+                <td className="px-3 py-3 text-body sm:px-4">{country.keyProfiles}</td>
               </tr>
-              <tr className="border-b border-[#D1DCE6]">
-                <td className="px-3 py-3 font-semibold text-[#1B2A4A] sm:px-4">UK Country Guidance</td>
-                <td className="px-3 py-3 text-[#374151] sm:px-4">{country.countryGuidance}</td>
+              <tr className="border-b border-rule">
+                <td className="px-3 py-3 text-ink sm:px-4">UK Country Guidance</td>
+                <td className="px-3 py-3 text-body sm:px-4">{country.countryGuidance}</td>
               </tr>
             </tbody>
           </table>
         </ResponsiveTableWrap>
 
-        <h2 className="mt-8 text-lg font-bold text-[#1B2A4A] sm:text-xl">Related Asylum Profiles</h2>
+        <h2 className="mt-8 font-display text-xl text-ink">Related Asylum Profiles</h2>
         <ul className="mt-4 space-y-2">
           {country.relatedProfiles.map((s) => {
             const profile = getAsylumProfile(s);
@@ -76,7 +76,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               <li key={s}>
                 <Link
                   href={`/asylum-profiles/${s}`}
-                  className="inline-flex min-h-[44px] items-center text-[#C4793A] hover:underline"
+                  className="inline-flex min-h-[44px] items-center text-ochre hover:underline"
                 >
                   {profile?.title ?? s}
                 </Link>

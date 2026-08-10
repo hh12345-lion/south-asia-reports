@@ -23,7 +23,7 @@ export default function GuidesPage() {
         subtitle="Practical guides for UK immigration solicitors instructing South Asia country expert witnesses."
         breadcrumbs={crumbs}
       >
-        <p className="mb-8 text-[#374151] leading-relaxed">
+        <p className="mb-8 text-body leading-relaxed">
           These guides cover Bangladesh post-August 2024 conditions, India Hindutva and minority claims, Sri Lanka KK
           [2021] framework, South Asia CPINs, Nepal and Bhutan expert evidence, and the instruction process for Legal
           Aid and privately funded cases.
@@ -35,9 +35,9 @@ export default function GuidesPage() {
             href: `/guides/${g.slug}`,
           }))}
         />
-        <p className="mt-8 text-[#374151]">
+        <p className="mt-8 text-body">
           For a complete overview, see our{" "}
-          <Link href="/south-asia-asylum-explained" className="font-semibold text-[#C4793A] hover:underline">
+          <Link href="/south-asia-asylum-explained" className="font-semibold text-ochre hover:underline">
             South Asia asylum explained pillar page
           </Link>
           .

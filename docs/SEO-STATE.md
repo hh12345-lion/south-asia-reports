@@ -354,7 +354,7 @@ Card grids link to regions, countries, services, expertise areas; hub links to g
 | **Glossary search query param** | WebSite SearchAction targets `/glossary?q=` but glossary filter is client-side only (no SSR search results page) |
 | **Expert profiles** | `/experts` shows 3 illustrative experts; not a full directory CMS |
 | **54 vs 62 African countries** | Marketing copy references 54 countries; only 12 dedicated country landing pages built |
-| **Middleware deprecation warning** | Next.js 16 warns `middleware.ts` convention deprecated in favour of `proxy` |
+| **Proxy deprecation** | Migrated: `middleware.ts` → `proxy.ts` (Next.js 16) |
 | **Duplicate sitemap sources** | Both `public/sitemap.xml` (prebuild script) and `app/sitemap.ts` exist; keep in sync via `npm run seo:verify` |
 | **Playwright responsive tests** | `npm run test:responsive` available; not wired to CI by default |
 | **Experts removed from navbar** | `/experts` page exists but not in main nav (by design) |

@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { RelatedLink } from "@/data/related-links";
 
 export function RelatedLinks({
-  title = "Related pages",
+  title = "Read next",
   links,
 }: {
   title?: string;
@@ -10,16 +10,19 @@ export function RelatedLinks({
 }) {
   if (links.length === 0) return null;
   return (
-    <aside className="mt-12 min-w-0 rounded-[8px] border border-[#D1DCE6] bg-[#F0F4F8] p-4 sm:p-6">
-      <h2 className="text-base font-bold text-[#1B2A4A] sm:text-lg">{title}</h2>
-      <ul className="mt-4 grid grid-cols-1 gap-2 md:grid-cols-2">
+    <aside className="mt-14 min-w-0 border-t border-rule pt-8">
+      <h2 className="kicker">{title}</h2>
+      <ul className="mt-4 grid grid-cols-1 gap-x-10 md:grid-cols-2">
         {links.map((link) => (
-          <li key={link.href}>
+          <li key={link.href} className="border-b border-rule-soft">
             <Link
               href={link.href}
-              className="inline-flex min-h-[44px] items-center text-sm font-medium text-[#1B2A4A] hover:text-[#C4793A] hover:underline"
+              className="flex min-h-[52px] items-center justify-between gap-4 py-2 text-[15px] text-ink transition-colors hover:text-indigo"
             >
-              {link.label}
+              <span className="break-words">{link.label}</span>
+              <span aria-hidden="true" className="shrink-0 text-ochre">
+                &rarr;
+              </span>
             </Link>
           </li>
         ))}

@@ -9,7 +9,10 @@ export function GlossarySearch({ terms }: { terms: GlossaryTerm[] }) {
   const filtered = useMemo(() => {
     const query = q.toLowerCase().trim();
     if (!query) return terms;
-    return terms.filter((t) => t.term.toLowerCase().includes(query) || t.definition.toLowerCase().includes(query));
+    return terms.filter(
+      (t) =>
+        t.term.toLowerCase().includes(query) || t.definition.toLowerCase().includes(query)
+    );
   }, [q, terms]);
 
   return (
@@ -20,29 +23,32 @@ export function GlossarySearch({ terms }: { terms: GlossaryTerm[] }) {
       <input
         id="glossary-search"
         type="search"
-        placeholder="Search terms…"
+        placeholder="Search terms"
         value={q}
         onChange={(e) => setQ(e.target.value)}
-        className="mb-8 w-full max-w-md rounded-[8px] border border-[#D1DCE6] px-4 py-3 min-h-[44px] focus:border-[#1B2A4A] focus:outline-none focus:ring-1 focus:ring-[#1B2A4A]"
+        className="mb-4 min-h-[48px] w-full max-w-md rounded-[10px] border border-rule bg-surface px-4 py-3 text-[16px] text-ink placeholder:text-ink-soft/60 focus:border-indigo focus:outline-none focus:ring-1 focus:ring-indigo"
       />
-      <dl className="space-y-6">
+
+      <p className="mb-8 text-[14px] text-ink-soft" aria-live="polite">
+        {filtered.length} of {terms.length} terms
+      </p>
+
+      <dl className="border-t border-rule">
         {filtered.map((t) => {
           const related = getGlossaryTermLinks(t.slug);
           return (
-            <div
-              key={t.slug}
-              id={t.slug}
-              className="scroll-mt-24 rounded-[8px] border border-[#D1DCE6] bg-white p-4 sm:p-5"
-            >
-              <dt className="break-words font-semibold text-[#1B2A4A]">{t.term}</dt>
-              <dd className="mt-2 break-words text-[#374151] leading-relaxed">{t.definition}</dd>
+            <div key={t.slug} id={t.slug} className="scroll-mt-32 border-b border-rule py-6">
+              <dt className="break-words font-display text-[1.2rem] text-ink">{t.term}</dt>
+              <dd className="measure-wide mt-2 break-words leading-relaxed text-body">
+                {t.definition}
+              </dd>
               {related.length > 0 && (
-                <dd className="mt-4 flex flex-wrap gap-x-4 gap-y-2 border-t border-[#D1DCE6] pt-4">
+                <dd className="mt-3 flex flex-wrap gap-x-5 gap-y-1">
                   {related.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className="inline-flex min-h-[44px] items-center text-sm font-medium text-[#C4793A] hover:underline"
+                      className="link-rule inline-flex min-h-[36px] items-center text-[14px] text-indigo"
                     >
                       {link.label}
                     </Link>

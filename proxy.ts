@@ -9,7 +9,7 @@ const REDIRECT_HOSTS = new Set([
   "www.southasiaexpert.com",
 ]);
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const host = request.headers.get("host")?.split(":")[0] ?? "";
 
   if (REDIRECT_HOSTS.has(host)) {

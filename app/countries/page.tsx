@@ -23,12 +23,12 @@ export default function CountriesPage() {
         subtitle="Dedicated country pages for the five South Asian nations with significant UK asylum claim volumes."
         breadcrumbs={crumbs}
       >
-        <p className="text-[#374151] leading-relaxed">
+        <p className="text-body leading-relaxed">
           South Asia Reports provides dedicated country expert report pages for Bangladesh, India, Sri Lanka, Nepal, and
           Bhutan. Each country page targets specific search queries such as &quot;Bangladesh country expert report UK&quot;
           and &quot;India asylum expert report UK&quot;, providing profile-specific risk analysis for UK immigration
           tribunals. Pakistan is covered separately at{" "}
-          <a href={PAKISTAN_REPORTS_URL} className="font-semibold text-[#C4793A] hover:underline" rel="noopener noreferrer">
+          <a href={PAKISTAN_REPORTS_URL} className="font-semibold text-ochre hover:underline" rel="noopener noreferrer">
             pakistanexpertreports.com
           </a>
           .

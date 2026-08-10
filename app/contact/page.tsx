@@ -1,6 +1,5 @@
 import { PageShell } from "@/components/layout/PageShell";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { UkServiceScope } from "@/components/ui/UkServiceScope";
 import { SITE_EMAIL } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
 
@@ -12,35 +11,52 @@ export const metadata = createMetadata({
   noindex: true,
 });
 
+const whatHappensNext = [
+  {
+    step: "Same day",
+    detail: "We confirm receipt and tell you if the deadline is workable.",
+  },
+  {
+    step: "One working day",
+    detail: "You get a named expert, a scope, a fee and a delivery date in writing.",
+  },
+  {
+    step: "Before any work",
+    detail: "Nothing is charged until you confirm the scope, or LAA prior authority is granted.",
+  },
+];
+
 export default function ContactPage() {
   return (
     <PageShell
-      title="Instruct a South Asia Country Expert Report"
-      subtitle="Confidential case submission for UK solicitors and Legal Aid practitioners. Response within one business day."
+      title="Send us the case"
+      subtitle="Five fields. If an expert report will not help this appeal, we will tell you that rather than take the instruction."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
+      rail={false}
     >
-      <div className="grid min-w-0 gap-10 lg:grid-cols-3 lg:gap-12">
-        <div className="min-w-0 lg:col-span-2">
+      <div className="grid min-w-0 gap-12 lg:grid-cols-[minmax(0,1fr)_18rem] lg:gap-16">
+        <div className="min-w-0">
           <ContactForm />
         </div>
-        <aside className="space-y-6">
-          <div className="h-fit rounded-[8px] border border-[#D1DCE6] bg-[#F0F4F8] p-5 sm:p-6">
-            <h2 className="font-bold text-[#1B2A4A]">Why instruct through South Asia Reports</h2>
-            <ul className="mt-4 space-y-4 text-sm text-[#374151]">
-              <li>Five South Asian countries covered: Bangladesh, India, Sri Lanka, Nepal, Bhutan</li>
-              <li>Post-August 2024 Bangladesh and KK [2021] Sri Lanka specialists</li>
-              <li>Legal Aid rates available for UK tribunal proceedings</li>
-              <li>Immigration Tribunal Practice Direction compliant</li>
-              <li>Response within 1 business day</li>
-            </ul>
-            <p className="mt-4 text-sm text-[#374151]">
-              Enquiries:{" "}
-              <a href={`mailto:${SITE_EMAIL}`} className="font-semibold text-[#C4793A] hover:underline">
-                {SITE_EMAIL}
-              </a>
-            </p>
-          </div>
-          <UkServiceScope showDetail={false} />
+
+        <aside className="min-w-0">
+          <span className="kicker">What happens next</span>
+          <ol className="mt-4 space-y-5 border-t border-rule pt-5">
+            {whatHappensNext.map((item) => (
+              <li key={item.step}>
+                <p className="font-display text-[15px] text-ink">{item.step}</p>
+                <p className="mt-0.5 text-[14px] leading-snug text-ink-soft">{item.detail}</p>
+              </li>
+            ))}
+          </ol>
+
+          <p className="mt-8 border-t border-rule pt-5 text-[14px] leading-relaxed text-ink-soft">
+            Prefer email? Write to{" "}
+            <a href={`mailto:${SITE_EMAIL}`} className="link-rule text-indigo">
+              {SITE_EMAIL}
+            </a>{" "}
+            with the refusal letter attached.
+          </p>
         </aside>
       </div>
     </PageShell>

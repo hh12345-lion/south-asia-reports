@@ -22,12 +22,12 @@ export const UK_SERVICE_SCOPE_POINTS = [
 ] as const;
 
 export const COLORS = {
-  primary: "#1B2A4A",
-  accent: "#C4793A",
-  highlight: "#00796B",
+  primary: "#241C33",
+  accent: "#9C6B1A",
+  highlight: "#4B3FA7",
   background: "#FFFFFF",
-  sectionAlt: "#F0F4F8",
-  border: "#D1DCE6",
-  heading: "#1B2A4A",
-  body: "#374151",
+  sectionAlt: "#EFEAE0",
+  border: "#DAD2C4",
+  heading: "#241C33",
+  body: "#453F4E",
 } as const;

@@ -92,7 +92,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { AFRICAN_COUNTRIES, CASE_TYPES, KEY_ISSUES, URGENCY_OPTIONS, FUNDING_OPTIONS } from "@/data/african-countries";
 
-const inputClass = "w-full rounded-[4px] border border-[#D1E3D8] px-4 py-3 text-[#374151] focus:border-[#0D3B2E] focus:outline-none focus:ring-1 focus:ring-[#0D3B2E] min-h-[44px]";
+const inputClass = "w-full rounded-[4px] border border-[#D1E3D8] px-4 py-3 text-[#453F4E] focus:border-[#0D3B2E] focus:outline-none focus:ring-1 focus:ring-[#0D3B2E] min-h-[44px]";
 const labelClass = "mb-1 block text-sm font-medium text-[#0D3B2E]";
 
 export function ContactForm() {
@@ -148,7 +148,7 @@ export function ContactForm() {
         <div className="flex flex-wrap gap-2">
           {KEY_ISSUES.map((issue) => (
             <button key={issue} type="button" onClick={() => toggleIssue(issue)}
-              className={`min-h-[44px] rounded-[4px] border px-3 py-2 text-sm ${selectedIssues.includes(issue) ? "border-[#0D3B2E] bg-[#0D3B2E] text-white" : "border-[#D1E3D8] bg-white text-[#374151]"}`}>
+              className={`min-h-[44px] rounded-[4px] border px-3 py-2 text-sm ${selectedIssues.includes(issue) ? "border-[#0D3B2E] bg-[#0D3B2E] text-white" : "border-[#D1E3D8] bg-[#FFFDF9] text-[#453F4E]"}`}>
               {issue}
             </button>
           ))}
@@ -188,9 +188,9 @@ export function CardGrid({ items }: { items: { title: string; description: strin
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((item) => (
         <Link key={item.href} href={item.href}
-          className="group rounded-[8px] border border-[#D1E3D8] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.08),0_4px_16px_rgba(0,0,0,0.06)] transition hover:border-[#0D3B2E] min-h-[44px]">
+          className="group rounded-[12px] border border-[#D1E3D8] bg-[#FFFDF9] p-6 transition hover:border-[#0D3B2E] min-h-[44px]">
           <h3 className="font-semibold text-[#0D3B2E] group-hover:text-[#C8922A]">{item.title}</h3>
-          <p className="mt-2 text-sm text-[#374151] leading-relaxed">{item.description}</p>
+          <p className="mt-2 text-sm text-[#453F4E] leading-relaxed">{item.description}</p>
           <span className="mt-4 inline-block text-sm font-medium text-[#C8922A]">Learn more →</span>
         </Link>
       ))}

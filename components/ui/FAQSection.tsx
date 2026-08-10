@@ -1,8 +1,12 @@
 import type { FAQ } from "@/lib/schema";
 
+/**
+ * Questions set as a ruled index rather than a stack of boxes — answers stay in
+ * the document for crawlers and for people reading straight through.
+ */
 export function FAQSection({
   faqs,
-  title = "Frequently Asked Questions",
+  title = "Questions solicitors ask",
   id,
   headingId,
 }: {
@@ -12,21 +16,31 @@ export function FAQSection({
   headingId?: string;
 }) {
   return (
-    <section id={id} className="py-8 sm:py-12">
-      <h2
-        id={headingId}
-        className="mb-6 break-words text-xl font-bold text-[#1B2A4A] sm:mb-8 sm:text-2xl"
-      >
+    <section id={id} className="scroll-mt-32 py-10 sm:py-12">
+      <h2 id={headingId} className="break-words font-display text-2xl text-ink sm:text-[1.75rem]">
         {title}
       </h2>
-      <div className="space-y-4 sm:space-y-6">
-        {faqs.map((faq) => (
-          <div key={faq.question} className="rounded-[8px] border border-[#D1DCE6] bg-white p-4 shadow-[0_1px_3px_rgba(0,0,0,0.08),0_4px_16px_rgba(0,0,0,0.06)] sm:p-6">
-            <h3 className="break-words text-base font-semibold text-[#1B2A4A] sm:text-lg">{faq.question}</h3>
-            <p className="prose-safe mt-3 text-sm text-[#374151] leading-relaxed sm:text-base">{faq.answer}</p>
+
+      <dl className="mt-8 border-t border-rule">
+        {faqs.map((faq, i) => (
+          <div
+            key={faq.question}
+            className="grid gap-2 border-b border-rule py-6 sm:grid-cols-[2.5rem_minmax(0,1fr)] sm:gap-6"
+          >
+            <span aria-hidden="true" className="numeral text-[1.35rem] sm:pt-0.5">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <div className="min-w-0">
+              <dt className="break-words font-display text-[1.15rem] leading-snug text-ink">
+                {faq.question}
+              </dt>
+              <dd className="prose-safe measure-wide mt-2 leading-relaxed text-body">
+                {faq.answer}
+              </dd>
+            </div>
           </div>
         ))}
-      </div>
+      </dl>
     </section>
   );
 }

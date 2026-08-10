@@ -1,93 +1,71 @@
 import Link from "next/link";
 import { CookieSettingsButton } from "@/components/cookies";
-import { PAKISTAN_REPORTS_URL, SITE_EMAIL, UK_SERVICE_SCOPE_DETAIL } from "@/lib/constants";
-import { asylumProfiles } from "@/data/asylum-profiles";
-import { countries } from "@/data/countries";
+import { PAKISTAN_REPORTS_URL, SITE_EMAIL } from "@/lib/constants";
+
+const sections = [
+  { label: "Countries", href: "/countries" },
+  { label: "Profiles", href: "/asylum-profiles" },
+  { label: "Case types", href: "/case-types" },
+  { label: "Services", href: "/services" },
+  { label: "Guides", href: "/guides" },
+  { label: "How to instruct", href: "/how-to-instruct" },
+];
+
+const legal = [
+  { label: "Privacy", href: "/privacy" },
+  { label: "Cookies", href: "/cookie-policy" },
+  { label: "Terms", href: "/terms" },
+];
 
 export function Footer() {
   return (
-    <footer className="border-t border-[#D1DCE6] bg-[#1B2A4A] text-white">
-      <div className="mx-auto min-w-0 max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4">
-          <div>
-            <h3 className="mb-4 font-semibold text-[#C4793A]">Countries</h3>
-            <ul className="space-y-2 text-sm text-white/80">
-              {countries.map((c) => (
-                <li key={c.slug}>
-                  <Link href={`/countries/${c.slug}`} className="inline-flex min-h-[44px] items-center hover:text-white">
-                    {c.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+    <footer className="bg-ink text-paper">
+      <div className="mx-auto max-w-[1180px] px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
+        <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-md">
+            <span className="kicker kicker-pale">Instructing an expert</span>
+            <a
+              href={`mailto:${SITE_EMAIL}`}
+              className="mt-3 block font-display text-2xl text-paper underline decoration-ochre decoration-1 underline-offset-[6px] transition-colors hover:decoration-ochre-pale sm:text-3xl"
+            >
+              {SITE_EMAIL}
+            </a>
+            <p className="mt-4 text-[15px] leading-relaxed text-paper/60">
+              Send the refusal letter, the appeal bundle index and your hearing date. You will have a
+              scope, a fee and a delivery date within one working day.
+            </p>
           </div>
-          <div>
-            <h3 className="mb-4 font-semibold text-[#C4793A]">Asylum Profiles</h3>
-            <ul className="space-y-2 text-sm text-white/80">
-              {asylumProfiles.slice(0, 5).map((p) => (
-                <li key={p.slug}>
-                  <Link href={`/asylum-profiles/${p.slug}`} className="inline-flex min-h-[44px] items-center hover:text-white">
-                    {p.title}
-                  </Link>
-                </li>
-              ))}
-              <li className="pt-2">
-                <Link href="/asylum-profiles" className="text-[#C4793A] hover:underline">
-                  View all profiles
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="mb-4 font-semibold text-[#C4793A]">Resources</h3>
-            <ul className="space-y-2 text-sm text-white/80">
-              <li><Link href="/south-asia-asylum-explained" className="hover:text-white">South Asia Asylum Explained</Link></li>
-              <li><Link href="/cpin-country-guidance" className="hover:text-white">CPIN & Country Guidance</Link></li>
-              <li><Link href="/guides" className="hover:text-white">Solicitor Guides</Link></li>
-              <li><Link href="/how-to-instruct" className="hover:text-white">How to Instruct</Link></li>
-              <li><Link href="/qualifications" className="hover:text-white">Qualifications</Link></li>
-              <li><Link href="/glossary" className="hover:text-white">Glossary</Link></li>
-              <li><Link href="/what-is-a-south-asia-expert-report" className="hover:text-white">What is a South Asia Expert Report?</Link></li>
-              <li>
-                <a href={PAKISTAN_REPORTS_URL} className="hover:text-white" rel="noopener noreferrer">
-                  Pakistan Expert Reports
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="mb-4 font-semibold text-[#C4793A]">Contact</h3>
-            <ul className="space-y-2 text-sm text-white/80">
-              <li className="text-white/70">United Kingdom enquiries only</li>
-              <li>
-                <a href={`mailto:${SITE_EMAIL}`} className="hover:text-white">
-                  {SITE_EMAIL}
-                </a>
-              </li>
-              <li><Link href="/contact" className="font-semibold text-[#C4793A] hover:underline">Contact Us</Link></li>
-            </ul>
+
+          <nav aria-label="Footer" className="flex flex-wrap gap-x-6 gap-y-2 md:justify-end">
+            {sections.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-[15px] text-paper/70 transition-colors hover:text-paper"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
+        <div className="mt-12 border-t border-paper/15 pt-6">
+          <p className="font-display text-[15px] italic text-paper/50">
+            An expert&rsquo;s duty is to the tribunal, not to the party instructing them.
+          </p>
+          <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13px] text-paper/45">
+            <span>South Asia Reports &mdash; not a law firm, no legal advice</span>
+            {legal.map((item) => (
+              <Link key={item.href} href={item.href} className="hover:text-paper/80">
+                {item.label}
+              </Link>
+            ))}
+            <CookieSettingsButton variant="footer" />
+            <a href={PAKISTAN_REPORTS_URL} rel="noopener noreferrer" className="hover:text-paper/80">
+              Pakistan reports
+            </a>
           </div>
         </div>
-        <p className="mt-10 border-t border-white/20 pt-6 text-center text-xs leading-relaxed text-white/60">
-          South Asia Reports connects UK solicitors with qualified South Asia country experts for First-tier Tribunal
-          and Upper Tribunal asylum and immigration proceedings. We are not a law firm and do not provide legal advice.{" "}
-          {UK_SERVICE_SCOPE_DETAIL}
-        </p>
-        <p className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center text-xs text-white/50">
-          <Link href="/privacy" className="inline-flex min-h-[44px] items-center hover:text-white">
-            Privacy
-          </Link>
-          <span aria-hidden="true">·</span>
-          <Link href="/cookie-policy" className="inline-flex min-h-[44px] items-center hover:text-white">
-            Cookie Policy
-          </Link>
-          <span aria-hidden="true">·</span>
-          <Link href="/terms" className="inline-flex min-h-[44px] items-center hover:text-white">
-            Terms
-          </Link>
-          <span aria-hidden="true">·</span>
-          <CookieSettingsButton variant="footer" />
-        </p>
       </div>
     </footer>
   );

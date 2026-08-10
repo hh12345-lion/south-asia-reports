@@ -8,14 +8,14 @@ export function ProfileGeoContent({ blocks }: { blocks: ProfileGeoBlock[] }) {
       {blocks.map((block) => (
         <div
           key={block.title}
-          className={`rounded-[8px] border p-6 ${
+          className={
             block.type === "highlight"
-              ? "border-[#C4793A]/40 bg-[#C4793A]/5"
-              : "border-[#D1DCE6] bg-[#F0F4F8]"
-          }`}
+              ? "border-l-2 border-ochre pl-5"
+              : "rounded-[14px] border border-rule bg-oat/70 p-6"
+          }
         >
-          <h2 className="break-words text-lg font-bold text-[#1B2A4A]">{block.title}</h2>
-          <p className="prose-safe mt-3 text-sm text-[#374151] leading-relaxed sm:text-base">{block.content}</p>
+          <h2 className="break-words font-display text-xl text-ink">{block.title}</h2>
+          <p className="prose-safe mt-2.5 leading-relaxed text-body">{block.content}</p>
         </div>
       ))}
     </div>
