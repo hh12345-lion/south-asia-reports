@@ -1,7 +1,7 @@
 export type RelatedLink = { label: string; href: string };
 
 const INSTRUCTION_LINKS: RelatedLink[] = [
-  { label: "How to Instruct", href: "/how-to-instruct" },
+  { label: "How a case is lodged", href: "/how-to-instruct" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -246,7 +246,7 @@ export function getPillarRelatedLinks(): RelatedLink[] {
     { label: "CPIN & Country Guidance", href: "/cpin-country-guidance" },
     { label: "All Asylum Profiles", href: "/asylum-profiles" },
     { label: "All Guides", href: "/guides" },
-    { label: "How to Instruct", href: "/how-to-instruct" },
+    { label: "How a case is lodged", href: "/how-to-instruct" },
     { label: "Contact Us", href: "/contact" },
   ];
 }
@@ -258,7 +258,7 @@ export function getCpinRelatedLinks(): RelatedLink[] {
     { label: "All Countries", href: "/countries" },
     { label: "All Asylum Profiles", href: "/asylum-profiles" },
     { label: "South Asia CPIN Guide", href: "/guides/south-asia-cpin-guide" },
-    { label: "How to Instruct", href: "/how-to-instruct" },
+    { label: "How a case is lodged", href: "/how-to-instruct" },
     { label: "Contact Us", href: "/contact" },
   ];
 }

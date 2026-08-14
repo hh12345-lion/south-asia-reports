@@ -1,5 +1,9 @@
 export const LEAD_BRAND_NAME = "South Asia Reports";
 
+/** Single Google Sheet tab for every lead. Never write to a second tab. */
+export const LEAD_SHEET_TAB =
+  process.env.GOOGLE_SHEET_TAB_NAME?.trim() || "Sheet1";
+
 /** Row 1 headers in Google Sheet tab (GOOGLE_SHEET_TAB_NAME); order must match buildLeadSheetRow() */
 export const LEAD_SHEET_COLUMNS = [
   "Timestamp",

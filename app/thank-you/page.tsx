@@ -4,7 +4,7 @@ import { SITE_EMAIL } from "@/lib/constants";
 
 export const metadata = createMetadata({
   title: "Thank You | South Asia Reports",
-  description: "Your instruction request has been received.",
+  description: "Your case has been received.",
   path: "/thank-you",
   noindex: true,
   follow: false,
@@ -49,7 +49,7 @@ export default function ThankYouPage() {
             href="/how-to-instruct"
             className="link-rule mt-8 inline-block text-[16px] text-indigo"
           >
-            The instruction process in full
+            How a case is lodged
           </Link>
         </div>
 

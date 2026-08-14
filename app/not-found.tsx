@@ -31,7 +31,7 @@ export default function NotFound() {
               href="/contact"
               className="inline-flex min-h-[50px] items-center justify-center rounded-[10px] border border-ink/25 px-7 font-medium text-ink transition-colors hover:border-ink"
             >
-              Start an instruction
+              Lodge a case
             </Link>
           </div>
         </div>

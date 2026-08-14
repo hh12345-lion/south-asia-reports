@@ -73,7 +73,7 @@ export const resourcesNavLinks: NavLink[] = [
   { label: "What Is an Expert Report?", href: "/what-is-a-south-asia-expert-report" },
   { label: "CPIN & Country Guidance", href: "/cpin-country-guidance" },
   { label: "Solicitor Guides", href: "/guides" },
-  { label: "How to Instruct", href: "/how-to-instruct" },
+  { label: "How a case is lodged", href: "/how-to-instruct" },
   { label: "Qualifications", href: "/qualifications" },
   { label: "Glossary", href: "/glossary" },
 ].map((link) => ({ ...link, note: resourceNotes[link.href] }));

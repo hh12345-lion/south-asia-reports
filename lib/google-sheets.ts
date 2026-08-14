@@ -1,11 +1,7 @@
 import { google, sheets_v4 } from "googleapis";
+import { LEAD_SHEET_TAB } from "@/lib/submit-lead";
 
 type CellValue = string | number | boolean | null;
-
-interface SheetTarget {
-  spreadsheetId?: string;
-  sheetName?: string;
-}
 
 interface AppendResult {
   success: boolean;
@@ -34,14 +30,14 @@ export function isGoogleSheetsConfigured(): boolean {
   );
 }
 
-/** Append a single row to the configured Google Sheet tab */
-export async function appendRow(
-  values: CellValue[],
-  target?: SheetTarget
-): Promise<AppendResult> {
+/**
+ * Append a single row to the one configured tab.
+ * Extra tab names (Contact / Retain / Instruct) are ignored on purpose.
+ */
+export async function appendRow(values: CellValue[]): Promise<AppendResult> {
   const sheets = getSheetsClient();
-  const spreadsheetId = target?.spreadsheetId || process.env.GOOGLE_SHEET_ID;
-  const sheetName = target?.sheetName || process.env.GOOGLE_SHEET_TAB_NAME || "Sheet1";
+  const spreadsheetId = process.env.GOOGLE_SHEET_ID;
+  const sheetName = LEAD_SHEET_TAB;
 
   if (!spreadsheetId) {
     throw new Error("Missing spreadsheet ID: set GOOGLE_SHEET_ID");

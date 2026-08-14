@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
-import { Archivo, Newsreader } from "next/font/google";
+import { Lexend, Petrona } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { SiteRail } from "@/components/layout/SiteRail";
 import { CookieConsentProvider } from "@/components/cookies";
 import { ConsentDefaultsScript } from "@/components/cookies/ConsentDefaultsScript";
 import { SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
-const archivo = Archivo({
+const lexend = Lexend({
   subsets: ["latin"],
-  variable: "--font-archivo",
+  variable: "--font-lexend",
   display: "swap",
 });
 
-const newsreader = Newsreader({
+const petrona = Petrona({
   subsets: ["latin"],
-  variable: "--font-newsreader",
+  variable: "--font-petrona",
   display: "swap",
   style: ["normal", "italic"],
 });
@@ -52,19 +53,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-GB" className={`${archivo.variable} ${newsreader.variable} h-full`}>
-      <body className="flex min-h-full flex-col bg-paper font-sans text-body antialiased">
+    <html lang="en-GB" className={`${lexend.variable} ${petrona.variable} h-full`}>
+      <body className="min-h-full bg-paper font-sans text-body antialiased">
         <ConsentDefaultsScript />
         <CookieConsentProvider>
           <a
             href="#main"
-            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-[10px] focus:bg-ink focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-paper"
+            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:bg-ink focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-paper"
           >
             Skip to content
           </a>
-          <Header />
-          <div className="flex-1">{children}</div>
-          <Footer />
+          <div className="lg:grid lg:min-h-full lg:grid-cols-[19.5rem_minmax(0,1fr)]">
+            <SiteRail />
+            <div className="flex min-h-full min-w-0 flex-col">
+              <Header />
+              <div className="flex-1">{children}</div>
+              <Footer />
+            </div>
+          </div>
         </CookieConsentProvider>
       </body>
     </html>

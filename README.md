@@ -25,56 +25,22 @@ npm run seo:verify
 npx eslint .
 ```
 
-## Design system — "Almanac"
+## Design system — landing ledger
 
-This site deliberately shares no visual language with the other expert-witness sites in this
-portfolio. If you are changing the look, keep it away from the house template (navy `#0E2433`-ish
-ink, teal/terracotta accents, dark photo hero with twin CTAs, uppercase mono eyebrow labels,
-sticky white bar with a coloured "Instruct" button, four-column dark link-farm footer).
+Landing-page chrome: a sticky left rail on desktop, a compact mobile bar, no mega-nav, no
+Instruct/Retain/Brief CTAs. Primary action is **Lodge a case**.
 
-Tokens live in `app/globals.css` under `@theme inline`. Use the token utilities (`bg-oat`,
-`text-ink`, `border-rule`) rather than arbitrary hex values.
+Do not copy ABC / Astra / Axiom / Expert Consultancy / South Asia Expert: no dual Contact+Retain
+nav, no 4-column dark footer, no teal/gold/acid palettes, no Fraunces/Figtree/Inter pairings.
 
 | Token | Value | Role |
 | --- | --- | --- |
-| `ink` | `#241C33` | Aubergine-black. Headings, dark bands, footer |
-| `ink-soft` | `#5B5268` | Secondary text, annotations |
-| `body` | `#453F4E` | Body copy |
-| `paper` | `#FBF9F5` | Page background (warm, never pure white) |
-| `oat` | `#EFEAE0` | Alternating sections, panels |
-| `surface` | `#FFFDF9` | Cards and inputs |
-| `rule` | `#DAD2C4` | Hairline borders (shadows are not used) |
-| `indigo` | `#4B3FA7` | Primary actions and links |
-| `ochre` | `#9C6B1A` | Kickers, marginalia, numerals, underlines |
+| `ink` | `#2B2118` | Walnut. Rail, headings |
+| `paper` | `#EDE8DF` | Stone page ground |
+| `indigo` | `#8B2942` | Garnet actions (token name is historical) |
+| `ochre` | `#5A6B3A` | Olive markers |
 
-Type is **Newsreader** (display serif, headings and kickers) over **Archivo** (text). Headings pick
-up Newsreader automatically from the base layer, so avoid adding `font-bold` to them.
-
-Base element styles are wrapped in `@layer base` and the editorial helpers in `@layer components`.
-Keep them there: unlayered CSS beats every Tailwind utility regardless of specificity, which will
-silently break colour utilities on headings.
-
-Editorial helpers: `.kicker` (serif-italic label on a hanging ochre rule), `.numeral` (hanging index
-numeral), `.link-rule` (ochre underline), `.measure` / `.measure-wide` (reading widths), `.panel`.
-
-### Layout conventions
-
-- Container width is `max-w-[1180px]`, not `max-w-6xl`/`7xl`.
-- Every inner page renders through `components/layout/PageShell.tsx`: a paper masthead
-  (`PageHero`) followed by a two-column body with a sticky `InstructionRail`. Pass `rail={false}`
-  where a page supplies its own sidebar.
-- The header (`components/layout/Header.tsx`) is a two-tier masthead: a dispatch rail plus a
-  masthead whose nav opens full-width `NavIndexPanel` panels rather than narrow dropdowns. Panel
-  copy comes from `navSections` in `data/navigation.ts`, where each link carries a short `note`.
-- The footer is deliberately minimal: email as the focal point, one link row, no copyright or
-  "all rights reserved" line.
-- Contact form is five fields by design. Do not re-add funding/report-type/phone selects.
-
-### Imagery
-
-`public/images/*.webp` are bespoke "almanac plate" illustrations generated for this project
-(abstract survey linework in the site palette). Do not replace them with stock photography, and in
-particular avoid the courtroom / scales / globe stock shots reused across the other sites.
+Type is **Petrona** over **Lexend**. Leads write to **one** Google Sheet tab (`GOOGLE_SHEET_TAB_NAME`).
 
 ## Environment
 

@@ -4,9 +4,9 @@ import { SITE_EMAIL } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Instruct a South Asia Country Expert Report",
+  title: "Lodge a South Asia Country Expert Report",
   description:
-    "Submit your case details to instruct a qualified South Asia country expert report for UK immigration tribunals. Legal Aid compatible. Response within 1 business day.",
+    "Lodge case details for a South Asia country expert report for UK immigration tribunals. Legal Aid compatible. Response within 1 business day.",
   path: "/contact",
   noindex: true,
 });
@@ -29,8 +29,8 @@ const whatHappensNext = [
 export default function ContactPage() {
   return (
     <PageShell
-      title="Send us the case"
-      subtitle="Five fields. If an expert report will not help this appeal, we will tell you that rather than take the instruction."
+      title="Lodge a case"
+      subtitle="Five fields. If a report will not help this appeal, we will tell you that rather than take the work."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       rail={false}
     >

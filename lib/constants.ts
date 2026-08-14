@@ -21,13 +21,16 @@ export const UK_SERVICE_SCOPE_POINTS = [
   "Expert reports prepared for the UK Immigration Rules and Refugee Convention as applied in the UK",
 ] as const;
 
+/** Primary landing CTA — not Instruct / Retain / Brief / Find an Expert */
+export const PRIMARY_CTA = "Lodge a case";
+
 export const COLORS = {
-  primary: "#241C33",
-  accent: "#9C6B1A",
-  highlight: "#4B3FA7",
-  background: "#FFFFFF",
-  sectionAlt: "#EFEAE0",
-  border: "#DAD2C4",
-  heading: "#241C33",
-  body: "#453F4E",
+  primary: "#2B2118",
+  accent: "#5A6B3A",
+  highlight: "#8B2942",
+  background: "#EDE8DF",
+  sectionAlt: "#E2DCD1",
+  border: "#C9C0B3",
+  heading: "#2B2118",
+  body: "#4A4038",
 } as const;

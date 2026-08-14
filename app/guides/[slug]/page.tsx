@@ -50,7 +50,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           href="/contact"
           className="mt-8 inline-flex min-h-[50px] items-center rounded-[10px] bg-indigo px-7 font-medium text-paper transition-colors hover:bg-indigo-deep"
         >
-          Instruct an Expert
+          Lodge a case
         </Link>
       </PageShell>
     </>

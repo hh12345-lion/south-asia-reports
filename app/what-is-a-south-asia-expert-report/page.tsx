@@ -70,7 +70,7 @@ export default function WhatIsSouthAsiaExpertReportPage() {
           </Link>
           {" · "}
           <Link href="/contact" className="font-semibold text-ochre hover:underline">
-            Instruct a report
+            Lodge a case
           </Link>
         </p>
       </PageShell>

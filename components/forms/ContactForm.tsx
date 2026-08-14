@@ -125,7 +125,7 @@ export function ContactForm() {
           disabled={status === "loading"}
           className="inline-flex min-h-[50px] w-full cursor-pointer items-center justify-center rounded-[10px] bg-indigo px-8 font-medium text-paper transition-colors hover:bg-indigo-deep disabled:opacity-60 sm:w-auto"
         >
-          {status === "loading" ? "Sending" : "Send case details"}
+          {status === "loading" ? "Sending" : "Lodge this case"}
         </button>
         <p className="text-[13.5px] text-ink-soft">
           Confidential. Never shared with the Home Office.
