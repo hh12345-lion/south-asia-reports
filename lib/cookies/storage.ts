@@ -12,6 +12,15 @@ import {
 /** Same-tab notify channel for useSyncExternalStore subscribers */
 const CONSENT_CHANGE_EVENT = "sar-cookie-consent-change";
 
+/** Cached snapshot — getSnapshot must return a stable reference or React loops. */
+let cachedRaw: string | null | undefined;
+let cachedValue: StoredConsent | null = null;
+
+function invalidateConsentCache() {
+  cachedRaw = undefined;
+  cachedValue = null;
+}
+
 function addDays(date: Date, days: number): Date {
   const d = new Date(date);
   d.setDate(d.getDate() + days);
@@ -35,15 +44,22 @@ export function isStoredConsentValid(stored: StoredConsent | null): stored is St
   return true;
 }
 
-/** Read consent from localStorage (client-only) */
+/** Read consent from localStorage (client-only). Cached for useSyncExternalStore. */
 export function readStoredConsent(): StoredConsent | null {
   if (typeof window === "undefined") return null;
   try {
     const raw = window.localStorage.getItem(CONSENT_STORAGE_KEY);
-    if (!raw) return null;
+    if (raw === cachedRaw) return cachedValue;
+    cachedRaw = raw;
+    if (!raw) {
+      cachedValue = null;
+      return null;
+    }
     const parsed = JSON.parse(raw) as StoredConsent;
-    return isStoredConsentValid(parsed) ? parsed : null;
+    cachedValue = isStoredConsentValid(parsed) ? parsed : null;
+    return cachedValue;
   } catch {
+    invalidateConsentCache();
     return null;
   }
 }
@@ -63,6 +79,7 @@ export function writeStoredConsent(choices: CategoryConsent): StoredConsent {
   };
   if (typeof window !== "undefined") {
     window.localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(stored));
+    invalidateConsentCache();
     notifyConsentSubscribers();
   }
   return stored;
@@ -71,6 +88,7 @@ export function writeStoredConsent(choices: CategoryConsent): StoredConsent {
 export function clearStoredConsent(): void {
   if (typeof window !== "undefined") {
     window.localStorage.removeItem(CONSENT_STORAGE_KEY);
+    invalidateConsentCache();
     notifyConsentSubscribers();
   }
 }
