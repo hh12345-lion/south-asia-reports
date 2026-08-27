@@ -1,3 +1,12 @@
+function getSiteDomain(): string {
+  const raw = process.env.NEXT_PUBLIC_SITE_URL || "https://southasiareports.com";
+  try {
+    return new URL(raw).hostname.replace(/^www\./, "");
+  } catch {
+    return "southasiareports.com";
+  }
+}
+
 export const LEAD_BRAND_NAME = "South Asia Reports";
 
 /** Single Google Sheet tab for every lead. Never write to a second tab. */
@@ -64,6 +73,7 @@ export function buildLeadWebhookPayload(input: SubmitLeadInput) {
     Email: input.email.trim(),
     "Phone Number": input.phone.trim(),
     "Brand name": LEAD_BRAND_NAME,
+    domain: getSiteDomain(),
   };
 }
 
