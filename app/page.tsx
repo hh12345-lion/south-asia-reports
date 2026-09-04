@@ -9,10 +9,9 @@ import { createMetadata } from "@/lib/metadata";
 import deltaPlate from "@/public/images/almanac-plate-delta.webp";
 
 export const metadata = createMetadata({
-  title:
-    "South Asia Expert Reports UK | Bangladesh, India, Sri Lanka & Nepal Country Condition Reports",
+  title: "South Asia Expert Reports UK | Country Condition Reports",
   description:
-    "United Kingdom South Asia expert reports for asylum appeals: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. UK immigration tribunals, CPINs, and Legal Aid.",
+    "UK South Asia expert reports for asylum appeals: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. FTT/UT tribunals, CPINs, and Legal Aid.",
   path: "/",
 });
 

@@ -2,9 +2,10 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { SEO_SLUG_REDIRECTS } from "@/lib/seo/slug-redirects";
 
-const PRIMARY_ORIGIN = "https://www.southasiareports.com";
+const PRIMARY_ORIGIN = "https://southasiareports.com";
 
 const REDIRECT_HOSTS = new Set([
+  "www.southasiareports.com",
   "southasiaexpert.com",
   "www.southasiaexpert.com",
 ]);

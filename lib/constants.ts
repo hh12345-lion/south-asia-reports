@@ -1,5 +1,5 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://www.southasiareports.com";
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://southasiareports.com";
 export const SITE_NAME = "South Asia Reports";
 export const SITE_EMAIL = "cases@southasiareports.com";
 export const PAKISTAN_REPORTS_URL = "https://www.pakistanexpertreports.com";

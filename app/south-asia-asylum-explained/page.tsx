@@ -10,7 +10,7 @@ import { articleSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/ui/JsonLd";
 
 export const metadata = createMetadata({
-  title: "South Asian Asylum Claims UK | Bangladesh, India, Sri Lanka & Nepal Expert Evidence Guide",
+  title: "South Asian Asylum Claims UK | Expert Evidence Guide",
   description:
     "Complete guide to South Asian asylum claims in UK tribunals: Bangladesh political persecution, India Hindutva/minorities, Sri Lanka Tamil claims, Nepal caste, and expert evidence methodology.",
   path: "/south-asia-asylum-explained",

@@ -3,8 +3,9 @@ import { UK_SERVICE_SCOPE_DETAIL, UK_SERVICE_SCOPE_INTRO } from "@/lib/constants
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Terms of Use | South Asia Reports",
-  description: "Terms of use for South Asia Reports.com",
+  title: "Terms of Use",
+  description:
+    "Terms governing use of South Asia Reports, a UK expert report referral service for immigration solicitors. Not legal advice or a law firm.",
   path: "/terms",
   noindex: true,
   follow: true,

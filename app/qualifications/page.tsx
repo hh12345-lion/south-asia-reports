@@ -3,7 +3,7 @@ import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "South Asia Expert Witness Qualifications UK | Credentials & Standards",
+  title: "South Asia Expert Witness Qualifications UK",
   description:
     "What qualifications should a South Asia expert witness hold? Bengali, Hindi, Tamil, Nepali language expertise, field research, academic credentials, and tribunal acceptance.",
   path: "/qualifications",

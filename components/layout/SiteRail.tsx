@@ -7,6 +7,8 @@ const railLinks = [
   { label: "Case types", href: "/case-types" },
   { label: "Services", href: "/services" },
   { label: "Guides", href: "/guides" },
+  { label: "Glossary", href: "/glossary" },
+  { label: "CPIN & guidance", href: "/cpin-country-guidance" },
   { label: "How a case is lodged", href: "/how-to-instruct" },
 ];
 

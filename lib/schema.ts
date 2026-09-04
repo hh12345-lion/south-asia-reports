@@ -38,7 +38,7 @@ export function organizationSchema() {
     url: SITE_URL,
     email: SITE_EMAIL,
     address: { "@type": "PostalAddress", addressCountry: "GB" },
-    areaServed: ["United Kingdom", "United States", "European Union"],
+    areaServed: "United Kingdom",
     sameAs: [LINKEDIN_URL],
   };
 }
@@ -91,7 +91,10 @@ export function websiteSchema() {
     publisher: { "@id": `${SITE_URL}/#organization` },
     potentialAction: {
       "@type": "SearchAction",
-      target: `${SITE_URL}/glossary?q={search_term_string}`,
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE_URL}/glossary?q={search_term_string}`,
+      },
       "query-input": "required name=search_term_string",
     },
   };

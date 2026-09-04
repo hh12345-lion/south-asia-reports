@@ -5,7 +5,7 @@ import { UkServiceScope } from "@/components/ui/UkServiceScope";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "What Is a South Asia Expert Report? | Country Condition Reports for UK Tribunals",
+  title: "What Is a South Asia Expert Report?",
   description:
     "A South Asia expert report provides independent country condition analysis for UK asylum appeals. Learn what reports should contain, tribunal standards, and when to instruct.",
   path: "/what-is-a-south-asia-expert-report",

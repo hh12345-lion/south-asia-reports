@@ -32,7 +32,7 @@ const cpinFaqs = [
 ];
 
 export const metadata = createMetadata({
-  title: "South Asia CPIN & Country Guidance 2025 | UK Asylum Solicitor Guide",
+  title: "South Asia CPIN & Country Guidance 2025",
   description:
     "Current Home Office CPINs and country guidance on South Asia for UK asylum practitioners: Bangladesh, India, Sri Lanka KK [2021], Nepal, Bhutan, and expert evidence gaps.",
   path: "/cpin-country-guidance",

@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/metadata";
 import { countries } from "@/data/countries";
 
 export const metadata = createMetadata({
-  title: "South Asia Country Expert Reports UK | Bangladesh, India, Sri Lanka, Nepal & Bhutan",
+  title: "South Asia Country Expert Reports UK",
   description:
     "Country expert report pages for Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Dedicated country condition report specialists for UK immigration tribunals.",
   path: "/countries",

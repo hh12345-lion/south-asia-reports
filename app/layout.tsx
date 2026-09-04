@@ -30,9 +30,8 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default:
-      "South Asia Expert Reports UK | Bangladesh, India, Sri Lanka & Nepal Country Condition Reports",
-    template: "%s | South Asia Reports",
+    default: "South Asia Expert Reports UK | Country Condition Reports",
+    template: "%s",
   },
   description:
     "United Kingdom expert reports for South Asian asylum appeals: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. For UK immigration solicitors, FTT/UT proceedings, and Legal Aid practitioners only.",

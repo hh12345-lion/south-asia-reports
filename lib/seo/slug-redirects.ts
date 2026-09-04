@@ -1,5 +1,6 @@
 /** 301 redirects from legacy/brief slugs to canonical routes */
 export const SEO_SLUG_REDIRECTS: Record<string, string> = {
+  "/what-is-a-somalia-expert-witness": "/what-is-a-south-asia-expert-report",
   "/what-is-a-south-asia-expert-witness": "/what-is-a-south-asia-expert-report",
   "/regions": "/countries",
   "/regions/bangladesh": "/countries/bangladesh",

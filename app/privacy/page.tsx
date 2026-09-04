@@ -3,8 +3,9 @@ import { createMetadata } from "@/lib/metadata";
 import { SITE_EMAIL } from "@/lib/constants";
 
 export const metadata = createMetadata({
-  title: "Privacy Policy | South Asia Reports",
-  description: "Privacy policy for South Asia Reports.com",
+  title: "Privacy Policy",
+  description:
+    "How South Asia Reports collects, uses, and protects personal data for UK solicitors lodging expert report requests. GDPR and UK GDPR compliant.",
   path: "/privacy",
   noindex: true,
   follow: true,

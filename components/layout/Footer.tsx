@@ -23,6 +23,18 @@ export function Footer() {
 
         <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-rule pt-5 text-[13px] text-ink-soft">
           <span>South Asia Reports — not a law firm</span>
+          <Link href="/glossary" className="hover:text-ink">
+            Glossary
+          </Link>
+          <Link href="/cpin-country-guidance" className="hover:text-ink">
+            CPIN & guidance
+          </Link>
+          <Link href="/what-is-a-south-asia-expert-report" className="hover:text-ink">
+            Expert reports
+          </Link>
+          <Link href="/qualifications" className="hover:text-ink">
+            Qualifications
+          </Link>
           <Link href="/privacy" className="hover:text-ink">
             Privacy
           </Link>

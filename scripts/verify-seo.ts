@@ -133,10 +133,11 @@ const COUNTRY_MATRIX: Record<string, string[]> = {
 };
 
 const REQUIRED_REDIRECTS: Record<string, string> = {
-  "/what-is-a-somalia-expert-witness": "/what-is-a-south-asia-expert-witness",
+  "/what-is-a-somalia-expert-witness": "/what-is-a-south-asia-expert-report",
+  "/what-is-a-south-asia-expert-witness": "/what-is-a-south-asia-expert-report",
   "/regions": "/countries",
   "/moj-country-guidance": "/south-asia-asylum-explained",
-  "/faq": "/countries",
+  "/faq": "/guides",
   "/fees": "/how-to-instruct",
   "/experts": "/qualifications",
 };

@@ -104,7 +104,7 @@ export const GLOSSARY_TERM_LINKS: Record<string, RelatedLink[]> = {
   ],
   "well-founded-fear": [
     { label: "South Asia Asylum Explained", href: "/south-asia-asylum-explained" },
-    { label: "What Is a South Asia Expert Witness?", href: "/what-is-a-south-asia-expert-witness" },
+    { label: "What Is a South Asia Expert Report?", href: "/what-is-a-south-asia-expert-report" },
   ],
 };
 

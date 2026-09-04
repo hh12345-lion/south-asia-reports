@@ -6,7 +6,7 @@ import { UkServiceScope } from "@/components/ui/UkServiceScope";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "How to Instruct a South Asia Expert Witness UK | Step-by-Step Guide",
+  title: "How to Instruct a South Asia Expert Witness UK",
   description:
     "Step-by-step guide for UK solicitors on instructing a South Asia expert witness for asylum appeals, Legal Aid cases, and immigration tribunal proceedings.",
   path: "/how-to-instruct",
