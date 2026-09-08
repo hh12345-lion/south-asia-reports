@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { SITE_EMAIL } from "@/lib/constants";
 import { postSubmitLead } from "@/lib/submit-lead";
 import { COUNTRIES } from "@/data/contact-options";
+import { submitNetlifyForm } from "@/lib/submitNetlifyForm";
 
 const fieldClass =
   "w-full min-w-0 min-h-[48px] rounded-[10px] border border-rule bg-surface px-4 py-3 text-[16px] text-ink placeholder:text-ink-soft/60 focus:border-indigo focus:outline-none focus:ring-1 focus:ring-indigo";
@@ -38,12 +39,36 @@ export function ContactForm() {
     };
 
     const ok = await postSubmitLead(payload);
-    if (ok) router.push("/thank-you");
-    else setStatus("error");
+    if (ok) {
+      try {
+        await submitNetlifyForm("contact", {
+          name: String(data.get("name") ?? "").trim(),
+          company: String(data.get("company") ?? "").trim(),
+          email: String(data.get("email") ?? "").trim(),
+          country: String(data.get("country") ?? "").trim(),
+          message: String(data.get("message") ?? "").trim(),
+        });
+      } catch {
+        // Sheets/webhook already stored the enquiry; don't block the visitor.
+      }
+      router.push("/thank-you");
+    } else setStatus("error");
   }
 
   return (
-    <form onSubmit={handleSubmit} className="min-w-0">
+    <form
+      name="contact"
+      method="POST"
+      action="/__forms.html"
+      onSubmit={handleSubmit}
+      className="min-w-0"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p className="hidden" aria-hidden="true">
+        <label>
+          Do not fill this out: <input name="bot-field" tabIndex={-1} autoComplete="off" />
+        </label>
+      </p>
       <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
 
       <div className="grid min-w-0 gap-5 sm:grid-cols-2">
