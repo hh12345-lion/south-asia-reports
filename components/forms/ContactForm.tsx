@@ -27,6 +27,7 @@ export function ContactForm() {
       return;
     }
 
+    const freeText = String(data.get("message") ?? "").trim();
     const payload = {
       fullName: String(data.get("name") ?? "").trim(),
       organisation: String(data.get("company") ?? "").trim(),
@@ -35,7 +36,8 @@ export function ContactForm() {
       caseProfile: "",
       region: String(data.get("country") ?? "").trim(),
       funding: "",
-      summary: String(data.get("message") ?? "").trim(),
+      summary: freeText,
+      message: freeText,
     };
 
     const ok = await postSubmitLead(payload);

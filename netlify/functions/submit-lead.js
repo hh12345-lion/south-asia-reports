@@ -22,6 +22,31 @@ function getLeadNotificationUrl() {
   );
 }
 
+function resolveLeadMessage(body) {
+  if (!body || typeof body !== "object") return "";
+  const keys = [
+    "message",
+    "Message",
+    "description",
+    "enquiry",
+    "details",
+    "summary",
+    "notes",
+    "matter",
+    "caseSummary",
+    "additionalInfo",
+    "additional_info",
+    "caseDetails",
+    "enquiryDetails",
+  ];
+  for (const key of keys) {
+    if (body[key] != null && String(body[key]).trim()) {
+      return String(body[key]).trim();
+    }
+  }
+  return "";
+}
+
 function parseBody(json) {
   if (!json || typeof json !== "object" || Array.isArray(json)) {
     return { error: "Invalid JSON body", status: 400 };
@@ -40,7 +65,7 @@ function parseBody(json) {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
     return { error: "Invalid email address", status: 400 };
   }
-  return { ok: { fullName, email, phone } };
+  return { ok: { fullName, email, phone, message: resolveLeadMessage(json) } };
 }
 
 exports.handler = async (event) => {
@@ -83,6 +108,7 @@ exports.handler = async (event) => {
     "Phone Number": parsed.ok.phone.trim(),
     "Brand name": BRAND_NAME,
     domain: getSiteDomain(),
+    message: parsed.ok.message ?? "",
   };
 
   const ac = new AbortController();
