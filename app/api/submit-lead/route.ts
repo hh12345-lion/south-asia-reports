@@ -4,6 +4,7 @@ import {
   buildLeadSheetRow,
   buildLeadWebhookPayload,
   getLeadWebhookUrl,
+  resolveLeadMessage,
   type SubmitLeadPayload,
 } from "@/lib/submit-lead";
 
@@ -65,17 +66,7 @@ export async function POST(request: Request) {
   }
 
   if (webhookUrl) {
-    const message = sanitize(
-      (body as { message?: string }).message ??
-        (body as { Message?: string }).Message ??
-        body.summary ??
-        (body as { description?: string }).description ??
-        (body as { enquiry?: string }).enquiry ??
-        (body as { details?: string }).details ??
-        (body as { notes?: string }).notes ??
-        (body as { matter?: string }).matter ??
-        ""
-    );
+    const message = sanitize(resolveLeadMessage(body as Record<string, unknown>));
     const outbound = buildLeadWebhookPayload({ fullName, email, phone, message });
     try {
       const res = await fetch(webhookUrl, {

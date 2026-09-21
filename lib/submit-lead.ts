@@ -67,6 +67,38 @@ export type SubmitLeadPayload = SubmitLeadInput & {
   summary?: string;
 };
 
+/** Map site free-text field names onto universal lowercase `message`. */
+export function resolveLeadMessage(
+  body: Record<string, unknown> | null | undefined
+): string {
+  if (!body || typeof body !== "object") return "";
+  const keys = [
+    "message",
+    "Message",
+    "summary",
+    "description",
+    "enquiry",
+    "details",
+    "notes",
+    "matter",
+    "caseBrief",
+    "caseSummary",
+    "case_summary",
+    "caseDescription",
+    "caseDetails",
+    "additionalInfo",
+    "additional_info",
+    "enquiryDetails",
+    "brief",
+  ] as const;
+  for (const key of keys) {
+    if (body[key] != null && String(body[key]).trim()) {
+      return String(body[key]).trim();
+    }
+  }
+  return "";
+}
+
 /** Minimal webhook payload (n8n / Lead_notification_url) */
 export function buildLeadWebhookPayload(input: SubmitLeadInput) {
   return {

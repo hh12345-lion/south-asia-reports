@@ -26,6 +26,9 @@ export function Footer() {
           <Link href="/glossary" className="hover:text-ink">
             Glossary
           </Link>
+          <Link href="/blog" className="hover:text-ink">
+            Blog
+          </Link>
           <Link href="/cpin-country-guidance" className="hover:text-ink">
             CPIN & guidance
           </Link>

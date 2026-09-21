@@ -11,6 +11,7 @@ const mobileLinks = [
   { label: "Profiles", href: "/asylum-profiles" },
   { label: "Case types", href: "/case-types" },
   { label: "Services", href: "/services" },
+  { label: "Blog", href: "/blog" },
   { label: "Guides", href: "/guides" },
   { label: "How a case is lodged", href: "/how-to-instruct" },
 ];
