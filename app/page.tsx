@@ -9,9 +9,9 @@ import { createMetadata } from "@/lib/metadata";
 import deltaPlate from "@/public/images/almanac-plate-delta.webp";
 
 export const metadata = createMetadata({
-  title: "South Asia Expert Reports UK | Country Condition Reports",
+  title: "South Asia Expert Reports | Country Condition Reports",
   description:
-    "UK South Asia expert reports for asylum appeals: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. FTT/UT tribunals, CPINs, and Legal Aid.",
+    "South Asia expert reports for asylum appeals: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. FTT/UT tribunals, CPINs, and Legal Aid.",
   path: "/",
 });
 
@@ -29,7 +29,7 @@ const canDo = [
 
 const cannotDo = [
   "Decide credibility. That is for the judge.",
-  "Advise on UK law, or write to a conclusion supplied in the papers.",
+  "Advise on the law of the forum, or write to a conclusion supplied in the papers.",
 ];
 
 export default function HomePage() {
@@ -41,13 +41,13 @@ export default function HomePage() {
         <section className="border-b border-rule">
           <div className="grid lg:grid-cols-2">
             <div className="px-4 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
-              <span className="kicker">UK asylum tribunals</span>
+              <span className="kicker">asylum tribunals</span>
               <h1 className="mt-4 text-balance font-display text-[2.2rem] leading-[1.05] text-ink sm:text-[2.8rem] lg:text-[3.2rem]">
                 Country evidence for South Asian appeals
               </h1>
               <p className="measure mt-5 text-[17px] leading-relaxed text-body">
                 Independent reports on Bangladesh, India, Sri Lanka, Nepal and Bhutan, written for
-                UK solicitors. Four of these five countries have no current UK country guidance —
+                counsel. Four of these five countries have no current designated country guidance —
                 the CPIN stands unless something answers it.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">

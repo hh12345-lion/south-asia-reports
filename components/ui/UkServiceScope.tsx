@@ -16,9 +16,9 @@ export function UkServiceScope({ showDetail = true, className = "" }: Props) {
   return (
     <aside
       className={`rounded-[14px] border border-rule bg-oat/70 p-5 sm:p-6 ${className}`}
-      aria-labelledby="uk-service-scope-heading"
+      aria-labelledby="service-scope-heading"
     >
-      <h2 id="uk-service-scope-heading" className="font-display text-xl text-ink">
+      <h2 id="service-scope-heading" className="font-display text-xl text-ink">
         {UK_SERVICE_SCOPE_TITLE}
       </h2>
       <p className="mt-3 leading-relaxed text-body">{UK_SERVICE_SCOPE_INTRO}</p>

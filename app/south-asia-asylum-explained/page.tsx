@@ -10,9 +10,9 @@ import { articleSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/ui/JsonLd";
 
 export const metadata = createMetadata({
-  title: "South Asian Asylum Claims UK | Expert Evidence Guide",
+  title: "South Asian Asylum Claims | Expert Evidence Guide",
   description:
-    "Complete guide to South Asian asylum claims in UK tribunals: Bangladesh political persecution, India Hindutva/minorities, Sri Lanka Tamil claims, Nepal caste, and expert evidence methodology.",
+    "Complete guide to South Asian asylum claims in tribunals: Bangladesh political persecution, India Hindutva/minorities, Sri Lanka Tamil claims, Nepal caste, and expert evidence methodology.",
   path: "/south-asia-asylum-explained",
 });
 
@@ -27,22 +27,22 @@ export default function SouthAsiaAsylumExplainedPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <JsonLd
         data={articleSchema({
-          title: "South Asian Asylum Claims in the UK: The Complete Guide for Solicitors",
+          title: "South Asian Asylum Claims: The Complete Guide for Solicitors",
           description:
-            "Complete guide to South Asian asylum claims in UK tribunals covering Bangladesh, India, Sri Lanka, Nepal, and Bhutan.",
+            "Complete guide to South Asian asylum claims in tribunals covering Bangladesh, India, Sri Lanka, Nepal, and Bhutan.",
           path: "/south-asia-asylum-explained",
         })}
       />
       <PageShell
-        title="South Asian Asylum Claims in the UK: The Complete Guide for Solicitors"
+        title="South Asian Asylum Claims: The Complete Guide for Solicitors"
         subtitle="Expert evidence, country guidance, CPINs, and profile-specific risk analysis for South Asian asylum appeals."
         breadcrumbs={crumbs}
       >
         <p className="text-body leading-relaxed">
-          South Asia is the second most significant asylum claim region in the UK after Sub-Saharan Africa. In the year
+          South Asia is the second most significant asylum claim region after Sub-Saharan Africa. In the year
           ending September 2025, Bangladesh, India, and Sri Lanka were among the nationalities with the highest number
           of asylum claims from visa holders. This guide explains the legal landscape, key profiles, country guidance
-          framework, and the critical role of expert evidence for UK immigration solicitors instructing reports for
+          framework, and the critical role of expert evidence for immigration counsel instructing reports for
           First-tier Tribunal and Upper Tribunal proceedings only.
         </p>
 
@@ -93,7 +93,7 @@ export default function SouthAsiaAsylumExplainedPage() {
         <h2 className="mt-10 font-display text-xl text-ink">India: The Hindutva Question</h2>
         <p className="mt-4 text-body leading-relaxed">
           India generates growing asylum claim volumes driven by Hindutva and RSS targeting of Muslims, Sikh claims,
-          Christian minority persecution, caste discrimination, and political dissident persecution. The Home Office
+          Christian minority persecution, caste discrimination, and political dissident persecution. The decision-makers
           frequently deploys internal relocation arguments given India&apos;s size, but expert evidence can challenge
           this where Hindutva networks have national reach.
         </p>
@@ -113,16 +113,16 @@ export default function SouthAsiaAsylumExplainedPage() {
 
         <h2 className="mt-10 font-display text-xl text-ink">Expert Evidence Without Country Guidance</h2>
         <p className="mt-4 text-body leading-relaxed">
-          For Bangladesh, India, Nepal, and Bhutan, where no current UK country guidance exists, independent expert
+          For Bangladesh, India, Nepal, and Bhutan, where no current country guidance exists, independent expert
           evidence is especially important. Expert reports provide detailed, country-specific analysis that goes beyond
-          what Home Office CPINs or standard country information covers, addressing the individual risk profile from
+          what official CPINs or standard country information covers, addressing the individual risk profile from
           the start. Tribunals must assess these claims on the merits of expert analysis rather than country guidance
           presumptions.
         </p>
 
         <h2 className="mt-10 font-display text-xl text-ink">CPIN Coverage for South Asia</h2>
         <p className="mt-4 text-body leading-relaxed">
-          Home Office CPINs cover political parties and religious minorities for Bangladesh, Sikh separatism and
+          official CPINs cover political parties and religious minorities for Bangladesh, Sikh separatism and
           Muslims for India, Tamils and LTTE for Sri Lanka, and general background for Nepal. Bhutan has limited
           coverage. CPINs may lag behind rapidly changing conditions, particularly for post-August 2024 Bangladesh.
           See our{" "}

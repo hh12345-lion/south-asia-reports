@@ -9,7 +9,7 @@ import { SITE_EMAIL } from "@/lib/constants";
 export const metadata = createMetadata({
   title: "Cookie Policy | South Asia Reports",
   description:
-    "How South Asia Reports.com uses cookies and similar technologies, your choices under UK GDPR and ePrivacy, and how to manage preferences.",
+    "How South Asia Reports.com uses cookies and similar technologies, your choices under GDPR and ePrivacy, and how to manage preferences.",
   path: "/cookie-policy",
 });
 
@@ -27,7 +27,7 @@ export default function CookiePolicyPage() {
           <Link href="/privacy" className="font-semibold text-ochre hover:underline">
             Privacy Policy
           </Link>
-          . We comply with the UK GDPR, the Privacy and Electronic Communications Regulations
+          . We comply with the GDPR, the Privacy and Electronic Communications Regulations
           (PECR), and apply CCPA-aligned transparency for California visitors.
         </p>
 
@@ -74,7 +74,7 @@ export default function CookiePolicyPage() {
           <li>Hotjar (analytics and experience insights)</li>
         </ul>
         <p className="mt-4 text-sm text-body">
-          These providers may process data outside the UK. We do not load non-essential scripts until
+          These providers may process data outside your jurisdiction. We do not load non-essential scripts until
           you opt in via our cookie banner.
         </p>
 

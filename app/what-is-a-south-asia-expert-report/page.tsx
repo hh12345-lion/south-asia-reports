@@ -7,7 +7,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "What Is a South Asia Expert Report?",
   description:
-    "A South Asia expert report provides independent country condition analysis for UK asylum appeals. Learn what reports should contain, tribunal standards, and when to instruct.",
+    "A South Asia expert report provides independent country condition analysis for asylum appeals. Learn what reports should contain, tribunal standards, and when to instruct.",
   path: "/what-is-a-south-asia-expert-report",
 });
 
@@ -30,12 +30,12 @@ export default function WhatIsSouthAsiaExpertReportPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
         title="What Is a South Asia Expert Report?"
-        subtitle="Independent country condition analysis for UK asylum appeals and immigration tribunal proceedings."
+        subtitle="Independent country condition analysis for asylum appeals and immigration tribunal proceedings."
         breadcrumbs={crumbs}
       >
         <p className="text-body leading-relaxed">
           A South Asia expert report is an independent, written analysis of country conditions in
-          Bangladesh, India, Sri Lanka, Nepal, or Bhutan, prepared for UK immigration tribunals in England, Wales,
+          Bangladesh, India, Sri Lanka, Nepal, or Bhutan, prepared for immigration tribunals in England, Wales,
           Scotland, and Northern Ireland. It assesses whether an appellant faces a real risk on return based on their
           specific profile, with OSCOLA-cited sources and Practice Direction compliant methodology.
         </p>
@@ -53,11 +53,11 @@ export default function WhatIsSouthAsiaExpertReportPage() {
 
         <h2 className="mt-10 font-display text-xl text-ink">When to Instruct a South Asia Expert Report</h2>
         <p className="mt-4 text-body leading-relaxed">
-          Instruct a South Asia expert report when the Home Office refusal relies on generic CPIN
+          Instruct a South Asia expert report when the decision-makers refusal relies on generic CPIN
           positions that do not address the appellant&apos;s specific country, profile, or personal risk
           factors. Expert reports are particularly valuable in post-August 2024 Bangladesh claims,
           India minority and internal relocation cases, Sri Lanka Tamil claims under KK [2021], and
-          Nepal/Bhutan claims where no UK country guidance exists.
+          Nepal/Bhutan claims where no country guidance exists.
         </p>
 
         <p className="mt-8">

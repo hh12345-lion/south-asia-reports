@@ -6,9 +6,9 @@ import { createMetadata } from "@/lib/metadata";
 import { countries } from "@/data/countries";
 
 export const metadata = createMetadata({
-  title: "South Asia Country Expert Reports UK",
+  title: "South Asia Country Expert Reports",
   description:
-    "Country expert report pages for Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Dedicated country condition report specialists for UK immigration tribunals.",
+    "Country expert report pages for Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Dedicated country condition report specialists for immigration tribunals.",
   path: "/countries",
 });
 
@@ -20,13 +20,13 @@ export default function CountriesPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
         title="South Asia Country Expert Reports"
-        subtitle="Dedicated country pages for the five South Asian nations with significant UK asylum claim volumes."
+        subtitle="Dedicated country pages for the five South Asian nations with significant asylum claim volumes."
         breadcrumbs={crumbs}
       >
         <p className="text-body leading-relaxed">
           South Asia Reports provides dedicated country expert report pages for Bangladesh, India, Sri Lanka, Nepal, and
           Bhutan. Each country page targets specific search queries such as &quot;Bangladesh country expert report UK&quot;
-          and &quot;India asylum expert report UK&quot;, providing profile-specific risk analysis for UK immigration
+          and &quot;India asylum expert report UK&quot;, providing profile-specific risk analysis for immigration
           tribunals. Pakistan is covered separately at{" "}
           <a href={PAKISTAN_REPORTS_URL} className="font-semibold text-ochre hover:underline" rel="noopener noreferrer">
             pakistanexpertreports.com

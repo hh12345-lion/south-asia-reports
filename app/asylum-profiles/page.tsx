@@ -20,7 +20,7 @@ export default function AsylumProfilesPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
         title="South Asian Asylum Profiles"
-        subtitle="Dedicated expert witness evidence for each major South Asian asylum profile in UK immigration tribunals."
+        subtitle="Dedicated expert witness evidence for each major South Asian asylum profile in immigration tribunals."
         breadcrumbs={crumbs}
       >
         <p className="mb-8 text-body leading-relaxed">

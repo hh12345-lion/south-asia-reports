@@ -20,7 +20,7 @@ export default function GuidesPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
         title="Solicitor Guides: South Asia Expert Evidence"
-        subtitle="Practical guides for UK immigration solicitors instructing South Asia country expert witnesses."
+        subtitle="Practical guides for immigration counsel instructing South Asia country expert witnesses."
         breadcrumbs={crumbs}
       >
         <p className="mb-8 text-body leading-relaxed">

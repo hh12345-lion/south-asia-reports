@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "Lodge a South Asia Country Expert Report",
   description:
-    "Lodge case details for a South Asia country expert report for UK immigration tribunals. Legal Aid compatible. Response within 1 business day.",
+    "Lodge case details for a South Asia country expert report for immigration tribunals. Legal Aid compatible. Response within 1 business day.",
   path: "/contact",
   noindex: true,
 });

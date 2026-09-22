@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "Terms of Use",
   description:
-    "Terms governing use of South Asia Reports, a UK expert report referral service for immigration solicitors. Not legal advice or a law firm.",
+    "Terms governing use of South Asia Reports, a UK expert report referral service for immigration counsel. Not legal advice or a law firm.",
   path: "/terms",
   noindex: true,
   follow: true,
@@ -15,7 +15,7 @@ export default function TermsPage() {
   return (
     <PageShell title="Terms of Use" breadcrumbs={[{ label: "Home", href: "/" }, { label: "Terms" }]}>
       <p className="text-body leading-relaxed">
-        South Asia Reports.com is an expert witness matching service for UK immigration solicitors. We are not a law firm
+        South Asia Reports.com is an expert witness matching service for immigration counsel. We are not a law firm
         and do not provide legal advice. Expert witnesses instructed through this service provide independent evidence
         to tribunals; their duty is to the tribunal, not to either party.
       </p>

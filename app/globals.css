@@ -1,32 +1,31 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------------
-   Ledger landing system
-   Walnut ink, garnet actions, olive markers, stone paper.
+   South Asia Reports brand system
+   Espresso ink (#261E18), burgundy (#80273A), olive (#7F905C), cream (#EAE5DB).
    Type: Petrona (display) over Lexend (text).
-   Layout: sticky left rail + scrolling landing canvas — not a mega-nav portal.
 --------------------------------------------------------------------------- */
 
 @theme inline {
-  --color-ink: #2b2118;
-  --color-ink-deep: #1c1611;
-  --color-ink-soft: #6a5d52;
-  --color-body: #4a4038;
-  --color-paper: #ede8df;
-  --color-oat: #e2dcd1;
-  --color-surface: #f7f4ee;
+  --color-ink: #261e18;
+  --color-ink-deep: #1a1511;
+  --color-ink-soft: #6b6158;
+  --color-body: #4a423b;
+  --color-paper: #eae5db;
+  --color-oat: #e0d9cc;
+  --color-surface: #f5f1e9;
   --color-rule: #c9c0b3;
   --color-rule-soft: #d8d1c6;
-  --color-indigo: #8b2942;
-  --color-indigo-deep: #6e1f34;
-  --color-indigo-pale: #d4a3af;
-  --color-ochre: #5a6b3a;
-  --color-ochre-pale: #8a9a62;
+  --color-indigo: #80273a;
+  --color-indigo-deep: #6a1f30;
+  --color-indigo-pale: #c98a97;
+  --color-ochre: #7f905c;
+  --color-ochre-pale: #9aab78;
 
-  --color-primary: #2b2118;
-  --color-accent: #5a6b3a;
-  --color-highlight: #8b2942;
-  --color-section-alt: #e2dcd1;
+  --color-primary: #261e18;
+  --color-accent: #7f905c;
+  --color-highlight: #80273a;
+  --color-section-alt: #e0d9cc;
   --color-border: #c9c0b3;
 
   --font-sans: var(--font-lexend);
@@ -44,8 +43,8 @@
   }
 
   body {
-    background: #ede8df;
-    color: #4a4038;
+    background: #eae5db;
+    color: #4a423b;
     font-family: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
     font-size: 1.05rem;
     line-height: 1.65;
@@ -68,16 +67,16 @@
     font-weight: 600;
     letter-spacing: -0.018em;
     line-height: 1.12;
-    color: #2b2118;
+    color: #261e18;
   }
 
   ::selection {
-    background: #8b2942;
-    color: #f7f4ee;
+    background: #80273a;
+    color: #f5f1e9;
   }
 
   :focus-visible {
-    outline: 2px solid #8b2942;
+    outline: 2px solid #80273a;
     outline-offset: 3px;
   }
 
@@ -99,23 +98,23 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #5a6b3a;
+    color: #7f905c;
   }
 
   .kicker::before {
     content: "";
     width: 0.55rem;
     height: 0.55rem;
-    background: #8b2942;
+    background: #80273a;
     flex: none;
   }
 
   .kicker-pale {
-    color: #8a9a62;
+    color: #9aab78;
   }
 
   .kicker-pale::before {
-    background: #d4a3af;
+    background: #c98a97;
   }
 
   .measure {
@@ -127,7 +126,7 @@
   }
 
   .panel {
-    background: #f7f4ee;
+    background: #f5f1e9;
     border: 1px solid #c9c0b3;
     border-radius: 2px;
   }
@@ -136,13 +135,13 @@
     font-family: var(--font-petrona), ui-serif, Georgia, serif;
     font-size: 1.75rem;
     line-height: 1;
-    color: #8b2942;
+    color: #80273a;
     font-variant-numeric: lining-nums tabular-nums;
   }
 
   .link-rule {
     text-decoration: underline;
-    text-decoration-color: #8b2942;
+    text-decoration-color: #80273a;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
   }

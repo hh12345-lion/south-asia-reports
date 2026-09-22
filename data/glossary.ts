@@ -39,7 +39,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "CPIN",
     slug: "cpin",
     definition:
-      "Country Policy and Information Note. Home Office documents providing country conditions information for asylum decision-making. South Asia CPINs cover Bangladesh, India, Sri Lanka, Nepal, and Bhutan, but may not reflect rapidly changing conditions or profile-specific risk factors.",
+      "Country Policy and Information Note. decision-makers documents providing country conditions information for asylum decision-making. South Asia CPINs cover Bangladesh, India, Sri Lanka, Nepal, and Bhutan, but may not reflect rapidly changing conditions or profile-specific risk factors.",
   },
   {
     term: "Country Guidance Case",
@@ -63,13 +63,13 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "FTT (Immigration & Asylum Chamber)",
     slug: "ftt",
     definition:
-      "The First-tier Tribunal (Immigration and Asylum Chamber) is the primary venue for asylum appeals in the UK. South Asian asylum appeals are heard in the FTT before potential onward appeal to the Upper Tribunal.",
+      "The First-tier Tribunal (Immigration and Asylum Chamber) is the primary venue for asylum appeals. South Asian asylum appeals are heard in the FTT before potential onward appeal to the Upper Tribunal.",
   },
   {
     term: "Hindutva",
     slug: "hindutva",
     definition:
-      "Hindutva is a political ideology advocating Hindu cultural nationalism in India, promoted by the BJP and RSS. Hindutva targeting of Muslims, Christians, and other minorities is a primary basis for India asylum claims in UK tribunals.",
+      "Hindutva is a political ideology advocating Hindu cultural nationalism in India, promoted by the BJP and RSS. Hindutva targeting of Muslims, Christians, and other minorities is a primary basis for India asylum claims in tribunals.",
   },
   {
     term: "HJ (Iran) [2010]",
@@ -93,7 +93,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "KK and Others [2021]",
     slug: "kk-and-others-2021",
     definition:
-      "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. The leading UK country guidance case on Sri Lanka Tamil asylum claims, establishing risk profiles including actual or imputed LTTE associations, diaspora activists, and those who have given evidence against the government.",
+      "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. The leading country guidance case on Sri Lanka Tamil asylum claims, establishing risk profiles including actual or imputed LTTE associations, diaspora activists, and those who have given evidence against the government.",
   },
   {
     term: "Khalistan",
@@ -105,13 +105,13 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Legal Aid",
     slug: "legal-aid",
     definition:
-      "Legal Aid is publicly funded legal assistance for eligible asylum appellants in the UK, administered by the Legal Aid Agency (LAA). Expert witness reports in Legal Aid cases require prior authority from the LAA before instruction.",
+      "Legal Aid is publicly funded legal assistance for eligible asylum appellants, administered by the Legal Aid Agency (LAA). Expert witness reports in Legal Aid cases require prior authority from the LAA before instruction.",
   },
   {
     term: "Lhotshampa",
     slug: "lhotshampa",
     definition:
-      "The Lhotshampa are ethnic Nepali-speaking people who were expelled from Bhutan in the 1990s. Approximately 100,000 fled to Nepal following citizenship stripping. Lhotshampa claims form the primary basis for Bhutan-related asylum claims in UK tribunals.",
+      "The Lhotshampa are ethnic Nepali-speaking people who were expelled from Bhutan in the 1990s. Approximately 100,000 fled to Nepal following citizenship stripping. Lhotshampa claims form the primary basis for Bhutan-related asylum claims in tribunals.",
   },
   {
     term: "LTTE (Liberation Tigers of Tamil Eelam)",
@@ -147,7 +147,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Refugee Convention 1951",
     slug: "refugee-convention-1951",
     definition:
-      "The Convention Relating to the Status of Refugees 1951, as amended by the 1967 Protocol. The foundation of UK asylum law, defining a refugee as someone with a well-founded fear of persecution for reasons of race, religion, nationality, membership of a particular social group, or political opinion.",
+      "The Convention Relating to the Status of Refugees 1951, as amended by the 1967 Protocol. The foundation of asylum law, defining a refugee as someone with a well-founded fear of persecution for reasons of race, religion, nationality, membership of a particular social group, or political opinion.",
   },
   {
     term: "RSS (Rashtriya Swayamsevak Sangh)",
@@ -177,13 +177,13 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Tamil Eelam",
     slug: "tamil-eelam",
     definition:
-      "Tamil Eelam is the proposed independent Tamil homeland in northern and eastern Sri Lanka, advocated by the LTTE and Tamil diaspora organisations. Tamil Eelam advocacy in the UK can create or enhance risk profiles for Sri Lanka Tamil asylum claimants on return.",
+      "Tamil Eelam is the proposed independent Tamil homeland in northern and eastern Sri Lanka, advocated by the LTTE and Tamil diaspora organisations. Tamil Eelam advocacy can create or enhance risk profiles for Sri Lanka Tamil asylum claimants on return.",
   },
   {
     term: "UNHCR Guidelines",
     slug: "unhcr-guidelines",
     definition:
-      "UNHCR issues guidelines on international protection for specific profiles and situations. UNHCR guidelines on gender-based persecution, LGBT persons, and religious minorities are relevant to South Asian asylum claims in UK tribunals.",
+      "UNHCR issues guidelines on international protection for specific profiles and situations. UNHCR guidelines on gender-based persecution, LGBT persons, and religious minorities are relevant to South Asian asylum claims in tribunals.",
   },
   {
     term: "Upper Tribunal (IAC)",
@@ -207,7 +207,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "EIN (Expert Inquiry Network)",
     slug: "ein",
     definition:
-      "The Expert Inquiry Network (EIN) directory lists country experts covering Bangladesh, Bhutan, India, Myanmar, Nepal, Pakistan, Sri Lanka, and Tibet. South Asia Reports connects UK solicitors with qualified experts from this network.",
+      "The Expert Inquiry Network (EIN) directory lists country experts covering Bangladesh, Bhutan, India, Myanmar, Nepal, Pakistan, Sri Lanka, and Tibet. South Asia Reports connects counsel with qualified experts from this network.",
   },
   {
     term: "Navtej Singh Johar [2018]",

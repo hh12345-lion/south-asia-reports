@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CookieSettingsButton } from "@/components/cookies";
-import { PAKISTAN_REPORTS_URL, PRIMARY_CTA, SITE_EMAIL } from "@/lib/constants";
+import { PAKISTAN_REPORTS_URL, PRIMARY_CTA, SITE_EMAIL, SITE_NAME } from "@/lib/constants";
 
 export function Footer() {
   return (
@@ -8,8 +9,19 @@ export function Footer() {
       <div className="px-4 py-10 sm:px-6 lg:px-10">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="font-display text-2xl text-ink">{SITE_EMAIL.replace("@", " · ")}</p>
-            <a href={`mailto:${SITE_EMAIL}`} className="link-rule mt-2 inline-block text-[15px] text-indigo">
+            <Link href="/" className="inline-flex items-center gap-3" aria-label={`${SITE_NAME} home`}>
+              <Image
+                src="/brand/monogram.png"
+                alt=""
+                width={48}
+                height={38}
+                className="h-10 w-auto"
+              />
+              <span className="font-display text-xl leading-none text-ink">
+                South Asia <span className="text-indigo">Reports</span>
+              </span>
+            </Link>
+            <a href={`mailto:${SITE_EMAIL}`} className="link-rule mt-3 inline-block text-[15px] text-indigo">
               {SITE_EMAIL}
             </a>
           </div>

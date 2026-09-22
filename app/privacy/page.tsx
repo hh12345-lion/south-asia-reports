@@ -5,7 +5,7 @@ import { SITE_EMAIL } from "@/lib/constants";
 export const metadata = createMetadata({
   title: "Privacy Policy",
   description:
-    "How South Asia Reports collects, uses, and protects personal data for UK solicitors lodging expert report requests. GDPR and UK GDPR compliant.",
+    "How South Asia Reports collects, uses, and protects personal data for counsel lodging expert report requests. GDPR and GDPR compliant.",
   path: "/privacy",
   noindex: true,
   follow: true,
@@ -15,7 +15,7 @@ export default function PrivacyPage() {
   return (
     <PageShell title="Privacy Policy" breadcrumbs={[{ label: "Home", href: "/" }, { label: "Privacy" }]}>
       <p className="text-body leading-relaxed">
-        South Asia Reports.com is operated to connect UK solicitors with qualified South Asia expert witnesses. We collect
+        South Asia Reports.com is operated to connect counsel with qualified South Asia expert witnesses. We collect
         personal data submitted through our contact form (name, law firm, email, phone, and case details) solely to
         respond to instruction requests and match appropriate experts.
       </p>

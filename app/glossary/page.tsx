@@ -24,7 +24,7 @@ export default function GlossaryPage() {
       <PageJsonLd breadcrumbs={crumbs} faqs={faqItems} />
       <PageShell
         title="South Asia Expert Witness & Asylum Law Glossary"
-        subtitle="35 definition-first terms for UK immigration practitioners."
+        subtitle="35 definition-first terms for immigration practitioners."
         breadcrumbs={crumbs}
       >
         <Suspense fallback={null}>

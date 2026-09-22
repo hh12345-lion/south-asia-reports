@@ -31,7 +31,7 @@ export const faqs: FAQ[] = [
   {
     question: "Is India a safe country for asylum?",
     answer:
-      "India is not a designated safe third country in UK asylum law and claims must be assessed on their merits. While India has a functioning state and judiciary, state protection is inconsistent for certain minority groups, particularly in states governed by BJP-aligned administrations. Expert witnesses assess the specific profile and viability of internal relocation.",
+      "India is not a designated safe third country in asylum law and claims must be assessed on their merits. While India has a functioning state and judiciary, state protection is inconsistent for certain minority groups, particularly in states governed by BJP-aligned administrations. Expert witnesses assess the specific profile and viability of internal relocation.",
   },
   {
     question: "Are LGBTQ+ asylum claims from India valid post-decriminalisation?",
@@ -41,7 +41,7 @@ export const faqs: FAQ[] = [
   {
     question: "Why is expert evidence especially important in Nepal cases?",
     answer:
-      "Unlike Somalia, Pakistan, or Sri Lanka, Nepal has no current UK Upper Tribunal country guidance. There are no binding country guidance findings from the UK tribunal on conditions in Nepal. Independent expert evidence is especially valuable as the tribunal must rely on expert analysis rather than country guidance presumptions.",
+      "Unlike Somalia, Pakistan, or Sri Lanka, Nepal has no current UK Upper Tribunal country guidance. There are no binding country guidance findings from the tribunal on conditions in Nepal. Independent expert evidence is especially valuable as the tribunal must rely on expert analysis rather than country guidance presumptions.",
   },
   {
     question: "How does the Bangladesh political transition affect existing claims?",
@@ -71,6 +71,6 @@ export const faqs: FAQ[] = [
   {
     question: "What is the EIN directory and how does it relate to South Asia experts?",
     answer:
-      "The Expert Inquiry Network (EIN) directory lists experts covering Bangladesh, Bhutan, India, Myanmar, Nepal, Pakistan, Sri Lanka, and Tibet. South Asia Reports connects UK solicitors with qualified experts from this network for tribunal-ready country condition reports.",
+      "The Expert Inquiry Network (EIN) directory lists experts covering Bangladesh, Bhutan, India, Myanmar, Nepal, Pakistan, Sri Lanka, and Tibet. South Asia Reports connects counsel with qualified experts from this network for tribunal-ready country condition reports.",
   },
 ];

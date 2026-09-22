@@ -11,7 +11,7 @@ export const experts: Expert[] = [
     name: "Dr Priya Sharma",
     jobTitle: "India Country Expert",
     description:
-      "Academic specialist in Indian politics and minority rights with 15 years of field research. Provides Hindutva/RSS risk analysis, Muslim and Sikh persecution reports, caste discrimination assessment, and internal relocation feasibility analysis for UK tribunals.",
+      "Academic specialist in Indian politics and minority rights with 15 years of field research. Provides Hindutva/RSS risk analysis, Muslim and Sikh persecution reports, caste discrimination assessment, and internal relocation feasibility analysis for tribunals.",
     expertise: ["Hindutva/RSS", "Muslim Minorities", "Sikh Claims", "Caste Discrimination", "Internal Relocation"],
     countries: ["India"],
   },

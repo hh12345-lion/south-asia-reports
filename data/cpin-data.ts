@@ -20,4 +20,4 @@ export const countryGuidanceCases = [
 ];
 
 export const cpinNote =
-  "For Bangladesh, India, Nepal, and Bhutan, there is no current country guidance from the UK Upper Tribunal. Expert evidence is particularly valuable to supplement CPIN positions and provide profile-specific risk analysis.";
+  "For Bangladesh, India, Nepal, and Bhutan, there is no current country guidance Upper Tribunal. Expert evidence is particularly valuable to supplement CPIN positions and provide profile-specific risk analysis.";

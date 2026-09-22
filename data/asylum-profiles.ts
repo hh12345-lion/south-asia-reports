@@ -15,10 +15,10 @@ export const asylumProfiles: AsylumProfile[] = [
   {
     slug: "political-persecution-south-asia",
     title: "Political Persecution South Asia",
-    metaTitle: "Political Persecution Expert Witness UK | South Asia Asylum Reports",
+    metaTitle: "Political Persecution Expert Witness | South Asia Asylum Reports",
     metaDescription:
-      "Political persecution expert witness for South Asian asylum claims in UK tribunals. Bangladesh BNP/Awami post-2024, India opposition, Sri Lanka Tamil politics, Nepal Maoists.",
-    h1: "Political Persecution Expert Witness UK | South Asia",
+      "Political persecution expert witness for South Asian asylum claims in tribunals. Bangladesh BNP/Awami post-2024, India opposition, Sri Lanka Tamil politics, Nepal Maoists.",
+    h1: "Political Persecution Expert Witness | South Asia",
     content: [
       "Political persecution claims from South Asia require expert evidence to establish whether the political party or movement at issue actually persecutes opponents, whether state protection is available (particularly where police are complicit), and whether the individual's profile creates a real risk rather than a generalised political claim.",
       "Bangladesh political claims have been fundamentally affected by the August 2024 fall of Sheikh Hasina's government. BNP supporters who were genuinely persecuted may now find their home country conditions have changed materially. Conversely, Awami League supporters face new risks under the post-transition power structure. Expert evidence on current post-transition conditions is essential in all Bangladesh political persecution claims.",
@@ -41,10 +41,10 @@ export const asylumProfiles: AsylumProfile[] = [
   {
     slug: "religious-minority-persecution",
     title: "Religious Minority Persecution",
-    metaTitle: "Religious Minority Persecution Expert Witness UK | South Asia",
+    metaTitle: "Religious Minority Persecution Expert Witness | South Asia",
     metaDescription:
       "Religious minority persecution expert witness for South Asian asylum claims. Indian Muslims, Bangladeshi Hindus, Sri Lankan Christians, state protection analysis.",
-    h1: "Religious Minority Persecution Expert Witness UK | South Asia",
+    h1: "Religious Minority Persecution Expert Witness | South Asia",
     content: [
       "South Asia generates significant religious minority asylum claims. Indian Muslims face Hindutva violence and systemic discrimination. Bangladeshi Hindus face communal attacks, particularly during political transitions. Christians in Sri Lanka and India face targeted violence. Ahmadis in Bangladesh and India face discrimination under blasphemy and religious laws.",
       "Expert witnesses assess the specific religious profile and country conditions, distinguishing between individual targeting by known persecutors and systemic discrimination from the cumulative effect of majority community hostility and state failure to protect.",
@@ -67,10 +67,10 @@ export const asylumProfiles: AsylumProfile[] = [
   {
     slug: "lgbtq-south-asia",
     title: "LGBTQ+ South Asia",
-    metaTitle: "LGBTQ+ Persecution Expert Witness UK | South Asia Asylum Reports",
+    metaTitle: "LGBTQ+ Persecution Expert Witness | South Asia Asylum Reports",
     metaDescription:
       "LGBTQ+ persecution expert witness for South Asian asylum claims. Bangladesh s377, India post-decriminalisation, Sri Lanka, Nepal, HJ (Iran) standard analysis.",
-    h1: "LGBTQ+ Persecution Expert Witness UK | South Asia",
+    h1: "LGBTQ+ Persecution Expert Witness | South Asia",
     content: [
       "The legal framework for LGBTQ+ individuals varies significantly across South Asia. Bangladesh still criminalises same-sex conduct under section 377 of the Penal Code. India decriminalised in 2018 (Navtej Singh Johar) but social persecution and family violence continue. Sri Lanka retains criminalisation. Nepal has made limited progressive steps but practical protection remains limited.",
       "Expert witnesses provide country-specific analysis of both legal framework and social reality, applying the HJ (Iran) standard to assess whether openly living as LGBTQ+ would create a real risk even in the absence of criminalisation.",
@@ -93,10 +93,10 @@ export const asylumProfiles: AsylumProfile[] = [
   {
     slug: "caste-discrimination",
     title: "Caste Discrimination",
-    metaTitle: "Caste Discrimination Expert Witness UK | South Asia Asylum Reports",
+    metaTitle: "Caste Discrimination Expert Witness | South Asia Asylum Reports",
     metaDescription:
       "Caste discrimination expert witness for South Asian asylum claims. Dalit persecution in India and Nepal, caste as PSG, state protection failures, upper-caste violence.",
-    h1: "Caste Discrimination Expert Witness UK | South Asia",
+    h1: "Caste Discrimination Expert Witness | South Asia",
     content: [
       "Caste-based discrimination can constitute persecution where it reaches the threshold of seriousness, particularly where accompanied by physical violence, systematic economic exclusion, or forced practices that violate fundamental rights. Dalits in India and Nepal may constitute a particular social group (PSG) for asylum purposes.",
       "Expert witnesses assess the severity of caste-based harm in the specific regional and community context, providing both country conditions analysis and assessment of the plausibility of claimed caste status and the risk it creates.",
@@ -119,10 +119,10 @@ export const asylumProfiles: AsylumProfile[] = [
   {
     slug: "women-gender-based-violence",
     title: "Women & Gender-Based Violence",
-    metaTitle: "Women & Gender-Based Violence Expert Witness UK | South Asia",
+    metaTitle: "Women & Gender-Based Violence Expert Witness | South Asia",
     metaDescription:
       "Gender-based violence expert witness for South Asian asylum claims. Honour killings, dowry violence, acid attacks, trafficking from Nepal, state protection failures.",
-    h1: "Women & Gender-Based Violence Expert Witness UK | South Asia",
+    h1: "Women & Gender-Based Violence Expert Witness | South Asia",
     content: [
       "South Asian gender-based violence asylum claims include honour killings and forced marriage across the region, dowry violence in India and Bangladesh, acid attacks in Bangladesh, trafficking from Nepal and India, and domestic violence with inadequate state protection across all South Asian countries.",
       "Despite formal legal protections in many South Asian jurisdictions, enforcement is inconsistent, particularly in rural areas and where perpetrators are from dominant castes or majority communities. Expert witnesses assess the specific state and region of origin and the practical availability of protection.",
@@ -145,10 +145,10 @@ export const asylumProfiles: AsylumProfile[] = [
   {
     slug: "journalists-human-rights-defenders",
     title: "Journalists & Human Rights Defenders",
-    metaTitle: "Journalists & Human Rights Defenders Expert Witness UK | South Asia",
+    metaTitle: "Journalists & Human Rights Defenders Expert Witness | South Asia",
     metaDescription:
       "Journalist and human rights defender expert witness for South Asian asylum claims. Bangladesh post-2024 media persecution, India press freedom, Sri Lanka HRD claims.",
-    h1: "Journalists & Human Rights Defenders Expert Witness UK | South Asia",
+    h1: "Journalists & Human Rights Defenders Expert Witness | South Asia",
     content: [
       "The August 2024 political transition in Bangladesh has created a complex situation for journalists. Those who previously supported the Awami League government through their reporting now face risks from the new power structure, while those who were previously persecuted by the Awami League may have found their position improved. Expert witnesses assess the current media environment and individual journalists' specific risk profiles.",
       "India's press freedom ranking has declined significantly in recent years. Journalists critical of the BJP government or covering sensitive topics (Hindu nationalism, Kashmir, Manipur) face harassment, legal threats under UAPA, and in some cases physical danger. Expert witnesses assess the individual journalist's profile and the current media environment.",
@@ -171,25 +171,25 @@ export const asylumProfiles: AsylumProfile[] = [
   {
     slug: "diaspora-activity-risk-on-return",
     title: "Diaspora Activity Risk on Return",
-    metaTitle: "Diaspora Activity Risk on Return Expert Witness UK | South Asia",
+    metaTitle: "Diaspora Activity Risk on Return Expert Witness | South Asia",
     metaDescription:
       "Diaspora activity risk expert witness for South Asian asylum claims. UK-based Tamil activism, Bangladeshi political activity, Sikh Khalistan, surveillance capacity analysis.",
-    h1: "Diaspora Activity Risk on Return Expert Witness UK | South Asia",
+    h1: "Diaspora Activity Risk on Return Expert Witness | South Asia",
     content: [
-      "UK-based diaspora political or human rights activities can create or enhance a risk profile on return, where the authorities in the country of origin have the capacity and motivation to monitor diaspora activity. Expert witnesses assess both the nature and visibility of the UK activities and the intelligence capacity of the relevant state to monitor and respond.",
-      "Tamil diaspora activism in the UK can create risk on return to Sri Lanka where activities have come to the attention of Sri Lankan intelligence services. Bangladeshi authorities have demonstrated capacity and motivation to monitor diaspora political activities in the UK, particularly activities by prominent BNP, Jamaat, or Awami League figures.",
+      "UK-based diaspora political or human rights activities can create or enhance a risk profile on return, where the authorities in the country of origin have the capacity and motivation to monitor diaspora activity. Expert witnesses assess both the nature and visibility activities and the intelligence capacity of the relevant state to monitor and respond.",
+      "Tamil diaspora activism can create risk on return to Sri Lanka where activities have come to the attention of Sri Lankan intelligence services. Bangladeshi authorities have demonstrated capacity and motivation to monitor diaspora political activities, particularly activities by prominent BNP, Jamaat, or Awami League figures.",
       "Indian diaspora activities, including Sikh Khalistan advocacy and Muslim minority advocacy, may also generate risk profiles. Post-August 2024, Bangladesh monitoring priorities may have shifted. Expert witnesses assess current intelligence capacity and the specific profile of the appellant.",
     ],
     faqs: [
       {
         question: "How does UK-based diaspora activism affect South Asian asylum claims?",
         answer:
-          "UK-based diaspora political or human rights activities can create or enhance a risk profile on return, where the authorities in the country of origin have the capacity and motivation to monitor diaspora activity. Expert witnesses assess both the nature and visibility of the UK activities and the intelligence capacity of the relevant state to monitor and respond.",
+          "UK-based diaspora political or human rights activities can create or enhance a risk profile on return, where the authorities in the country of origin have the capacity and motivation to monitor diaspora activity. Expert witnesses assess both the nature and visibility activities and the intelligence capacity of the relevant state to monitor and respond.",
       },
       {
         question: "Does Bangladesh monitor UK-based political activists?",
         answer:
-          "Bangladeshi authorities have demonstrated capacity and motivation to monitor diaspora political activities in the UK, particularly activities by prominent BNP, Jamaat, or Awami League figures. Post-August 2024, the monitoring priorities may have shifted. Expert witnesses assess current intelligence capacity and the specific profile of the appellant.",
+          "Bangladeshi authorities have demonstrated capacity and motivation to monitor diaspora political activities, particularly activities by prominent BNP, Jamaat, or Awami League figures. Post-August 2024, the monitoring priorities may have shifted. Expert witnesses assess current intelligence capacity and the specific profile of the appellant.",
       },
     ],
     relatedCaseTypes: ["sri-lanka-tamil-claims", "bangladesh-political-claims", "deportation-return-south-asia"],
@@ -197,20 +197,20 @@ export const asylumProfiles: AsylumProfile[] = [
   {
     slug: "failed-asylum-seekers-return",
     title: "Failed Asylum Seekers Return",
-    metaTitle: "Failed Asylum Seekers Return Expert Witness UK | South Asia",
+    metaTitle: "Failed Asylum Seekers Return Expert Witness | South Asia",
     metaDescription:
-      "Failed asylum seeker return risk expert witness for South Asian claims. Country-specific return risk analysis, Home Office certification challenge, post-2024 Bangladesh conditions.",
-    h1: "Failed Asylum Seekers Return Expert Witness UK | South Asia",
+      "Failed asylum seeker return risk expert witness for South Asian claims. Country-specific return risk analysis, decision-makers certification challenge, post-2024 Bangladesh conditions.",
+    h1: "Failed Asylum Seekers Return Expert Witness | South Asia",
     content: [
       "Return risk for South Asian failed asylum seekers depends heavily on the individual's profile and current country conditions. Given the August 2024 political transition in Bangladesh, some profiles that were previously lower risk may now face genuine risk on return. Expert witnesses provide current country condition analysis for individual risk assessment.",
-      "The Home Office has powers to certify asylum claims from certain countries as clearly unfounded, removing the right of appeal in-country. However, certification is inappropriate where a claim has a realistic prospect of success. Expert witnesses help solicitors challenge certification by providing independent country condition analysis supporting the claim.",
+      "The decision-makers has powers to certify asylum claims from certain countries as clearly unfounded, removing the right of appeal in-country. However, certification is inappropriate where a claim has a realistic prospect of success. Expert witnesses help solicitors challenge certification by providing independent country condition analysis supporting the claim.",
       "Expert witnesses provide country-specific return risk analysis for failed asylum seekers across Bangladesh, India, Sri Lanka, Nepal, and Bhutan, assessing how the individual's profile interacts with current conditions and any changes since the original refusal.",
     ],
     faqs: [
       {
         question: "Are South Asian asylum claims certifiable as clearly unfounded?",
         answer:
-          "The Home Office has powers to certify asylum claims from certain countries as clearly unfounded, removing the right of appeal in-country. However, certification is inappropriate where a claim has a realistic prospect of success. Expert witnesses help solicitors challenge certification by providing independent country condition analysis supporting the claim.",
+          "The decision-makers has powers to certify asylum claims from certain countries as clearly unfounded, removing the right of appeal in-country. However, certification is inappropriate where a claim has a realistic prospect of success. Expert witnesses help solicitors challenge certification by providing independent country condition analysis supporting the claim.",
       },
       {
         question: "What is the return risk for failed Bangladesh asylum seekers?",

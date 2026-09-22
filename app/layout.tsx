@@ -8,6 +8,8 @@ import { ConsentDefaultsScript } from "@/components/cookies/ConsentDefaultsScrip
 import { SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
+export const dynamic = "force-dynamic";
+
 const lexend = Lexend({
   subsets: ["latin"],
   variable: "--font-lexend",
@@ -25,16 +27,25 @@ export const viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
+  themeColor: "#261E18",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "South Asia Expert Reports UK | Country Condition Reports",
+    default: "South Asia Reports | Country Condition Expert Evidence",
     template: "%s",
   },
   description:
-    "United Kingdom expert reports for South Asian asylum appeals: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. For UK immigration solicitors, FTT/UT proceedings, and Legal Aid practitioners only.",
+    "South Asia expert reports for asylum and immigration proceedings: Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Matched country specialists for instructing counsel.",
+  icons: {
+    icon: [
+      { url: "/icon", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-48.png", type: "image/png", sizes: "48x48" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
     other: process.env.BING_SITE_VERIFICATION
@@ -43,8 +54,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     languages: {
-      "en-GB": SITE_URL,
-      "en-US": SITE_URL,
+      en: SITE_URL,
       "x-default": SITE_URL,
     },
   },
@@ -52,7 +62,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-GB" className={`${lexend.variable} ${petrona.variable} h-full`}>
+    <html lang="en" className={`${lexend.variable} ${petrona.variable} h-full`}>
       <body className="min-h-full bg-paper font-sans text-body antialiased">
         <ConsentDefaultsScript />
         <CookieConsentProvider>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -36,10 +37,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-rule bg-paper lg:hidden">
       <div className="flex items-center justify-between gap-3 px-4 py-3">
-        <Link href="/" className="min-w-0" onClick={() => setOpen(false)}>
-          <span className="block truncate font-display text-xl leading-none text-ink">
-            South Asia <span className="text-indigo">Reports</span>
-          </span>
+        <Link href="/" className="min-w-0" onClick={() => setOpen(false)} aria-label="South Asia Reports home">
+          <Image
+            src="/brand/wordmark.png"
+            alt="South Asia Reports"
+            width={140}
+            height={82}
+            priority
+            className="h-10 w-auto"
+          />
         </Link>
 
         <div className="flex items-center gap-2">

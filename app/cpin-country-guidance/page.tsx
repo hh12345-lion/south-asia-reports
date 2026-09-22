@@ -15,17 +15,17 @@ import { getCpinRelatedLinks } from "@/data/related-links";
 
 const cpinFaqs = [
   {
-    question: "What is a CPIN in UK asylum law?",
+    question: "What is a CPIN in asylum law?",
     answer:
-      "A Country Policy Information Note (CPIN) is a Home Office document setting out the UK government's position on country conditions for asylum decision-making. CPINs are not binding on immigration tribunals but carry significant weight. South Asia has CPINs covering Bangladesh, India, Sri Lanka, Nepal, and Bhutan.",
+      "A Country Policy Information Note (CPIN) is a decision-makers document setting out the UK government's position on country conditions for asylum decision-making. CPINs are not binding on immigration tribunals but carry significant weight. South Asia has CPINs covering Bangladesh, India, Sri Lanka, Nepal, and Bhutan.",
   },
   {
-    question: "Which South Asian countries have UK country guidance?",
+    question: "Which South Asian countries have country guidance?",
     answer:
       "Only Sri Lanka has current UK Upper Tribunal country guidance: KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. Bangladesh, India, Nepal, and Bhutan have no current binding country guidance, making expert evidence especially important for these countries.",
   },
   {
-    question: "Can expert evidence challenge Home Office CPIN findings on South Asia?",
+    question: "Can expert evidence challenge decision-makers CPIN findings on South Asia?",
     answer:
       "Yes. Expert witnesses provide independent analysis beyond CPIN reproduction. Where the CPIN does not reflect the appellant's profile or current conditions (such as post-August 2024 Bangladesh), the expert may challenge findings with field research, UN reports, and profile-specific evidence.",
   },
@@ -34,7 +34,7 @@ const cpinFaqs = [
 export const metadata = createMetadata({
   title: "South Asia CPIN & Country Guidance 2025",
   description:
-    "Current Home Office CPINs and country guidance on South Asia for UK asylum practitioners: Bangladesh, India, Sri Lanka KK [2021], Nepal, Bhutan, and expert evidence gaps.",
+    "Current official CPINs and country guidance on South Asia for asylum practitioners: Bangladesh, India, Sri Lanka KK [2021], Nepal, Bhutan, and expert evidence gaps.",
   path: "/cpin-country-guidance",
 });
 
@@ -48,17 +48,17 @@ export default function CpinCountryGuidancePage() {
         data={articleSchema({
           title: "South Asia CPIN & Country Guidance 2025: A Guide for UK Asylum Solicitors",
           description:
-            "Current Home Office CPINs and country guidance on South Asia for UK asylum practitioners.",
+            "Current official CPINs and country guidance on South Asia for asylum practitioners.",
           path: "/cpin-country-guidance",
         })}
       />
       <PageShell
         title="South Asia CPIN & Country Guidance 2025: A Guide for UK Asylum Solicitors"
-        subtitle="Current Home Office CPINs, country guidance cases, and the expert witness role beyond generic country policy."
+        subtitle="Current official CPINs, country guidance cases, and the expert witness role beyond generic country policy."
         breadcrumbs={crumbs}
       >
         <p className="text-body leading-relaxed">
-          South Asia is the second most significant asylum claim region in the UK after Sub-Saharan Africa. Multiple
+          South Asia is the second most significant asylum claim region after Sub-Saharan Africa. Multiple
           CPINs cover Bangladesh, India, Sri Lanka, Nepal, and Bhutan, but only Sri Lanka has binding UK Upper Tribunal
           country guidance. Expert evidence is essential to fill gaps in CPIN coverage and address rapidly changing
           conditions, particularly post-August 2024 Bangladesh.
@@ -69,7 +69,7 @@ export default function CpinCountryGuidancePage() {
           <ResponsiveTableWrap>
             <table className="w-full min-w-[500px] border-collapse text-sm">
               <caption className="mb-3 text-left text-base text-ink">
-                South Asia CPIN quick reference for UK asylum practitioners (2025)
+                South Asia CPIN quick reference for asylum practitioners (2025)
               </caption>
               <thead>
                 <tr className="border-b border-rule bg-oat">

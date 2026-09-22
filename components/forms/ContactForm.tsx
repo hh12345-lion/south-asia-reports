@@ -21,23 +21,25 @@ export function ContactForm() {
     const form = e.currentTarget;
     const data = new FormData(form);
 
-    // Honeypot — bots only; reject silently
     if (String(data.get("website") ?? "").trim()) {
       router.push("/thank-you");
       return;
     }
 
+    const country = String(data.get("country") ?? "").trim();
     const freeText = String(data.get("message") ?? "").trim();
+    const message = [country && `Country: ${country}`, freeText].filter(Boolean).join("\n\n");
+
     const payload = {
       fullName: String(data.get("name") ?? "").trim(),
-      organisation: String(data.get("company") ?? "").trim(),
+      organisation: "",
       email: String(data.get("email") ?? "").trim(),
       phone: "",
       caseProfile: "",
-      region: String(data.get("country") ?? "").trim(),
+      region: country,
       funding: "",
       summary: freeText,
-      message: freeText,
+      message,
     };
 
     const ok = await postSubmitLead(payload);
@@ -45,13 +47,12 @@ export function ContactForm() {
       try {
         await submitNetlifyForm("contact", {
           name: String(data.get("name") ?? "").trim(),
-          company: String(data.get("company") ?? "").trim(),
           email: String(data.get("email") ?? "").trim(),
-          country: String(data.get("country") ?? "").trim(),
-          message: String(data.get("message") ?? "").trim(),
+          country,
+          message,
         });
       } catch {
-        // Sheets/webhook already stored the enquiry; don't block the visitor.
+        // Webhook already stored the enquiry; don't block the visitor.
       }
       router.push("/thank-you");
     } else setStatus("error");
@@ -81,18 +82,6 @@ export function ContactForm() {
           <input id="name" name="name" required autoComplete="name" className={fieldClass} />
         </div>
         <div className="min-w-0">
-          <label className={labelClass} htmlFor="company">
-            Firm
-          </label>
-          <input
-            id="company"
-            name="company"
-            required
-            autoComplete="organization"
-            className={fieldClass}
-          />
-        </div>
-        <div className="min-w-0">
           <label className={labelClass} htmlFor="email">
             Email
           </label>
@@ -105,21 +94,22 @@ export function ContactForm() {
             className={fieldClass}
           />
         </div>
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="country">
-            Country
-          </label>
-          <select id="country" name="country" required className={fieldClass} defaultValue="">
-            <option value="" disabled>
-              Select
+      </div>
+
+      <div className="mt-5 min-w-0">
+        <label className={labelClass} htmlFor="country">
+          Country
+        </label>
+        <select id="country" name="country" required className={fieldClass} defaultValue="">
+          <option value="" disabled>
+            Select
+          </option>
+          {COUNTRIES.map((c) => (
+            <option key={c} value={c}>
+              {c}
             </option>
-            {COUNTRIES.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
-        </div>
+          ))}
+        </select>
       </div>
 
       <div className="mt-5 min-w-0">
@@ -131,7 +121,7 @@ export function ContactForm() {
           name="message"
           required
           rows={4}
-          placeholder="Profile, hearing date, and whether funding is Legal Aid or private."
+          placeholder="Profile, hearing date, and key issues for the expert."
           className={`${fieldClass} min-h-[120px] resize-y`}
         />
       </div>
@@ -154,9 +144,7 @@ export function ContactForm() {
         >
           {status === "loading" ? "Sending" : "Lodge this case"}
         </button>
-        <p className="text-[13.5px] text-ink-soft">
-          Confidential. Never shared with the Home Office.
-        </p>
+        <p className="text-[13.5px] text-ink-soft">Confidential intake.</p>
       </div>
     </form>
   );

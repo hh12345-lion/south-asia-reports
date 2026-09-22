@@ -102,7 +102,7 @@ export const navSections: NavSection[] = [
     label: "Countries",
     href: "/countries",
     blurb:
-      "Five countries, each with its own evidence problem. Bangladesh and India have no current UK country guidance, so the CPIN stands unless it is answered.",
+      "Five countries, each with its own evidence problem. Bangladesh and India have no current country guidance, so the CPIN stands unless it is answered.",
     hubLabel: "All countries",
     links: countriesNavLinks,
     columns: 2,

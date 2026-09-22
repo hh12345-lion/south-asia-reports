@@ -47,7 +47,7 @@ export default function QualificationsPage() {
         <p className="mt-4 text-body leading-relaxed">
           An expert&apos;s paramount duty is to the tribunal: to assist it in reaching a decision by providing an
           objective, unbiased opinion on matters within their expertise, not to advocate for either the appellant or
-          the Home Office. Expert evidence should be the independent product of the expert, uninfluenced by the
+          the decision-makers. Expert evidence should be the independent product of the expert, uninfluenced by the
           pressures of litigation.
         </p>
         <p className="mt-4 text-body leading-relaxed">

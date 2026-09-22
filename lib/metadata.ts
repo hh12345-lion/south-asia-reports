@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { SITE_URL } from "./constants";
 import { normalizeSeoDescription, normalizeSeoTitle } from "./seo/meta";
 
-const OG_IMAGE_ALT = "South Asia Reports — UK South Asia expert reports";
+const OG_IMAGE_ALT = "South Asia Reports";
 
 export const OPEN_GRAPH_IMAGE = {
-  url: `${SITE_URL}/opengraph-image`,
+  url: `${SITE_URL}/og-default.jpg`,
   width: 1200,
   height: 630,
   alt: OG_IMAGE_ALT,
@@ -36,11 +36,16 @@ export function createMetadata({
       description: seoDescription,
       url,
       siteName: "South Asia Reports",
-      locale: "en_GB",
+      locale: "en",
       type: "website",
       images: [OPEN_GRAPH_IMAGE],
     },
-    twitter: { card: "summary_large_image", title: seoTitle, description: seoDescription },
+    twitter: {
+      card: "summary_large_image",
+      title: seoTitle,
+      description: seoDescription,
+      images: [OPEN_GRAPH_IMAGE.url],
+    },
     robots: noindex
       ? { index: false, follow, googleBot: { index: false, follow } }
       : { index: true, follow: true },

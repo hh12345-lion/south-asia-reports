@@ -38,7 +38,7 @@ export function organizationSchema() {
     url: SITE_URL,
     email: SITE_EMAIL,
     address: { "@type": "PostalAddress", addressCountry: "GB" },
-    areaServed: "United Kingdom",
+    areaServed: "Worldwide",
     sameAs: [LINKEDIN_URL],
   };
 }
@@ -61,7 +61,7 @@ export function professionalServiceSchema() {
     url: SITE_URL,
     serviceType: "South Asia Country Expert Reports",
     provider: { "@id": `${SITE_URL}/#organization` },
-    areaServed: "United Kingdom",
+    areaServed: "Worldwide",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "South Asia Expert Report Services",
@@ -87,7 +87,7 @@ export function websiteSchema() {
     "@id": `${SITE_URL}/#website`,
     name: "South Asia Reports",
     url: SITE_URL,
-    inLanguage: "en-GB",
+    inLanguage: "en",
     publisher: { "@id": `${SITE_URL}/#organization` },
     potentialAction: {
       "@type": "SearchAction",
@@ -141,7 +141,7 @@ export function articleSchema({
     headline: title,
     description,
     url: `${SITE_URL}${path}`,
-    inLanguage: "en-GB",
+    inLanguage: "en",
     publisher: { "@id": `${SITE_URL}/#organization` },
   };
 }

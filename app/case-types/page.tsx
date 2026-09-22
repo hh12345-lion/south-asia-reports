@@ -20,7 +20,7 @@ export default function CaseTypesPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
         title="South Asia Asylum Case Types"
-        subtitle="Expert witness evidence for all major UK immigration tribunal proceedings involving South Asian nationals."
+        subtitle="Expert witness evidence for all major immigration tribunal proceedings involving South Asian nationals."
         breadcrumbs={crumbs}
       >
         <p className="mb-8 text-body leading-relaxed">

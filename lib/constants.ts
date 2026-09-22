@@ -6,31 +6,39 @@ export const PAKISTAN_REPORTS_URL = "https://www.pakistanexpertreports.com";
 export const LINKEDIN_URL = "https://www.linkedin.com/company/south-asia-reports";
 
 /** Geographic and professional scope — use in page copy (not alert banners) */
-export const UK_SERVICE_SCOPE_TITLE = "United Kingdom service scope";
+export const SERVICE_SCOPE_TITLE = "Service scope";
 
-export const UK_SERVICE_SCOPE_INTRO =
-  "South Asia Reports is a United Kingdom–focused expert report service. We connect immigration solicitors, law firms, and Legal Aid practitioners in England, Wales, Scotland, and Northern Ireland with country condition reports for UK asylum and immigration proceedings.";
+export const SERVICE_SCOPE_INTRO =
+  "South Asia Reports connects immigration counsel, law firms, and legal-aid practitioners with country condition reports for South Asian asylum and immigration proceedings.";
 
-export const UK_SERVICE_SCOPE_DETAIL =
-  "All guidance on this website reflects UK asylum law, Home Office Country Policy Information Notes (CPINs), Upper Tribunal country guidance, Immigration Tribunal Practice Direction paragraph 10, and Legal Aid Agency instruction processes. We do not provide reports for US, Canadian, EU, or other non-UK immigration systems.";
+export const SERVICE_SCOPE_DETAIL =
+  "Guidance on this website addresses country conditions across Bangladesh, India, Sri Lanka, Nepal, and Bhutan, including official country-of-origin material, tribunal practice, and instruction processes. We focus on South Asian jurisdictions rather than unrelated regional systems.";
 
-export const UK_SERVICE_SCOPE_POINTS = [
-  "First-tier Tribunal (Immigration and Asylum Chamber) and Upper Tribunal appeals",
-  "Home Office CPINs and designated UK country guidance (e.g. KK [2021] Sri Lanka)",
-  "Legal Aid Agency prior authority and LAA-compatible fee structures",
-  "Expert reports prepared for the UK Immigration Rules and Refugee Convention as applied in the UK",
+export const SERVICE_SCOPE_POINTS = [
+  "Immigration and asylum tribunal appeals involving South Asian countries of origin",
+  "Official country-of-origin material and designated country guidance",
+  "Legal-aid-compatible fee structures where applicable",
+  "Expert reports prepared for Refugee Convention analysis as applied in the relevant forum",
 ] as const;
+
+/** @deprecated Prefer SERVICE_SCOPE_* — kept for existing imports */
+export const UK_SERVICE_SCOPE_TITLE = SERVICE_SCOPE_TITLE;
+export const UK_SERVICE_SCOPE_INTRO = SERVICE_SCOPE_INTRO;
+export const UK_SERVICE_SCOPE_DETAIL = SERVICE_SCOPE_DETAIL;
+export const UK_SERVICE_SCOPE_POINTS = SERVICE_SCOPE_POINTS;
 
 /** Primary landing CTA — not Instruct / Retain / Brief / Find an Expert */
 export const PRIMARY_CTA = "Lodge a case";
 
+/** Brand palette from guidelines */
 export const COLORS = {
-  primary: "#2B2118",
-  accent: "#5A6B3A",
-  highlight: "#8B2942",
-  background: "#EDE8DF",
-  sectionAlt: "#E2DCD1",
+  primary: "#261E18",
+  accent: "#7F905C",
+  highlight: "#80273A",
+  background: "#EAE5DB",
+  sectionAlt: "#E0D9CC",
   border: "#C9C0B3",
-  heading: "#2B2118",
-  body: "#4A4038",
+  heading: "#261E18",
+  body: "#4A423B",
+  white: "#FFFFFF",
 } as const;

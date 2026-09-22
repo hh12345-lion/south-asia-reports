@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { PRIMARY_CTA, SITE_EMAIL } from "@/lib/constants";
 
@@ -18,16 +19,19 @@ export function SiteRail() {
     <aside className="hidden lg:block">
       <div className="sticky top-0 flex h-dvh w-[19.5rem] flex-col justify-between border-r border-rule bg-ink px-7 py-8 text-paper">
         <div>
-          <Link href="/" className="block">
-            <span className="block font-display text-[1.65rem] leading-none text-paper">
-              South Asia
-            </span>
-            <span className="mt-1 block font-display text-[1.65rem] leading-none text-ochre-pale">
-              Reports
-            </span>
+          <Link href="/" className="block" aria-label="South Asia Reports home">
+            <Image
+              src="/brand/wordmark.png"
+              alt="South Asia Reports"
+              width={200}
+              height={116}
+              priority
+              className="h-[4.75rem] w-auto"
+            />
           </Link>
           <p className="mt-5 text-[13.5px] leading-relaxed text-paper/65">
-            Country evidence for UK asylum appeals. Bangladesh, India, Sri Lanka, Nepal, Bhutan.
+            Country evidence for South Asian asylum and immigration proceedings. Bangladesh, India, Sri
+            Lanka, Nepal, Bhutan.
           </p>
 
           <Link

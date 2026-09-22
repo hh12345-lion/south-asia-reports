@@ -8,7 +8,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "How to Instruct a South Asia Expert Witness UK",
   description:
-    "Step-by-step guide for UK solicitors on instructing a South Asia expert witness for asylum appeals, Legal Aid cases, and immigration tribunal proceedings.",
+    "Step-by-step guide for counsel on instructing a South Asia expert witness for asylum appeals, Legal Aid cases, and immigration tribunal proceedings.",
   path: "/how-to-instruct",
 });
 
@@ -36,7 +36,7 @@ const steps = [
   {
     n: 5,
     title: "Provide All Relevant Materials",
-    body: "Include the screening record, Asylum Interview Record (AIR), Home Office refusal letter (RFRL), client witness statement, any previous expert reports, and relevant CPINs and country guidance decisions.",
+    body: "Include the screening record, Asylum Interview Record (AIR), decision-makers refusal letter (RFRL), client witness statement, any previous expert reports, and relevant CPINs and country guidance decisions.",
   },
   {
     n: 6,
@@ -58,7 +58,7 @@ export default function HowToInstructPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
         title="How to Instruct a South Asia Expert Witness"
-        subtitle="Seven steps for UK immigration solicitors and Legal Aid practitioners."
+        subtitle="Seven steps for immigration counsel and Legal Aid practitioners."
         breadcrumbs={crumbs}
       >
         <UkServiceScope className="mb-8" />

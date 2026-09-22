@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           </Link>
           <span className="mx-2 text-ink-soft">/</span>
           <time dateTime={post.updated || post.date}>
-            {new Date(post.updated || post.date).toLocaleDateString("en-GB", {
+            {new Date(post.updated || post.date).toLocaleDateString("en", {
               day: "numeric",
               month: "long",
               year: "numeric",

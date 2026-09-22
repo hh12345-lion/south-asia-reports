@@ -22,21 +22,21 @@ export type Service = {
 export const services: Service[] = [
   {
     id: "bangladesh-country-reports",
-    title: "Bangladesh Country Condition Reports UK",
+    title: "Bangladesh Country Condition Reports",
     navLabel: "Bangladesh Reports",
     description:
       "General Bangladesh country condition reports covering state protection, internal relocation, profile-specific risk, and post-August 2024 political conditions.",
-    metaTitle: "Bangladesh Country Condition Reports UK | Asylum Expert Reports",
+    metaTitle: "Bangladesh Country Condition Reports | Asylum Expert Reports",
     metaDescription:
-      "Bangladesh country condition expert reports for UK asylum appeals. BNP/Awami League politics, Hindu minorities, LGBTQ+ persecution, and post-August 2024 conditions.",
+      "Bangladesh country condition expert reports for asylum appeals. BNP/Awami League politics, Hindu minorities, LGBTQ+ persecution, and post-August 2024 conditions.",
     content: [
-      "Bangladesh country condition reports provide independent, tribunal-ready analysis for UK asylum appeals involving political persecution, religious minority risk, LGBTQ+ criminalisation, and journalist persecution.",
-      "Reports assess profile-specific risk against current Home Office CPINs, district-level conditions, and the fundamental political transition following Sheikh Hasina's departure in August 2024. All reports comply with Immigration Tribunal Practice Direction paragraph 10.",
+      "Bangladesh country condition reports provide independent, tribunal-ready analysis for asylum appeals involving political persecution, religious minority risk, LGBTQ+ criminalisation, and journalist persecution.",
+      "Reports assess profile-specific risk against current official CPINs, district-level conditions, and the fundamental political transition following Sheikh Hasina's departure in August 2024. All reports comply with Immigration Tribunal Practice Direction paragraph 10.",
     ],
     relatedHref: "/countries/bangladesh",
     methodology: [
       { phase: "Case scoping", whatWeDo: "Identify asylum profile, relevant CPINs, and post-2024 political context", deliverable: "Scope confirmation and expert match" },
-      { phase: "Research", whatWeDo: "Field research, Home Office COI, UNHCR, and primary sources", deliverable: "Source bibliography" },
+      { phase: "Research", whatWeDo: "Field research, decision-makers COI, UNHCR, and primary sources", deliverable: "Source bibliography" },
       { phase: "Report drafting", whatWeDo: "OSCOLA-cited report addressing profile-specific risk and state protection", deliverable: "Practice Direction compliant expert report" },
     ],
     faqs: [
@@ -58,16 +58,16 @@ export const services: Service[] = [
   },
   {
     id: "india-country-reports",
-    title: "India Country Expert Reports UK",
+    title: "India Country Expert Reports",
     navLabel: "India Reports",
     description:
-      "Hindutva/Muslim minority reports, Sikh claims, internal relocation analysis, and CAA/NRC context for UK immigration tribunals.",
-    metaTitle: "India Country Expert Reports UK | Muslim, Sikh & Minority Asylum",
+      "Hindutva/Muslim minority reports, Sikh claims, internal relocation analysis, and CAA/NRC context for immigration tribunals.",
+    metaTitle: "India Country Expert Reports | Muslim, Sikh & Minority Asylum",
     metaDescription:
-      "India country expert reports for UK tribunals. Hindutva targeting of Muslims, Sikh Khalistan claims, Christian minorities, caste discrimination, and internal relocation analysis.",
+      "India country expert reports for tribunals. Hindutva targeting of Muslims, Sikh Khalistan claims, Christian minorities, caste discrimination, and internal relocation analysis.",
     content: [
-      "India country expert reports address the growing volume of UK asylum claims involving Hindutva/RSS targeting of Muslims, Sikh persecution, Christian minority claims, caste discrimination, and political dissident profiles.",
-      "India's size means internal relocation arguments are heavily deployed by the Home Office. Expert reports challenge this where persecutors have national reach through Hindutva networks or where relocation would be unduly harsh.",
+      "India country expert reports address the growing volume of asylum claims involving Hindutva/RSS targeting of Muslims, Sikh persecution, Christian minority claims, caste discrimination, and political dissident profiles.",
+      "India's size means internal relocation arguments are heavily deployed by the decision-makers. Expert reports challenge this where persecutors have national reach through Hindutva networks or where relocation would be unduly harsh.",
     ],
     relatedHref: "/countries/india",
     methodology: [
@@ -89,19 +89,19 @@ export const services: Service[] = [
       {
         question: "Is India a safe country for return?",
         answer:
-          "India is not a designated safe third country in UK asylum law. State protection is inconsistent for certain minority groups, particularly in BJP-aligned states. Expert reports assess the specific profile and pattern of state complicity.",
+          "India is not a designated safe third country in asylum law. State protection is inconsistent for certain minority groups, particularly in BJP-aligned states. Expert reports assess the specific profile and pattern of state complicity.",
       },
     ],
   },
   {
     id: "sri-lanka-country-reports",
-    title: "Sri Lanka Country Expert Reports UK",
+    title: "Sri Lanka Country Expert Reports",
     navLabel: "Sri Lanka Reports",
     description:
-      "KK [2021] framework analysis, Tamil/LTTE association reports, and diaspora activity risk assessment for UK tribunals.",
-    metaTitle: "Sri Lanka Country Expert Reports UK | Tamil & LTTE Association",
+      "KK [2021] framework analysis, Tamil/LTTE association reports, and diaspora activity risk assessment for tribunals.",
+    metaTitle: "Sri Lanka Country Expert Reports | Tamil & LTTE Association",
     metaDescription:
-      "Sri Lanka country expert reports for UK tribunals. KK [2021] UKUT 245 country guidance, Tamil persecution, LTTE associations, and diaspora activism risk.",
+      "Sri Lanka country expert reports for tribunals. KK [2021] UKUT 245 country guidance, Tamil persecution, LTTE associations, and diaspora activism risk.",
     content: [
       "Sri Lanka country expert reports apply the KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245 framework to assess Tamil persecution, LTTE associations, diaspora activism risk, and political opposition profiles.",
       "Reports assess whether the appellant's specific profile creates a real risk on return, including those with actual or imputed LTTE associations, high-profile diaspora activists, or those who have given evidence against the Sri Lankan government.",
@@ -119,26 +119,26 @@ export const services: Service[] = [
           "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245 established that Tamil asylum seekers with certain profiles face real risk on return, particularly those with LTTE associations, diaspora activists, or those who gave evidence against the government.",
       },
       {
-        question: "Does diaspora Tamil activism in the UK create risk on return?",
+        question: "Does diaspora Tamil activism create risk on return?",
         answer:
-          "Yes. Where Tamil diaspora activities in the UK have come to the attention of Sri Lankan intelligence services, they can create or enhance a risk profile. Expert reports assess the nature and visibility of UK-based activities.",
+          "Yes. Where Tamil diaspora activities have come to the attention of Sri Lankan intelligence services, they can create or enhance a risk profile. Expert reports assess the nature and visibility of UK-based activities.",
       },
       {
         question: "Are Sri Lanka expert reports consistent with current CPINs?",
         answer:
-          "Yes. Reports address Home Office CPIN positions on Tamils, LTTE associations, and human rights defenders while applying the KK [2021] country guidance framework.",
+          "Yes. Reports address decision-makers CPIN positions on Tamils, LTTE associations, and human rights defenders while applying the KK [2021] country guidance framework.",
       },
     ],
   },
   {
     id: "nepal-bhutan-country-reports",
-    title: "Nepal & Bhutan Country Expert Reports UK",
+    title: "Nepal & Bhutan Country Expert Reports",
     navLabel: "Nepal & Bhutan Reports",
     description:
-      "Expert reports where no UK country guidance exists: Maoist claims, Dalit/caste discrimination, ethnic minorities, and Lhotshampa persecution.",
-    metaTitle: "Nepal & Bhutan Country Expert Reports UK | No Country Guidance",
+      "Expert reports where no country guidance exists: Maoist claims, Dalit/caste discrimination, ethnic minorities, and Lhotshampa persecution.",
+    metaTitle: "Nepal & Bhutan Country Expert Reports | No Country Guidance",
     metaDescription:
-      "Nepal and Bhutan country expert reports for UK tribunals. Maoist-linked claims, Dalit caste discrimination, Madhesi minorities, and Lhotshampa persecution where no UK country guidance exists.",
+      "Nepal and Bhutan country expert reports for tribunals. Maoist-linked claims, Dalit caste discrimination, Madhesi minorities, and Lhotshampa persecution where no country guidance exists.",
     content: [
       "Unlike Somalia, Pakistan, or Sri Lanka, Nepal and Bhutan have no current UK Upper Tribunal country guidance. Independent expert reports are especially valuable as tribunals must rely on expert analysis rather than binding country guidance presumptions.",
       "Reports address Maoist-linked claims, Dalit caste discrimination, Madhesi, Tharu, and Janajati ethnic minorities in Nepal, and Lhotshampa and Nepali-speaking minority persecution in Bhutan.",
@@ -169,15 +169,15 @@ export const services: Service[] = [
   },
   {
     id: "cpin-challenge-reports",
-    title: "South Asia CPIN Challenge Expert Reports UK",
+    title: "South Asia CPIN Challenge Expert Reports",
     navLabel: "CPIN Challenge",
     description:
-      "Challenging Home Office CPIN positions on South Asian countries through gap analysis and independent country condition analysis.",
-    metaTitle: "South Asia CPIN Challenge Expert Reports UK",
+      "Challenging decision-makers CPIN positions on South Asian countries through gap analysis and independent country condition analysis.",
+    metaTitle: "South Asia CPIN Challenge Expert Reports",
     metaDescription:
-      "Independent expert reports challenging Home Office CPIN positions on Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Gap analysis and profile-specific country conditions.",
+      "Independent expert reports challenging decision-makers CPIN positions on Bangladesh, India, Sri Lanka, Nepal, and Bhutan. Gap analysis and profile-specific country conditions.",
     content: [
-      "Home Office CPINs provide general country background but may not address the appellant's specific profile, district, or the cumulative effect of multiple risk factors. CPIN challenge reports provide independent analysis identifying gaps in CPIN coverage.",
+      "official CPINs provide general country background but may not address the appellant's specific profile, district, or the cumulative effect of multiple risk factors. CPIN challenge reports provide independent analysis identifying gaps in CPIN coverage.",
       "Reports are particularly valuable for Bangladesh post-August 2024 claims, India minority profiles, and Nepal/Bhutan cases where CPIN coverage is limited or outdated.",
     ],
     relatedHref: "/cpin-country-guidance",
@@ -190,7 +190,7 @@ export const services: Service[] = [
       {
         question: "When should solicitors instruct a CPIN challenge report?",
         answer:
-          "When the Home Office refusal relies on generic CPIN positions that do not address the appellant's specific profile, district, political affiliation, or the cumulative effect of multiple risk factors.",
+          "When the decision-makers refusal relies on generic CPIN positions that do not address the appellant's specific profile, district, political affiliation, or the cumulative effect of multiple risk factors.",
       },
       {
         question: "Which South Asian countries have limited CPIN coverage?",
@@ -200,21 +200,21 @@ export const services: Service[] = [
       {
         question: "Do CPIN challenge reports replace country condition reports?",
         answer:
-          "CPIN challenge reports are a specialist subset of country condition reports focused on identifying and addressing gaps in Home Office CPIN positions. They include full profile-specific risk analysis.",
+          "CPIN challenge reports are a specialist subset of country condition reports focused on identifying and addressing gaps in decision-makers CPIN positions. They include full profile-specific risk analysis.",
       },
     ],
   },
   {
     id: "internal-relocation-analysis",
-    title: "South Asia Internal Relocation Expert Reports UK",
+    title: "South Asia Internal Relocation Expert Reports",
     navLabel: "Internal Relocation",
     description:
       "India nationwide persecutor reach, Bangladesh district-specific analysis, and viability and undue harshness assessments.",
-    metaTitle: "South Asia Internal Relocation Expert Reports UK",
+    metaTitle: "South Asia Internal Relocation Expert Reports",
     metaDescription:
       "Internal relocation expert reports for South Asian asylum appeals. India Hindutva network reach, Bangladesh district analysis, and undue harshness assessments.",
     content: [
-      "Internal relocation is a central issue in South Asian asylum appeals, particularly from India where the Home Office argues appellants can relocate to another state. Expert reports assess whether persecutors have national reach and whether relocation would be unduly harsh.",
+      "Internal relocation is a central issue in South Asian asylum appeals, particularly from India where the decision-makers argues appellants can relocate to another state. Expert reports assess whether persecutors have national reach and whether relocation would be unduly harsh.",
       "For Bangladesh, district-specific analysis is critical given regional political dynamics. For India, Hindutva/RSS networks operate nationally, challenging generic internal relocation arguments.",
     ],
     relatedHref: "/asylum-profiles/religious-minority-persecution",
@@ -243,13 +243,13 @@ export const services: Service[] = [
   },
   {
     id: "bangladesh-post-2024-reports",
-    title: "Post-August 2024 Bangladesh Expert Reports UK",
+    title: "Post-August 2024 Bangladesh Expert Reports",
     navLabel: "Post-2024 Bangladesh",
     description:
       "Specialist reports on the political transition, reversed BNP/AL dynamics, and current conditions analysis following Sheikh Hasina's departure.",
-    metaTitle: "Post-August 2024 Bangladesh Expert Reports UK",
+    metaTitle: "Post-August 2024 Bangladesh Expert Reports",
     metaDescription:
-      "Post-August 2024 Bangladesh expert reports for UK tribunals. Political transition analysis, reversed BNP/Awami League dynamics, and current country conditions.",
+      "Post-August 2024 Bangladesh expert reports for tribunals. Political transition analysis, reversed BNP/Awami League dynamics, and current country conditions.",
     content: [
       "The fall of Sheikh Hasina's Awami League government in August 2024, following mass student protests, has fundamentally changed the asylum landscape for Bangladesh. Expert reports must assess post-August 2024 conditions, not the position under the previous government.",
       "Former Awami League supporters and officials may now face greater risk. BNP and Jamaat supporters who were genuinely persecuted under Hasina may face a changed country conditions argument. Timely expert evidence is essential as conditions continue to evolve.",
@@ -284,9 +284,9 @@ export const services: Service[] = [
     navLabel: "Oral Evidence",
     description:
       "Expert witness oral evidence at FTT and Upper Tribunal hearings, Practice Direction compliance, and cross-examination readiness.",
-    metaTitle: "Oral Evidence at Immigration Tribunal UK | South Asia Expert Witness",
+    metaTitle: "Oral Evidence at Immigration Tribunal | South Asia Expert Witness",
     metaDescription:
-      "South Asia expert witness oral evidence at UK immigration tribunals. Practice Direction compliance, FTT and Upper Tribunal attendance, and cross-examination readiness.",
+      "South Asia expert witness oral evidence at immigration tribunals. Practice Direction compliance, FTT and Upper Tribunal attendance, and cross-examination readiness.",
     content: [
       "In addition to written country condition reports, qualified South Asia experts can attend immigration tribunal hearings to give oral evidence, respond to cross-examination, and assist the tribunal with country conditions analysis.",
       "Oral evidence requires Practice Direction paragraph 10 compliance, advance disclosure of the expert report, and preparation for cross-examination on methodology, sources, and conclusions. Experts attend as independent witnesses with a paramount duty to the tribunal.",
@@ -294,14 +294,14 @@ export const services: Service[] = [
     relatedHref: "/qualifications",
     methodology: [
       { phase: "Report preparation", whatWeDo: "Draft tribunal-ready written report as foundation for oral evidence", deliverable: "Practice Direction compliant expert report" },
-      { phase: "Hearing preparation", whatWeDo: "Review skeleton arguments, Home Office evidence, and cross-examination topics", deliverable: "Pre-hearing briefing" },
+      { phase: "Hearing preparation", whatWeDo: "Review skeleton arguments, decision-makers evidence, and cross-examination topics", deliverable: "Pre-hearing briefing" },
       { phase: "Tribunal attendance", whatWeDo: "Give oral evidence, respond to cross-examination, assist the tribunal", deliverable: "Oral expert evidence at hearing" },
     ],
     faqs: [
       {
         question: "When is oral expert evidence needed at immigration tribunals?",
         answer:
-          "Oral evidence is appropriate where the tribunal needs to test the expert's methodology, where country conditions are contested, or where the Home Office has instructed a competing expert. Written reports alone may suffice in straightforward cases.",
+          "Oral evidence is appropriate where the tribunal needs to test the expert's methodology, where country conditions are contested, or where the decision-makers has instructed a competing expert. Written reports alone may suffice in straightforward cases.",
       },
       {
         question: "What Practice Direction requirements apply to oral expert evidence?",

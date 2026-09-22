@@ -8,7 +8,7 @@ import { servicesPageGraph } from "@/lib/schema";
 import { services } from "@/data/services";
 
 export const metadata = createMetadata({
-  title: "South Asia Expert Report Services | Country Condition Reports UK",
+  title: "South Asia Expert Report Services | Country Condition Reports",
   description:
     "Eight specialist South Asia expert report services: Bangladesh, India, Sri Lanka, Nepal/Bhutan country reports, CPIN challenge, internal relocation, post-August 2024 Bangladesh, and oral evidence.",
   path: "/services",
@@ -31,7 +31,7 @@ export default function ServicesPage() {
         breadcrumbs={crumbs}
       >
         <p className="mb-8 text-body leading-relaxed">
-          South Asia Reports provides eight specialist expert report services for UK immigration solicitors, law firms,
+          South Asia Reports provides eight specialist expert report services for immigration counsel, law firms,
           and Legal Aid practitioners. All reports are prepared by qualified South Asia country experts with current CPIN
           knowledge, country guidance expertise, and field research experience across Bangladesh, India, Sri Lanka,
           Nepal, and Bhutan.

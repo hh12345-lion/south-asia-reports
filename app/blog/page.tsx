@@ -9,7 +9,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata = createMetadata({
   title: "Blog | South Asia Reports",
   description:
-    "Articles for UK immigration solicitors on South Asia country expert evidence, Upper Tribunal guidance, and instructing country experts.",
+    "Articles for immigration counsel on South Asia country expert evidence, Upper Tribunal guidance, and instructing country experts.",
   path: "/blog",
 });
 
@@ -61,7 +61,7 @@ export default function BlogIndexPage() {
                 <div className="p-6">
                   <p className="text-[12px] font-medium uppercase tracking-[0.14em] text-indigo">
                     <time dateTime={post.updated || post.date}>
-                      {new Date(post.updated || post.date).toLocaleDateString("en-GB", {
+                      {new Date(post.updated || post.date).toLocaleDateString("en", {
                         day: "numeric",
                         month: "long",
                         year: "numeric",

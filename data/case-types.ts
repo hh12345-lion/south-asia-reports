@@ -14,13 +14,13 @@ export const caseTypes: CaseType[] = [
   {
     slug: "ftt-south-asia-appeal",
     title: "FTT South Asia Appeal",
-    metaTitle: "FTT South Asia Appeal Expert Witness UK | First-tier Tribunal Reports",
+    metaTitle: "FTT South Asia Appeal Expert Witness | First-tier Tribunal Reports",
     metaDescription:
       "South Asia expert witness reports for First-tier Tribunal asylum appeals. Bangladesh, India, Sri Lanka, Nepal, Bhutan country condition reports for FTT proceedings.",
     h1: "FTT South Asia Appeal Expert Witness UK",
     content: [
       "First-tier Tribunal (FTT) asylum appeals from South Asian nationals require country condition reports that address the specific risk profile of the appellant against current conditions in Bangladesh, India, Sri Lanka, Nepal, or Bhutan. Expert reports must comply with Immigration Tribunal Practice Direction paragraph 10 and CPR Part 35.",
-      "South Asian FTT appeals frequently involve challenges to Home Office CPIN positions, internal relocation arguments (particularly in India), and the application of country guidance (KK [2021] for Sri Lanka Tamil claims). Expert witnesses provide independent analysis that goes beyond generic country information.",
+      "South Asian FTT appeals frequently involve challenges to decision-makers CPIN positions, internal relocation arguments (particularly in India), and the application of country guidance (KK [2021] for Sri Lanka Tamil claims). Expert witnesses provide independent analysis that goes beyond generic country information.",
       "Early instruction allows sufficient time for profile-specific research, particularly where post-August 2024 Bangladesh conditions or evolving India Hindutva dynamics require current analysis. Reports should be served in accordance with tribunal directions and hearing timetables.",
     ],
     faqs: [
@@ -34,14 +34,14 @@ export const caseTypes: CaseType[] = [
   {
     slug: "upper-tribunal-south-asia",
     title: "Upper Tribunal South Asia",
-    metaTitle: "Upper Tribunal South Asia Expert Witness UK | UT Appeal Reports",
+    metaTitle: "Upper Tribunal South Asia Expert Witness | UT Appeal Reports",
     metaDescription:
       "South Asia expert witness reports for Upper Tribunal appeals. Country guidance analysis, CPIN challenge, and specialist evidence for UT proceedings.",
     h1: "Upper Tribunal South Asia Expert Witness UK",
     content: [
       "Upper Tribunal (UT) appeals from South Asian asylum claims require expert evidence that addresses the legal errors identified in the FTT decision and provides updated country conditions analysis. UT proceedings demand rigorous, well-sourced expert reports with clear methodology.",
       "For Sri Lanka Tamil claims, UT appeals frequently engage KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. Expert witnesses must assess whether the FTT correctly applied this country guidance to the appellant's specific profile.",
-      "For Bangladesh, India, Nepal, and Bhutan claims where no current UK country guidance exists, UT appeals rely heavily on the quality and independence of expert evidence. Expert witnesses provide analysis that addresses both general country conditions and the individual risk profile.",
+      "For Bangladesh, India, Nepal, and Bhutan claims where no current country guidance exists, UT appeals rely heavily on the quality and independence of expert evidence. Expert witnesses provide analysis that addresses both general country conditions and the individual risk profile.",
     ],
     faqs: [
       {
@@ -54,9 +54,9 @@ export const caseTypes: CaseType[] = [
   {
     slug: "sri-lanka-tamil-claims",
     title: "Sri Lanka Tamil Claims",
-    metaTitle: "Sri Lanka Tamil Expert Witness UK | KK [2021] Country Guidance Reports",
+    metaTitle: "Sri Lanka Tamil Expert Witness | KK [2021] Country Guidance Reports",
     metaDescription:
-      "Sri Lanka Tamil expert witness for UK asylum tribunals. KK [2021] UKUT 00245 framework, LTTE associations, diaspora activism risk, Tamil persecution analysis.",
+      "Sri Lanka Tamil expert witness for asylum tribunals. KK [2021] UKUT 00245 framework, LTTE associations, diaspora activism risk, Tamil persecution analysis.",
     h1: "Sri Lanka Tamil Claims Expert Witness UK",
     content: [
       "Sri Lanka Tamil asylum claims are governed by KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245, which established that Tamil asylum seekers with certain profiles face real risk on return. Expert witnesses assess the appellant's profile against this country guidance framework.",
@@ -74,9 +74,9 @@ export const caseTypes: CaseType[] = [
   {
     slug: "bangladesh-political-claims",
     title: "Bangladesh Political Claims",
-    metaTitle: "Bangladesh Political Expert Witness UK | Post-August 2024 BNP/AL Reports",
+    metaTitle: "Bangladesh Political Expert Witness | Post-August 2024 BNP/AL Reports",
     metaDescription:
-      "Bangladesh political persecution expert witness for UK tribunals. Post-August 2024 transition, BNP/Awami League reversal, Jamaat, Hindu minority, expert evidence.",
+      "Bangladesh political persecution expert witness for tribunals. Post-August 2024 transition, BNP/Awami League reversal, Jamaat, Hindu minority, expert evidence.",
     h1: "Bangladesh Political Claims Expert Witness UK",
     content: [
       "Bangladesh political asylum claims have been fundamentally reshaped by the August 2024 fall of Sheikh Hasina's Awami League government. Expert witnesses must assess current post-transition conditions rather than relying on pre-2024 country information.",
@@ -94,13 +94,13 @@ export const caseTypes: CaseType[] = [
   {
     slug: "india-minority-claims",
     title: "India Minority Claims",
-    metaTitle: "India Minority Expert Witness UK | Muslim, Sikh, Christian & Caste Reports",
+    metaTitle: "India Minority Expert Witness | Muslim, Sikh, Christian & Caste Reports",
     metaDescription:
-      "India minority expert witness for UK asylum tribunals. Hindutva targeting, Muslim persecution, Sikh Khalistan, Christian minorities, caste discrimination, internal relocation.",
+      "India minority expert witness for asylum tribunals. Hindutva targeting, Muslim persecution, Sikh Khalistan, Christian minorities, caste discrimination, internal relocation.",
     h1: "India Minority Claims Expert Witness UK",
     content: [
       "India minority asylum claims require expert evidence addressing Hindutva and RSS targeting of Muslims, Sikh claims linked to Khalistan associations, Christian minority persecution, caste discrimination against Dalits, and the viability of internal relocation within India.",
-      "The Home Office frequently argues that internal relocation to major cities is available for Indian appellants. Expert witnesses challenge this where the persecutor has national reach (Hindutva networks, RSS) or where relocation would be unduly harsh given the appellant's profile and resources.",
+      "The decision-makers frequently argues that internal relocation to major cities is available for Indian appellants. Expert witnesses challenge this where the persecutor has national reach (Hindutva networks, RSS) or where relocation would be unduly harsh given the appellant's profile and resources.",
       "Expert witnesses assess state protection availability in the specific state and region of origin, the nationwide reach of Hindutva organisations, and the cumulative effect of anti-minority rhetoric and violence on the appellant's specific risk profile.",
     ],
     faqs: [
@@ -114,7 +114,7 @@ export const caseTypes: CaseType[] = [
   {
     slug: "deportation-return-south-asia",
     title: "Deportation Return South Asia",
-    metaTitle: "Deportation Return Expert Witness UK | South Asia Risk Assessment",
+    metaTitle: "Deportation Return Expert Witness | South Asia Risk Assessment",
     metaDescription:
       "Deportation and return risk expert witness for South Asian failed asylum seekers. Country-specific return risk analysis for Bangladesh, India, Sri Lanka, Nepal, Bhutan.",
     h1: "Deportation Return South Asia Expert Witness UK",
@@ -134,7 +134,7 @@ export const caseTypes: CaseType[] = [
   {
     slug: "fresh-claims-south-asia",
     title: "Fresh Claims South Asia",
-    metaTitle: "Fresh Claims Expert Witness UK | South Asia Country Conditions",
+    metaTitle: "Fresh Claims Expert Witness | South Asia Country Conditions",
     metaDescription:
       "Fresh claim expert witness for South Asian asylum seekers. Post-2024 Bangladesh conditions, evolving India Hindutva risk, updated country analysis for fresh claims.",
     h1: "Fresh Claims South Asia Expert Witness UK",
@@ -154,14 +154,14 @@ export const caseTypes: CaseType[] = [
   {
     slug: "certification-challenge",
     title: "Certification Challenge",
-    metaTitle: "Certification Challenge Expert Witness UK | South Asia Asylum Claims",
+    metaTitle: "Certification Challenge Expert Witness | South Asia Asylum Claims",
     metaDescription:
       "Certification challenge expert witness for South Asian asylum claims. Challenge clearly unfounded certification with independent country condition analysis.",
-    h1: "Certification Challenge Expert Witness UK | South Asia",
+    h1: "Certification Challenge Expert Witness | South Asia",
     content: [
-      "The Home Office may certify South Asian asylum claims as clearly unfounded under section 94 of the Nationality, Immigration and Asylum Act 2002, removing the right of in-country appeal. Certification is inappropriate where a claim has a realistic prospect of success.",
+      "The decision-makers may certify South Asian asylum claims as clearly unfounded under section 94 of the Nationality, Immigration and Asylum Act 2002, removing the right of in-country appeal. Certification is inappropriate where a claim has a realistic prospect of success.",
       "Expert witnesses help solicitors challenge certification by providing independent country condition analysis demonstrating that the claim has merit. This is particularly important for Bangladesh post-2024 claims, India minority claims, and Nepal claims where no country guidance exists.",
-      "Expert reports for certification challenges should address the specific reasons the Home Office considers the claim unfounded and provide evidence-based analysis of why the appellant's profile creates a realistic prospect of success.",
+      "Expert reports for certification challenges should address the specific reasons the decision-makers considers the claim unfounded and provide evidence-based analysis of why the appellant's profile creates a realistic prospect of success.",
     ],
     faqs: [
       {
