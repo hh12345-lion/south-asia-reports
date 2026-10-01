@@ -68,13 +68,13 @@ export function markdownToHtml(md: string): string {
       i++;
       continue;
     }
-    if (/^-\s+/.test(t)) {
+    if (/^-\s+/.test(t) || /^\*\s+/.test(t)) {
       if (!inUl) {
         closeLists();
         html.push("<ul>");
         inUl = true;
       }
-      html.push(`<li>${inline(t.replace(/^-\s+/, ""))}</li>`);
+      html.push(`<li>${inline(t.replace(/^[-*]\s+/, ""))}</li>`);
       i++;
       continue;
     }
@@ -85,7 +85,13 @@ export function markdownToHtml(md: string): string {
     while (i < lines.length) {
       const n = lines[i].trim();
       if (!n) break;
-      if (/^#{1,3}\s+/.test(n) || /^-\s+/.test(n) || /^\d+\.\s+/.test(n)) break;
+      if (
+        /^#{1,3}\s+/.test(n) ||
+        /^-\s+/.test(n) ||
+        /^\*\s+/.test(n) ||
+        /^\d+\.\s+/.test(n)
+      )
+        break;
       parts.push(n);
       i++;
     }

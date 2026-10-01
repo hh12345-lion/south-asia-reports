@@ -90,6 +90,13 @@ export function resolveLeadMessage(
     "additional_info",
     "enquiryDetails",
     "brief",
+    "caseBriefing",
+    "matterDescription",
+    "additionalNotes",
+    "caseBackground",
+    "specificQuestions",
+    "briefSummary",
+    "conflict_info",
   ] as const;
   for (const key of keys) {
     if (body[key] != null && String(body[key]).trim()) {

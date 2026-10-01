@@ -48,6 +48,7 @@ function resolveLeadMessage(body) {
     "briefSummary",
     "conflict_info",
     "brief",
+    "caseBriefing",
   ];
   for (const key of keys) {
     if (body[key] != null && String(body[key]).trim()) {
