@@ -18,28 +18,28 @@ export const countries: Country[] = [
   {
     slug: "bangladesh",
     title: "Bangladesh",
-    metaTitle: "Bangladesh Expert Witness | BNP, Hindus, LGBTQ+ & Political Persecution",
+    metaTitle: "Bangladesh Country Condition Report | South Asia Reports",
     metaDescription:
-      "Bangladesh expert witness for asylum tribunals. Post-August 2024 political transition, BNP/Awami League persecution, Hindu minority, LGBTQ+ criminalisation, and garment worker rights.",
-    h1: "Bangladesh Country Expert Witness UK",
-    claimVolume: "High (top 5 visa holder claims)",
-    keyProfiles: "BNP/AL politics, Hindus, LGBTQ+",
+      "Bangladesh country condition reports for asylum appeals: post-August 2024 politics, BNP, Jamaat and Awami League profiles, Hindu minorities, LGBTQ+ and acid violence.",
+    h1: "Bangladesh Country Condition Reports",
+    claimVolume: "High",
+    keyProfiles: "Party politics, Hindu minority, LGBTQ+, gender violence",
     countryGuidance: "No current CG",
     content: [
-      "Bangladesh generates one of the highest volumes of South Asian asylum claims, after Pakistan. Claims arise from political persecution linked to the Bangladesh Nationalist Party (BNP) and Awami League rivalry, persecution of Hindu and other religious minorities, LGBTQ+ criminalisation under section 377 of the Penal Code, and gender-based violence including acid attacks.",
-      "The fall of Sheikh Hasina's Awami League government in August 2024, following mass student protests, has fundamentally changed the asylum landscape for Bangladesh. Expert witnesses must assess post-August 2024 conditions, which may mean former Awami League supporters now face greater risk than before, while BNP and Jamaat claimants who were genuinely persecuted under Hasina may have a changed country conditions argument. Expert evidence on current conditions is more important than ever as the political situation continues to evolve.",
-      "Hindu minority communities face communal violence, land disputes, and targeted persecution, particularly during and after political transitions. State protection for minorities is inconsistent and depends significantly on the political context. LGBTQ+ individuals face criminalisation and severe social persecution. Expert witnesses provide community-specific and district-specific analysis of risk profiles for immigration tribunals.",
+      "Bangladesh is one of the largest sources of South Asian asylum appeals, second only to Pakistan. Our Bangladesh reports most often deal with party-political risk, the treatment of Hindu and other religious minorities, LGBTQ+ claims under section 377 of the Penal Code, and violence against women including acid attacks.",
+      "Every Bangladesh report now has to address the change of government in August 2024, when Sheikh Hasina left the country after mass student-led protests. The report explains how this affects the appellant's specific affiliation: some Awami League supporters now face more risk than before, while some BNP and Jamaat supporters may face arguments that their circumstances have changed. Because the situation is still developing, reports are dated as near to the hearing as possible.",
+      "For minority and LGBTQ+ claims, the report looks at the appellant's district and community, including land disputes and communal attacks against Hindus, and explains how the availability of police protection depends on who holds local political power.",
     ],
     faqs: [
       {
-        question: "How has the fall of Sheikh Hasina's government in 2024 affected Bangladesh asylum claims?",
+        question: "What should a Bangladesh country report cover after August 2024?",
         answer:
-          "The August 2024 political transition, following mass protests that led Sheikh Hasina to flee to India, has fundamentally altered the asylum landscape for Bangladesh. Former BNP and Jamaat supporters who were genuinely persecuted under the Awami League government may now face a changed country conditions argument. Conversely, Awami League supporters and former officials face new risks. Expert witnesses must assess conditions as of the current date, not the position under the previous government.",
+          "The current position of the appellant's party or group, how police and local power structures have shifted since the transition, conditions in the home district, and an explanation of where older country material no longer applies.",
       },
       {
-        question: "What persecution do Hindus face in Bangladesh?",
+        question: "Can a Bangladesh report address a Hindu minority claim?",
         answer:
-          "Hindu minority communities in Bangladesh face communal violence, land disputes, and targeted persecution, particularly during and after political transitions. State protection for minorities is inconsistent and depends significantly on the political context. Expert witnesses provide community-specific and district-specific analysis of minority risk.",
+          "Yes. It covers communal violence, land disputes and attacks during political upheaval, and assesses protection at district level, since it varies with local political control.",
       },
     ],
     relatedProfiles: [
@@ -52,28 +52,28 @@ export const countries: Country[] = [
   {
     slug: "india",
     title: "India",
-    metaTitle: "India Expert Witness | Muslim, Sikh, Christian & Minority Asylum Reports",
+    metaTitle: "India Country Condition Report | South Asia Reports",
     metaDescription:
-      "India expert witness for asylum tribunals. Hindutva/RSS targeting of Muslims, Sikh Khalistan claims, Christian minorities, CAA/NRC, caste discrimination, and internal relocation analysis.",
-    h1: "India Country Expert Witness UK",
+      "India country condition reports for asylum appeals: Muslim and Christian minorities, Sikh claims, Dalits, CAA/NRC, dissidents and internal relocation.",
+    h1: "India Country Condition Reports",
     claimVolume: "Growing",
-    keyProfiles: "Muslims/Hindutva, Sikhs, HRDs",
+    keyProfiles: "Muslim and Sikh minorities, Dalits, dissidents",
     countryGuidance: "No current CG",
     content: [
-      "India generates growing asylum claim volumes and presents unique legal challenges for tribunals. Claims arise from Hindutva and RSS targeting of Muslims, Sikh claims linked to Khalistan associations and historical persecution, Christian minority targeting, political dissident persecution, caste discrimination against Dalits, and concerns linked to the Citizenship Amendment Act (CAA) and National Register of Citizens (NRC).",
-      "Hindutva ideology, promoted by the BJP and associated organisations including the RSS, identifies Muslims as targets in certain contexts, particularly identifiably Muslim individuals in states governed by BJP-aligned administrations. Mob lynching, discriminatory application of laws, and the cumulative effect of anti-Muslim rhetoric at the national level create serious risk profiles.",
-      "India's size means internal relocation arguments are heavily deployed by the decision-makers, but expert evidence can challenge this where the persecutor has national reach (Hindutva networks, RSS) or where internal relocation would be unduly harsh. Expert witnesses assess whether state protection is available and whether internal relocation within India is viable given the nationwide reach of Hindutva networks and the specific profile of the appellant.",
+      "Indian appeals are increasing, and the reports we prepare cover a wide range: Muslims targeted by Hindutva and RSS-linked groups, Sikhs with perceived Khalistan links, Christians, political dissidents, Dalits, and people affected by the Citizenship Amendment Act and the National Register of Citizens.",
+      "For Muslim appellants the report documents the risks that matter in practice, such as mob violence, uneven application of the law and the effect of national political rhetoric, and pays particular attention to whether the appellant is visibly Muslim and which state they come from.",
+      "Most Indian refusals argue that the appellant could move to another city. The report addresses this directly, assessing whether the groups feared operate nationally, how the appellant might be identified, and whether relocation would be unduly harsh for someone in their position.",
     ],
     faqs: [
       {
-        question: "What persecution do Muslims face in India?",
+        question: "Is India treated as a safe country of return?",
         answer:
-          "Muslim asylum claims from India typically involve targeted violence by Hindutva groups with political protection, mob lynching in some states, discriminatory application of laws, and the cumulative effect of anti-Muslim rhetoric at the national level. Expert witnesses assess whether state protection is available and whether internal relocation within India is viable given the nationwide reach of Hindutva networks.",
+          "No. India is not designated as safe in asylum law and each claim is decided on its facts. Although India has functioning courts, protection for some minorities is uneven, particularly in BJP-governed states, and the report addresses that for the appellant's profile.",
       },
       {
-        question: "Is India a safe country for return?",
+        question: "What does an India report need from the appellant?",
         answer:
-          "India is not a designated safe third country in asylum law and claims must be assessed on their merits. While India has a functioning state and judiciary, state protection is inconsistent for certain minority groups, particularly in states governed by BJP-aligned administrations. Expert witnesses assess the specific profile, the pattern of state complicity, and the viability of internal relocation.",
+          "Their state and town of origin, religion or caste, details and dates of any incidents, any police complaints, and the relocation areas named in the refusal letter.",
       },
     ],
     relatedProfiles: [
@@ -86,28 +86,28 @@ export const countries: Country[] = [
   {
     slug: "sri-lanka",
     title: "Sri Lanka",
-    metaTitle: "Sri Lanka Expert Witness | Tamil Persecution & LTTE Association Claims",
+    metaTitle: "Sri Lanka Country Condition Report | KK [2021] | South Asia Reports",
     metaDescription:
-      "Sri Lanka expert witness for asylum tribunals. KK [2021] UKUT 00245 country guidance, Tamil persecution, LTTE associations, diaspora activism risk, and political opposition.",
-    h1: "Sri Lanka Country Expert Witness UK",
+      "Sri Lanka country condition reports for asylum appeals applying KK [2021] UKUT 00245: Tamil and LTTE profiles, UK diaspora activity, opposition and HRDs.",
+    h1: "Sri Lanka Country Condition Reports",
     claimVolume: "Significant",
-    keyProfiles: "Tamil/LTTE, political opposition",
+    keyProfiles: "Tamil and LTTE-linked, diaspora activists",
     countryGuidance: "KK [2021] UKUT 245",
     content: [
-      "Sri Lanka asylum claims are shaped by KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245, which remains the leading country guidance on Tamil persecution. Claims arise from actual or imputed LTTE associations, Tamil diaspora activism risk, political opposition persecution, human rights defender targeting, and Sinhalese Buddhist nationalism.",
-      "Post-civil war, Tamil asylum seekers with certain profiles face real risk on return, particularly those with actual or imputed LTTE associations, high-profile diaspora activists, or those who have given evidence against the Sri Lankan government. Expert witnesses assess the individual's profile against this country guidance framework.",
-      "UK-based Tamil diaspora activities, including demonstrations, fundraising, and leadership roles in Tamil organisations, can create or enhance a risk profile where they have come to the attention of Sri Lankan intelligence services. Expert witnesses assess the nature and visibility of UK-based activities and the risk they generate on return.",
+      "Sri Lanka reports are anchored in KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245, which remains the leading country guidance for Tamil appellants. Reports also cover political opposition, human rights defenders and the effects of Sinhalese Buddhist nationalism.",
+      "The core of most Sri Lanka reports is a profile assessment: whether the appellant has actual or perceived LTTE links, has been a prominent diaspora activist, or has given evidence against the state, and how the current security situation affects people with that history.",
+      "Where the appellant has been active in the UK, the report examines what they did, such as attending demonstrations, fundraising or holding roles in Tamil organisations, and whether that activity is likely to be known to the Sri Lankan authorities.",
     ],
     faqs: [
       {
-        question: "What is the KK country guidance on Sri Lanka?",
+        question: "How does a Sri Lanka report use KK [2021]?",
         answer:
-          "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245 established that Tamil asylum seekers with certain profiles face real risk on return, particularly those with actual or imputed LTTE associations, high-profile diaspora activists, or those who have given evidence against the Sri Lankan government. Expert witnesses assess the individual's profile against this country guidance.",
+          "It sets out the risk categories in KK and explains, with evidence, which of them the appellant may fall within and why.",
       },
       {
-        question: "Does diaspora Tamil activism create risk on return?",
+        question: "What evidence of UK activity should be sent?",
         answer:
-          "Yes. Where Tamil diaspora activities (demonstrations, fundraising, leadership roles in Tamil organisations) have come to the attention of Sri Lankan intelligence services, they can create or enhance a risk profile. Expert witnesses assess the nature and visibility-based activities and the risk they generate.",
+          "Photographs from events, social media posts, records of roles in Tamil organisations and any media coverage, all with dates, so the report can assess visibility.",
       },
     ],
     relatedProfiles: [
@@ -120,28 +120,28 @@ export const countries: Country[] = [
   {
     slug: "nepal",
     title: "Nepal",
-    metaTitle: "Nepal Expert Witness | Maoist, Caste & Ethnic Minority Asylum Reports",
+    metaTitle: "Nepal Country Condition Report | South Asia Reports",
     metaDescription:
-      "Nepal expert witness for asylum tribunals. No current country guidance, Maoist-linked claims, Dalit caste discrimination, Madhesi and Janajati ethnic minorities, and political persecution.",
-    h1: "Nepal Country Expert Witness UK",
+      "Nepal country condition reports for asylum appeals: Maoist-linked claims, Dalit caste discrimination, Madhesi, Tharu and Janajati minorities, journalists.",
+    h1: "Nepal Country Condition Reports",
     claimVolume: "Moderate",
-    keyProfiles: "Maoists, Dalits, ethnic minorities",
+    keyProfiles: "Maoist-linked, Dalits, Madhesi and Janajati",
     countryGuidance: "No current CG",
     content: [
-      "Unlike Somalia, Pakistan, or Sri Lanka, Nepal has no current UK Upper Tribunal country guidance. There are no binding country guidance findings from the tribunal on conditions in Nepal. This makes independent expert evidence especially valuable, as the tribunal must rely on the merits of expert analysis rather than country guidance presumptions.",
-      "Nepal asylum claims include Maoist-linked claims, both those persecuted by Maoists during the insurgency and former Maoist combatants facing retaliation from opponents. Dalit caste discrimination claims arise from systematic social exclusion and violence. Ethnic minority claims from Madhesi, Tharu, and Janajati groups reflect continuing discrimination and political marginalisation.",
-      "Political persecution claims from journalists and human rights defenders also arise from Nepal. Expert witnesses provide country conditions analysis addressing the specific regional, ethnic, and caste context of each appellant's claim, with particular attention to the absence of binding country guidance.",
+      "There is no current Upper Tribunal country guidance on Nepal, so the tribunal has no binding starting point and depends on the country evidence put before it. A well-sourced report therefore carries more weight in Nepali cases than in many others.",
+      "Nepal reports cover claims connected to the Maoist conflict, from people targeted by Maoists during the insurgency and from former combatants facing reprisals. They also cover caste discrimination against Dalits, discrimination against Madhesi, Tharu and Janajati communities, and risks to journalists and human rights defenders.",
+      "Each report is focused on the appellant's region, ethnicity and caste, because conditions in Nepal vary considerably between the hills, the Terai and the Kathmandu valley.",
     ],
     faqs: [
       {
-        question: "Why is expert evidence particularly important in Nepal cases?",
+        question: "Why does a Nepal report carry particular weight?",
         answer:
-          "Unlike Somalia, Pakistan, or Sri Lanka, Nepal has no current UK Upper Tribunal country guidance. There are no binding country guidance findings from the tribunal on conditions in Nepal. This makes independent expert evidence especially valuable, as the tribunal must rely on the merits of expert analysis rather than country guidance presumptions.",
+          "Without country guidance, the tribunal decides risk on the evidence in front of it. A detailed, sourced report is often the most authoritative material available.",
       },
       {
-        question: "What asylum claims arise from Nepal?",
+        question: "What kinds of Nepal claims do reports cover?",
         answer:
-          "Nepal asylum claims include Maoist-linked claims (both those persecuted by Maoists during the insurgency and former Maoist combatants facing retaliation from opponents), Dalit caste discrimination claims, ethnic minority claims from Madhesi, Tharu, and Janajati groups, and political persecution claims from journalists and human rights defenders.",
+          "Maoist-related claims on both sides of the conflict, Dalit caste discrimination, Madhesi, Tharu and Janajati minority claims, and claims by journalists and human rights defenders.",
       },
     ],
     relatedProfiles: [
@@ -154,28 +154,28 @@ export const countries: Country[] = [
   {
     slug: "bhutan",
     title: "Bhutan",
-    metaTitle: "Bhutan Expert Witness | Lhotshampa & Nepali-Speaking Minority Asylum Reports",
+    metaTitle: "Bhutan Country Condition Report | South Asia Reports",
     metaDescription:
-      "Bhutan expert witness for asylum tribunals. Lhotshampa ethnic Nepali minority, citizenship stripping, continuing discrimination, and political dissident persecution.",
-    h1: "Bhutan Country Expert Witness UK",
+      "Bhutan country condition reports for asylum appeals: Lhotshampa Nepali-speaking minority, loss of citizenship, political dissidents and return risk.",
+    h1: "Bhutan Country Condition Reports",
     claimVolume: "Low",
-    keyProfiles: "Lhotshampa, political",
+    keyProfiles: "Lhotshampa, political dissidents",
     countryGuidance: "No current CG",
     content: [
-      "The Lhotshampa are ethnic Nepali-speaking people who were expelled from Bhutan in the 1990s. Approximately 100,000 fled to Nepal following citizenship stripping under Bhutan's nationality laws. Residual claims from Bhutan involve continuing discrimination against Nepali speakers who remain, political opposition persecution, and in some cases claims from individuals previously displaced to Nepal who fear return to Bhutan.",
-      "Bhutan generates relatively low claim volumes compared to other South Asian countries. However, those claims that do arise are often complex, requiring specialist knowledge of Bhutanese politics, the Lhotshampa situation, and the limited publicly available country information.",
-      "Buddhist religious minority claims and political dissident persecution also arise from Bhutan. Expert witnesses provide analysis of Bhutan's unique political system, the residual effects of the 1990s expulsion policy, and the practical risks facing specific appellant profiles on return.",
+      "Bhutanese appeals are rare, and public country information on Bhutan is limited. Reports therefore draw together the scattered sources that exist and explain clearly how much weight each can bear.",
+      "Most Bhutan reports concern the Lhotshampa, the Nepali-speaking community of whom around 100,000 left for Nepal in the 1990s after losing citizenship under Bhutan's nationality laws. Reports address continuing discrimination against Nepali speakers who remained, and the position of people displaced to Nepal who fear being returned to Bhutan.",
+      "Reports also cover political dissidents and religious minority claims, and explain how Bhutan's political system affects the protection available to people with those profiles.",
     ],
     faqs: [
       {
-        question: "Who are the Lhotshampa and what asylum claims arise?",
+        question: "What is the background to Lhotshampa claims?",
         answer:
-          "The Lhotshampa are ethnic Nepali-speaking people who were expelled from Bhutan in the 1990s. Approximately 100,000 fled to Nepal following citizenship stripping. Residual claims from Bhutan involve continuing discrimination against Nepali speakers who remain, political opposition persecution, and in some cases claims from individuals previously displaced to Nepal who fear return to Bhutan.",
+          "In the 1990s around 100,000 Nepali-speaking Lhotshampa left Bhutan for Nepal after being stripped of citizenship. Current claims involve discrimination against those who stayed and the risks facing those who would be returned.",
       },
       {
-        question: "How common are Bhutan asylum claims?",
+        question: "Can a report be prepared when information on Bhutan is scarce?",
         answer:
-          "Bhutan generates relatively low claim volumes compared to other South Asian countries. However, those claims that do arise are often complex, requiring specialist knowledge of Bhutanese politics, the Lhotshampa situation, and the limited publicly available country information.",
+          "Yes. The report sets out the sources available, explains their limits, and states its conclusions with appropriate caution so the tribunal can weigh them.",
       },
     ],
     relatedProfiles: [
