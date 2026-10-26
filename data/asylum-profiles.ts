@@ -14,208 +14,208 @@ export type AsylumProfile = {
 export const asylumProfiles: AsylumProfile[] = [
   {
     slug: "political-persecution-south-asia",
-    title: "Political Persecution South Asia",
-    metaTitle: "Political Persecution Expert Witness | South Asia Asylum Reports",
+    title: "Political Persecution Reports",
+    metaTitle: "Political Persecution Country Report | South Asia Reports",
     metaDescription:
-      "Political persecution expert witness for South Asian asylum claims in tribunals. Bangladesh BNP/Awami post-2024, India opposition, Sri Lanka Tamil politics, Nepal Maoists.",
-    h1: "Political Persecution Expert Witness | South Asia",
+      "What a South Asia political persecution country report covers: party affiliation risk, post-August 2024 Bangladesh, Tamil political profiles and police complicity.",
+    h1: "Political Persecution Country Condition Reports",
     content: [
-      "Political persecution claims from South Asia require expert evidence to establish whether the political party or movement at issue actually persecutes opponents, whether state protection is available (particularly where police are complicit), and whether the individual's profile creates a real risk rather than a generalised political claim.",
-      "Bangladesh political claims have been fundamentally affected by the August 2024 fall of Sheikh Hasina's government. BNP supporters who were genuinely persecuted may now find their home country conditions have changed materially. Conversely, Awami League supporters face new risks under the post-transition power structure. Expert evidence on current post-transition conditions is essential in all Bangladesh political persecution claims.",
-      "India political opposition claims, Sri Lanka Tamil political profiles, and Nepal Maoist-linked claims each require country-specific analysis. Expert witnesses assess the political context, the appellant's visibility and affiliations, and the practical availability of state protection in the relevant jurisdiction.",
+      "A political persecution report answers three questions for the tribunal: does the party or movement in question face targeting, could the appellant obtain protection from the police or courts, and does this appellant's role make them visible enough to be at real risk. The report treats each question separately so that a judge can accept one finding without having to accept them all.",
+      "For Bangladesh, the report has to be dated after August 2024. The fall of Sheikh Hasina's government changed who holds power locally, so material describing the position of BNP or Awami League supporters before that date can no longer carry the analysis on its own. Reports set out what has changed and what has not, district by district where the evidence allows.",
+      "For India, Sri Lanka and Nepal the report focuses on the specific movement involved, whether opposition activism, Tamil political association or Maoist-linked history. Counsel should send the appellant's account of their role, any membership documents and arrest or FIR records, as these determine how the country evidence is applied.",
     ],
     faqs: [
       {
-        question: "Why is expert evidence important in South Asian political persecution claims?",
+        question: "What does a political persecution country report contain?",
         answer:
-          "South Asian political persecution claims require expert evidence to establish whether the political party or movement at issue actually persecutes opponents, whether state protection is available (particularly where police are complicit), and whether the individual's profile creates a real risk rather than a generalised political claim.",
+          "It typically has an overview of the political situation at the date of the report, an assessment of how parties and movements of the appellant's type are treated, an analysis of police and judicial protection, and a profile-specific risk section. Each opinion is tied to cited sources so the tribunal can test it.",
       },
       {
-        question: "How has Bangladesh's 2024 political transition affected asylum claims?",
+        question: "Can a pre-2024 report still be used in a Bangladesh political claim?",
         answer:
-          "The August 2024 fall of Sheikh Hasina's government has reversed many previously straightforward Bangladesh political claims. BNP supporters who were genuinely persecuted may now find their home country conditions have changed materially. Expert evidence on current post-transition conditions is essential in all Bangladesh political persecution claims.",
+          "Usually not on its own. Because the August 2024 transition reversed the position of several political groups, an older report risks describing a situation that no longer exists. An addendum or a fresh report covering post-transition conditions is normally needed.",
       },
     ],
     relatedCaseTypes: ["bangladesh-political-claims", "ftt-south-asia-appeal", "fresh-claims-south-asia"],
   },
   {
     slug: "religious-minority-persecution",
-    title: "Religious Minority Persecution",
-    metaTitle: "Religious Minority Persecution Expert Witness | South Asia",
+    title: "Religious Minority Reports",
+    metaTitle: "Religious Minority Country Report | South Asia Reports",
     metaDescription:
-      "Religious minority persecution expert witness for South Asian asylum claims. Indian Muslims, Bangladeshi Hindus, Sri Lankan Christians, state protection analysis.",
-    h1: "Religious Minority Persecution Expert Witness | South Asia",
+      "Country reports on religious minorities from South Asia: Indian Muslims and Christians, Bangladeshi Hindus, Ahmadis. Individual targeting versus systemic risk.",
+    h1: "Religious Minority Country Condition Reports",
     content: [
-      "South Asia generates significant religious minority asylum claims. Indian Muslims face Hindutva violence and systemic discrimination. Bangladeshi Hindus face communal attacks, particularly during political transitions. Christians in Sri Lanka and India face targeted violence. Ahmadis in Bangladesh and India face discrimination under blasphemy and religious laws.",
-      "Expert witnesses assess the specific religious profile and country conditions, distinguishing between individual targeting by known persecutors and systemic discrimination from the cumulative effect of majority community hostility and state failure to protect.",
-      "State protection for religious minorities varies significantly across South Asian countries and within regions. Expert witnesses provide granular analysis of whether effective protection is realistically available for the specific appellant in their community and district of origin.",
+      "Religious minority reports cover the groups that appear most often in South Asian appeals: Muslims and Christians in India, Hindus in Bangladesh, Christians in Sri Lanka, and Ahmadis. The report identifies which of these groups the appellant belongs to and narrows the evidence to that community rather than describing religious freedom in general terms.",
+      "A key structural choice is whether the claim rests on targeting by identifiable people, on the cumulative effect of discrimination and community hostility, or on both. The report addresses each route separately, because tribunals assess them under different parts of the legal test.",
+      "Where internal relocation is in issue, the report looks at the appellant's home district and at the places the decision-maker has suggested, and explains why conditions there are or are not materially different for a person of the same faith.",
     ],
     faqs: [
       {
-        question: "What religious minority claims arise from South Asia?",
+        question: "What information should counsel send for a religious minority report?",
         answer:
-          "South Asia generates significant religious minority asylum claims: Indian Muslims facing Hindutva violence; Bangladeshi Hindus facing communal attacks; Christians in Sri Lanka and India facing targeted violence; and Ahmadis in Bangladesh and India facing discrimination. Expert witnesses assess the specific religious profile and country conditions.",
+          "The appellant's faith and denomination, home district, any incidents with dates and the people involved, police complaints or refusals to register them, and the refusal letter's reasoning on state protection and relocation. These let the report focus on the points actually in dispute.",
       },
       {
-        question: "Is there pattern-based religious persecution or only individual targeting?",
+        question: "Does the report deal with internal relocation?",
         answer:
-          "Both exist across South Asian religious minority claims. Some appellants face individual targeting by known persecutors; others face systemic discrimination and risk from the cumulative effect of majority community hostility and state failure to protect. Expert witnesses distinguish between the two and assess both the individual and systemic risk.",
+          "Yes, if instructed. It compares the home area with any proposed relocation areas and explains whether the factors driving the risk, such as national networks or attitudes to the faith, would follow the appellant there.",
       },
     ],
     relatedCaseTypes: ["india-minority-claims", "ftt-south-asia-appeal", "upper-tribunal-south-asia"],
   },
   {
     slug: "lgbtq-south-asia",
-    title: "LGBTQ+ South Asia",
-    metaTitle: "LGBTQ+ Persecution Expert Witness | South Asia Asylum Reports",
+    title: "LGBTQ+ Claim Reports",
+    metaTitle: "LGBTQ+ Country Report for South Asian Claims | South Asia Reports",
     metaDescription:
-      "LGBTQ+ persecution expert witness for South Asian asylum claims. Bangladesh s377, India post-decriminalisation, Sri Lanka, Nepal, HJ (Iran) standard analysis.",
-    h1: "LGBTQ+ Persecution Expert Witness | South Asia",
+      "Country reports for LGBTQ+ asylum claims from Bangladesh, India, Sri Lanka and Nepal: criminal law, social and family risk, and the HJ (Iran) framework.",
+    h1: "LGBTQ+ Country Condition Reports",
     content: [
-      "The legal framework for LGBTQ+ individuals varies significantly across South Asia. Bangladesh still criminalises same-sex conduct under section 377 of the Penal Code. India decriminalised in 2018 (Navtej Singh Johar) but social persecution and family violence continue. Sri Lanka retains criminalisation. Nepal has made limited progressive steps but practical protection remains limited.",
-      "Expert witnesses provide country-specific analysis of both legal framework and social reality, applying the HJ (Iran) standard to assess whether openly living as LGBTQ+ would create a real risk even in the absence of criminalisation.",
-      "Family honour violence, community ostracism, and employment discrimination remain serious risks for LGBTQ+ individuals across South Asia. Expert witnesses assess the specific social context, family dynamics, and regional attitudes relevant to each appellant's claim.",
+      "An LGBTQ+ report separates the law on paper from what happens in practice. It sets out the current legal position in the country concerned, including section 377 of the Penal Code in Bangladesh, criminalisation in Sri Lanka, India's 2018 decriminalisation in Navtej Singh Johar and the limited reforms in Nepal, and then documents how people are treated regardless of that position.",
+      "Because the HJ (Iran) approach asks how the appellant would live on return and why, the report addresses the consequences of living openly, including family honour violence, exclusion from the community and loss of work. It does not assume that a change in criminal law removes risk.",
+      "The report is drafted so it can sit alongside the appellant's own evidence about their identity without commenting on credibility, which is a matter for the tribunal.",
     ],
     faqs: [
       {
-        question: "How does LGBTQ+ persecution from South Asia differ country by country?",
+        question: "Is a report needed for India now that same-sex conduct is legal?",
         answer:
-          "The legal framework varies significantly: Bangladesh still criminalises same-sex conduct (s377 PPC); India decriminalised in 2018 (Navtej Singh Johar) but social persecution and family violence continue; Sri Lanka retains criminalisation; Nepal has made limited progressive steps. Expert witnesses provide country-specific analysis of both legal framework and social reality.",
+          "Often yes. Decriminalisation in 2018 changed the criminal law but not family or community attitudes in many areas. A report documents those non-state risks and whether police would realistically protect the appellant.",
       },
       {
-        question: "Can LGBTQ+ claimants from India asylum succeed post-2018 decriminalisation?",
+        question: "Does the report comment on whether the appellant is gay or transgender?",
         answer:
-          "Yes. Decriminalisation does not eliminate persecution. Family honour violence, community ostracism, and employment discrimination remain serious risks for LGBTQ+ individuals in India. Expert witnesses apply the HJ (Iran) standard to assess whether openly living as LGBTQ+ would create a real risk even in the absence of criminalisation.",
+          "No. Identity and credibility are for the tribunal. The report assesses the risk that would arise for a person with the profile the appellant describes.",
       },
     ],
     relatedCaseTypes: ["india-minority-claims", "ftt-south-asia-appeal", "certification-challenge"],
   },
   {
     slug: "caste-discrimination",
-    title: "Caste Discrimination",
-    metaTitle: "Caste Discrimination Expert Witness | South Asia Asylum Reports",
+    title: "Caste Discrimination Reports",
+    metaTitle: "Caste Discrimination Country Report | South Asia Reports",
     metaDescription:
-      "Caste discrimination expert witness for South Asian asylum claims. Dalit persecution in India and Nepal, caste as PSG, state protection failures, upper-caste violence.",
-    h1: "Caste Discrimination Expert Witness | South Asia",
+      "Country reports for caste-based asylum claims from India and Nepal: Dalit status as a particular social group, severity of harm and gaps in state protection.",
+    h1: "Caste Discrimination Country Condition Reports",
     content: [
-      "Caste-based discrimination can constitute persecution where it reaches the threshold of seriousness, particularly where accompanied by physical violence, systematic economic exclusion, or forced practices that violate fundamental rights. Dalits in India and Nepal may constitute a particular social group (PSG) for asylum purposes.",
-      "Expert witnesses assess the severity of caste-based harm in the specific regional and community context, providing both country conditions analysis and assessment of the plausibility of claimed caste status and the risk it creates.",
-      "Caste persecution claims require evidence both of the general pattern of caste-based harm in the relevant country and of the individual's specific risk profile. Upper-caste violence, state protection failures, and economic and social exclusion are key themes in South Asian caste discrimination claims.",
+      "Caste claims turn on whether the harm described reaches the level of persecution. A caste report therefore documents the kinds of harm reported against Dalit communities in the appellant's region of India or Nepal, such as violence, exclusion from work and land, and coerced practices, and indicates how common and how serious they are.",
+      "The report addresses whether Dalits can be treated as a particular social group and explains the gap between constitutional protections and how police respond to complaints from lower-caste people in practice.",
+      "Where instructed, it also comments on whether the caste status the appellant describes is consistent with their name, village and community, using published material rather than speculation.",
     ],
     faqs: [
       {
-        question: "Can caste discrimination constitute persecution in asylum law?",
+        question: "What makes a caste report persuasive to a tribunal?",
         answer:
-          "Caste-based discrimination can constitute persecution where it reaches the threshold of seriousness, particularly where accompanied by physical violence, systematic economic exclusion, or forced practices that violate fundamental rights. Dalits in India and Nepal may constitute a particular social group (PSG) for asylum purposes. Expert witnesses assess the severity of caste-based harm in the specific regional and community context.",
+          "Specificity. Evidence from the appellant's own state or district, figures on reported incidents and police responses, and a clear explanation of why general anti-discrimination laws do not protect this person in practice.",
       },
       {
-        question: "What level of proof is needed for a caste persecution claim?",
+        question: "Can the report confirm the appellant's caste?",
         answer:
-          "Caste persecution claims require evidence both of the general pattern of caste-based harm in the relevant country and of the individual's specific risk profile. Expert witnesses provide country conditions analysis and, where relevant, assessment of the plausibility of claimed caste status and the risk it creates.",
+          "It cannot confirm identity, but it can say whether the details given, such as surname, locality and occupation, are consistent with the claimed caste according to available sources.",
       },
     ],
     relatedCaseTypes: ["india-minority-claims", "ftt-south-asia-appeal", "upper-tribunal-south-asia"],
   },
   {
     slug: "women-gender-based-violence",
-    title: "Women & Gender-Based Violence",
-    metaTitle: "Women & Gender-Based Violence Expert Witness | South Asia",
+    title: "Gender-Based Violence Reports",
+    metaTitle: "Gender-Based Violence Country Report | South Asia Reports",
     metaDescription:
-      "Gender-based violence expert witness for South Asian asylum claims. Honour killings, dowry violence, acid attacks, trafficking from Nepal, state protection failures.",
-    h1: "Women & Gender-Based Violence Expert Witness | South Asia",
+      "Country reports for women's asylum claims from South Asia: forced marriage, honour and dowry violence, acid attacks, trafficking, and protection on return.",
+    h1: "Gender-Based Violence Country Condition Reports",
     content: [
-      "South Asian gender-based violence asylum claims include honour killings and forced marriage across the region, dowry violence in India and Bangladesh, acid attacks in Bangladesh, trafficking from Nepal and India, and domestic violence with inadequate state protection across all South Asian countries.",
-      "Despite formal legal protections in many South Asian jurisdictions, enforcement is inconsistent, particularly in rural areas and where perpetrators are from dominant castes or majority communities. Expert witnesses assess the specific state and region of origin and the practical availability of protection.",
-      "Expert witnesses provide analysis of cultural and legal context, assessing whether the appellant faces a real risk of gender-based harm on return and whether state protection is realistically available given local social dynamics and institutional failures.",
+      "Gender-based violence reports cover forced marriage and honour violence, dowry violence in India and Bangladesh, acid attacks in Bangladesh, trafficking from Nepal and India, and domestic abuse. The report focuses on the type of harm the appellant fears rather than surveying all of them.",
+      "Most South Asian countries have laws against these forms of violence, so the central question is usually enforcement. The report looks at how police, courts and shelters respond in the appellant's area, and whether a woman returning alone, or with children, could access them.",
+      "It also considers practical factors that affect safety on return: whether the appellant could live independently, find work or housing without family support, and avoid being traced by the people she fears.",
     ],
     faqs: [
       {
-        question: "What gender-based violence claims arise from South Asia?",
+        question: "Does the report cover shelters and support services?",
         answer:
-          "South Asian gender-based violence asylum claims include honour killings and forced marriage across the region; dowry violence in India and Bangladesh; acid attacks in Bangladesh; trafficking from Nepal and India; and domestic violence with inadequate state protection across all South Asian countries.",
+          "Yes. It describes what services exist in the relevant region, their capacity and conditions, and whether they offer more than short-term refuge.",
       },
       {
-        question: "Does India have adequate protection for women facing gender-based violence?",
+        question: "Is a different report needed for a trafficking claim?",
         answer:
-          "Despite formal legal protections, enforcement is inconsistent across India, particularly in rural areas and where the perpetrators are from dominant castes or majority communities. Expert witnesses assess the specific state and region of origin and the practical availability of protection.",
+          "Trafficking claims need additional analysis of re-trafficking risk and the reach of the traffickers. This is set out in the instructions so the report covers it from the start.",
       },
     ],
     relatedCaseTypes: ["ftt-south-asia-appeal", "deportation-return-south-asia", "fresh-claims-south-asia"],
   },
   {
     slug: "journalists-human-rights-defenders",
-    title: "Journalists & Human Rights Defenders",
-    metaTitle: "Journalists & Human Rights Defenders Expert Witness | South Asia",
+    title: "Journalist & HRD Reports",
+    metaTitle: "Journalist & Human Rights Defender Country Report | South Asia Reports",
     metaDescription:
-      "Journalist and human rights defender expert witness for South Asian asylum claims. Bangladesh post-2024 media persecution, India press freedom, Sri Lanka HRD claims.",
-    h1: "Journalists & Human Rights Defenders Expert Witness | South Asia",
+      "Country reports for journalists and human rights defenders from Bangladesh, India and Sri Lanka: media freedom, UAPA and security laws, post-2024 Bangladesh.",
+    h1: "Journalist & Human Rights Defender Country Reports",
     content: [
-      "The August 2024 political transition in Bangladesh has created a complex situation for journalists. Those who previously supported the Awami League government through their reporting now face risks from the new power structure, while those who were previously persecuted by the Awami League may have found their position improved. Expert witnesses assess the current media environment and individual journalists' specific risk profiles.",
-      "India's press freedom ranking has declined significantly in recent years. Journalists critical of the BJP government or covering sensitive topics (Hindu nationalism, Kashmir, Manipur) face harassment, legal threats under UAPA, and in some cases physical danger. Expert witnesses assess the individual journalist's profile and the current media environment.",
-      "Sri Lanka human rights defender claims and Nepal media freedom issues also require specialist expert analysis. Expert witnesses provide country-specific assessment of the risks facing journalists and HRDs based on their reporting history, affiliations, and visibility.",
+      "Reports for journalists and human rights defenders start from the appellant's own output: what they published or campaigned on, where, and how widely it was seen. The country evidence is then applied to that record, because risk depends heavily on subject matter and visibility.",
+      "In Bangladesh the report addresses how the August 2024 change of government has affected journalists on both sides of the previous divide. In India it covers prosecutions and harassment of reporters working on sensitive subjects such as Kashmir, Manipur and Hindu nationalism, including the use of the UAPA.",
+      "Sri Lankan and Nepali cases are assessed on the same basis. Counsel should provide copies or links to the appellant's work, any threats received, and any legal proceedings started against them.",
     ],
     faqs: [
       {
-        question: "What risks do journalists face in Bangladesh post-2024?",
+        question: "Why does the report need the appellant's published work?",
         answer:
-          "The August 2024 political transition in Bangladesh has created a complex situation for journalists. Those who previously supported the Awami League government through their reporting now face risks from the new power structure, while those who were previously persecuted by the Awami League may have found their position improved. Expert witnesses assess the current media environment and individual journalists' specific risk profiles.",
+          "Risk for journalists depends on what they covered and who noticed. Seeing the work allows the report to compare it with the reporting that has led to arrests or attacks on others.",
       },
       {
-        question: "Are Indian journalists at risk?",
+        question: "Does the report address security and anti-terror laws?",
         answer:
-          "India's press freedom ranking has declined significantly in recent years. Journalists critical of the BJP government or covering sensitive topics (Hindu nationalism, Kashmir, Manipur) face harassment, legal threats (UAPA), and in some cases physical danger. Expert witnesses assess the individual journalist's profile and the current media environment.",
+          "Yes. Where relevant it explains how laws such as India's UAPA or Bangladesh's digital security legislation have been used against journalists and activists, and what that means for the appellant.",
       },
     ],
     relatedCaseTypes: ["bangladesh-political-claims", "india-minority-claims", "ftt-south-asia-appeal"],
   },
   {
     slug: "diaspora-activity-risk-on-return",
-    title: "Diaspora Activity Risk on Return",
-    metaTitle: "Diaspora Activity Risk on Return Expert Witness | South Asia",
+    title: "Diaspora Activity Reports",
+    metaTitle: "Diaspora Activity Risk Country Report | South Asia Reports",
     metaDescription:
-      "Diaspora activity risk expert witness for South Asian asylum claims. UK-based Tamil activism, Bangladeshi political activity, Sikh Khalistan, surveillance capacity analysis.",
-    h1: "Diaspora Activity Risk on Return Expert Witness | South Asia",
+      "Country reports on risk from UK diaspora activity: Tamil activism and Sri Lanka, Bangladeshi party activity, Sikh and Muslim advocacy, and monitoring capacity.",
+    h1: "Diaspora Activity Country Condition Reports",
     content: [
-      "UK-based diaspora political or human rights activities can create or enhance a risk profile on return, where the authorities in the country of origin have the capacity and motivation to monitor diaspora activity. Expert witnesses assess both the nature and visibility activities and the intelligence capacity of the relevant state to monitor and respond.",
-      "Tamil diaspora activism can create risk on return to Sri Lanka where activities have come to the attention of Sri Lankan intelligence services. Bangladeshi authorities have demonstrated capacity and motivation to monitor diaspora political activities, particularly activities by prominent BNP, Jamaat, or Awami League figures.",
-      "Indian diaspora activities, including Sikh Khalistan advocacy and Muslim minority advocacy, may also generate risk profiles. Post-August 2024, Bangladesh monitoring priorities may have shifted. Expert witnesses assess current intelligence capacity and the specific profile of the appellant.",
+      "A diaspora report assesses two things: how visible the appellant's activity in the UK has been, and whether the authorities at home are able and motivated to notice it. Attendance at a single protest and a leadership role in an organisation are treated very differently.",
+      "For Sri Lanka the report applies KK [2021] and the evidence on monitoring of Tamil diaspora activity. For Bangladesh it considers monitoring of BNP, Jamaat and Awami League figures abroad and how priorities may have changed since August 2024. For India it covers Sikh Khalistan and Muslim advocacy.",
+      "Counsel should send photographs, social media posts, membership records and any media coverage of the appellant's activities, with dates. The report uses these to place the appellant within the risk categories the tribunal applies.",
     ],
     faqs: [
       {
-        question: "How does UK-based diaspora activism affect South Asian asylum claims?",
+        question: "What evidence of diaspora activity is most useful for the report?",
         answer:
-          "UK-based diaspora political or human rights activities can create or enhance a risk profile on return, where the authorities in the country of origin have the capacity and motivation to monitor diaspora activity. Expert witnesses assess both the nature and visibility activities and the intelligence capacity of the relevant state to monitor and respond.",
+          "Dated, verifiable material: photographs from events, posts and their reach, roles held in organisations, and any coverage by media or authorities in the country of origin.",
       },
       {
-        question: "Does Bangladesh monitor UK-based political activists?",
+        question: "Does the report consider how the appellant would be identified on return?",
         answer:
-          "Bangladeshi authorities have demonstrated capacity and motivation to monitor diaspora political activities, particularly activities by prominent BNP, Jamaat, or Awami League figures. Post-August 2024, the monitoring priorities may have shifted. Expert witnesses assess current intelligence capacity and the specific profile of the appellant.",
+          "Yes. It addresses points of exposure such as airport screening, documentation checks and local informants, alongside monitoring abroad.",
       },
     ],
     relatedCaseTypes: ["sri-lanka-tamil-claims", "bangladesh-political-claims", "deportation-return-south-asia"],
   },
   {
     slug: "failed-asylum-seekers-return",
-    title: "Failed Asylum Seekers Return",
-    metaTitle: "Failed Asylum Seekers Return Expert Witness | South Asia",
+    title: "Return Risk Reports",
+    metaTitle: "Return Risk Country Report | South Asia Reports",
     metaDescription:
-      "Failed asylum seeker return risk expert witness for South Asian claims. Country-specific return risk analysis, decision-makers certification challenge, post-2024 Bangladesh conditions.",
-    h1: "Failed Asylum Seekers Return Expert Witness | South Asia",
+      "Country reports on return risk for refused asylum seekers from Bangladesh, India, Sri Lanka, Nepal and Bhutan, including clearly unfounded certification challenges.",
+    h1: "Return Risk Country Condition Reports",
     content: [
-      "Return risk for South Asian failed asylum seekers depends heavily on the individual's profile and current country conditions. Given the August 2024 political transition in Bangladesh, some profiles that were previously lower risk may now face genuine risk on return. Expert witnesses provide current country condition analysis for individual risk assessment.",
-      "The decision-makers has powers to certify asylum claims from certain countries as clearly unfounded, removing the right of appeal in-country. However, certification is inappropriate where a claim has a realistic prospect of success. Expert witnesses help solicitors challenge certification by providing independent country condition analysis supporting the claim.",
-      "Expert witnesses provide country-specific return risk analysis for failed asylum seekers across Bangladesh, India, Sri Lanka, Nepal, and Bhutan, assessing how the individual's profile interacts with current conditions and any changes since the original refusal.",
+      "A return risk report looks forward from the date it is written. It considers how the appellant's profile would be treated on arrival and afterwards, and records any changes in country conditions since the original refusal, which is especially important for Bangladesh after August 2024.",
+      "Where the Home Office has certified a claim as clearly unfounded, the report is written to show whether the claim has a realistic prospect of success on the country evidence, which is the test for challenging certification.",
+      "Reports cover Bangladesh, India, Sri Lanka, Nepal and Bhutan. They address the specific return route and documentation where this affects risk, and identify any categories of returnee the authorities are known to question or detain.",
     ],
     faqs: [
       {
-        question: "Are South Asian asylum claims certifiable as clearly unfounded?",
+        question: "Can a report help challenge a clearly unfounded certificate?",
         answer:
-          "The decision-makers has powers to certify asylum claims from certain countries as clearly unfounded, removing the right of appeal in-country. However, certification is inappropriate where a claim has a realistic prospect of success. Expert witnesses help solicitors challenge certification by providing independent country condition analysis supporting the claim.",
+          "Yes. A report that shows a real dispute on the country evidence supports the argument that the claim is not bound to fail, which is what certification requires.",
       },
       {
-        question: "What is the return risk for failed Bangladesh asylum seekers?",
+        question: "How recent does a return risk report need to be?",
         answer:
-          "Return risk for Bangladesh failed asylum seekers depends heavily on the individual's profile and current country conditions. Given the August 2024 political transition, some profiles that were previously lower risk may now face genuine risk on return. Expert witnesses provide current country condition analysis for individual risk assessment.",
+          "As recent as possible. Tribunals assess risk at the date of the hearing, so a report more than a few months old may need an update, particularly where conditions are changing quickly.",
       },
     ],
     relatedCaseTypes: ["deportation-return-south-asia", "certification-challenge", "fresh-claims-south-asia"],

@@ -9,65 +9,65 @@ export function getProfileGeoContent(slug: string): ProfileGeoBlock[] {
     "political-persecution-south-asia": [
       {
         type: "highlight",
-        title: "Bangladesh post-August 2024 reversal",
+        title: "Report dating: Bangladesh after August 2024",
         content:
-          "The August 2024 fall of Sheikh Hasina's Awami League government has reversed the persecution dynamic for many Bangladesh political claimants. Expert witnesses must assess current post-transition conditions, not pre-2024 country information.",
+          "Reports on Bangladeshi political claims are written against conditions after the fall of the Awami League government. Earlier country material is cited for background only and the report explains where the position has since reversed.",
       },
     ],
     "religious-minority-persecution": [
       {
         type: "highlight",
-        title: "Hindutva national reach (India)",
+        title: "Relocation analysis: India",
         content:
-          "Hindutva networks and the RSS have national reach in India, challenging internal relocation arguments. Muslim and Christian minority claimants may face risk even in non-BJP governed states due to national-level anti-minority rhetoric and violence.",
+          "Because Hindutva organisations and the RSS operate nationally, India reports test any proposed relocation area against the appellant's faith and profile, including states not governed by the BJP.",
       },
     ],
     "lgbtq-south-asia": [
       {
         type: "highlight",
-        title: "Post-decriminalisation India claims",
+        title: "Law versus practice: India",
         content:
-          "India decriminalised same-sex conduct in 2018 (Navtej Singh Johar), but social persecution, family honour violence, and employment discrimination continue. Expert witnesses apply the HJ (Iran) standard to assess real risk despite legal decriminalisation.",
+          "India reports note the 2018 Navtej Singh Johar judgment and then focus on family, community and workplace treatment, which is where most risk now arises.",
       },
     ],
     "diaspora-activity-risk-on-return": [
       {
         type: "highlight",
-        title: "Tamil diaspora surveillance (Sri Lanka)",
+        title: "Applying KK [2021]: Sri Lanka",
         content:
-          "Sri Lankan intelligence services monitor UK-based Tamil political activities. Diaspora demonstrations, fundraising, and leadership roles in Tamil organisations can create or enhance risk profiles for Tamil asylum claimants on return under KK [2021].",
+          "Sri Lanka reports map the appellant's UK activity, such as demonstrations, fundraising or organisational roles, onto the risk categories in KK [2021] and the evidence on monitoring of the Tamil diaspora.",
       },
     ],
     "failed-asylum-seekers-return": [
       {
         type: "highlight",
-        title: "Post-2024 Bangladesh return risk",
+        title: "Changed circumstances: Bangladesh",
         content:
-          "Given the August 2024 political transition, some Bangladesh profiles previously assessed as low risk may now face genuine persecution on return. Expert witnesses provide current country condition analysis for individual return risk assessment.",
+          "Return reports for Bangladesh identify profiles whose risk has increased since the 2024 transition, which can support a fresh claim or a renewed appeal.",
       },
     ],
     "caste-discrimination": [
       {
         type: "highlight",
-        title: "Dalit vulnerability (India and Nepal)",
+        title: "Regional evidence: India and Nepal",
         content:
-          "Caste-based persecution claims require expert analysis of the appellant's specific caste status, regional enforcement patterns, and the gap between constitutional protections and practical state protection. Dalit communities face systemic discrimination in both India and Nepal.",
+          "Caste reports use state- and district-level evidence on Dalit communities, and on how police handle their complaints, rather than national averages.",
       },
     ],
     "women-gender-based-violence": [
       {
         type: "highlight",
-        title: "Acid attacks and honour violence (Bangladesh)",
+        title: "Enforcement focus: Bangladesh",
         content:
-          "Bangladesh generates significant gender-based violence asylum claims including acid attacks and honour-based violence. Expert witnesses assess district-level enforcement, family and community dynamics, and the practical availability of state protection beyond statutory frameworks.",
+          "Bangladesh reports on acid attacks and honour violence concentrate on district enforcement and support services, since the legal framework itself is rarely in dispute.",
       },
     ],
     "journalists-human-rights-defenders": [
       {
         type: "highlight",
-        title: "Shrinking civic space (Bangladesh and India)",
+        title: "Legal tools used against reporters: Bangladesh and India",
         content:
-          "Journalists and human rights defenders face targeted persecution under sedition, digital security, and anti-terror laws in Bangladesh and India. Expert witnesses assess the appellant's visibility, prior targeting, and whether state protection is available where security forces are complicit.",
+          "Reports explain how sedition, digital security and anti-terror laws have been applied to journalists and activists, and compare those cases with the appellant's own work.",
       },
     ],
   };
