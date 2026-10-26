@@ -13,161 +13,161 @@ export type CaseType = {
 export const caseTypes: CaseType[] = [
   {
     slug: "ftt-south-asia-appeal",
-    title: "FTT South Asia Appeal",
-    metaTitle: "FTT South Asia Appeal Expert Witness | First-tier Tribunal Reports",
+    title: "First-tier Tribunal Appeals",
+    metaTitle: "Country Report for a First-tier Tribunal Appeal | South Asia Reports",
     metaDescription:
-      "South Asia expert witness reports for First-tier Tribunal asylum appeals. Bangladesh, India, Sri Lanka, Nepal, Bhutan country condition reports for FTT proceedings.",
-    h1: "FTT South Asia Appeal Expert Witness UK",
+      "Country condition reports for First-tier Tribunal asylum appeals involving Bangladesh, India, Sri Lanka, Nepal and Bhutan: scope, documents needed and timing.",
+    h1: "Country Reports for First-tier Tribunal Appeals",
     content: [
-      "First-tier Tribunal (FTT) asylum appeals from South Asian nationals require country condition reports that address the specific risk profile of the appellant against current conditions in Bangladesh, India, Sri Lanka, Nepal, or Bhutan. Expert reports must comply with Immigration Tribunal Practice Direction paragraph 10 and CPR Part 35.",
-      "South Asian FTT appeals frequently involve challenges to decision-makers CPIN positions, internal relocation arguments (particularly in India), and the application of country guidance (KK [2021] for Sri Lanka Tamil claims). Expert witnesses provide independent analysis that goes beyond generic country information.",
-      "Early instruction allows sufficient time for profile-specific research, particularly where post-August 2024 Bangladesh conditions or evolving India Hindutva dynamics require current analysis. Reports should be served in accordance with tribunal directions and hearing timetables.",
+      "A report for a First-tier Tribunal appeal is built around the refusal letter. It takes each country-related reason the decision-maker gave, such as reliance on a CPIN, an internal relocation finding or the application of KK [2021] for a Tamil appellant, and responds to it with sourced analysis. Points that are not in dispute are kept short.",
+      "The report is written to meet the tribunal's practice direction on expert evidence and CPR Part 35 principles: it states the instructions received, sets out the expert's qualifications and sources, distinguishes fact from opinion, and includes the required declaration of independence.",
+      "Timing matters. Where the case turns on fast-moving conditions, such as Bangladesh after August 2024 or current events in India, the report is dated as close to the hearing as the directions allow, so that the tribunal is not working from out-of-date material.",
     ],
     faqs: [
       {
-        question: "When should I instruct a South Asia expert for an FTT appeal?",
+        question: "What documents are needed to start an FTT appeal report?",
         answer:
-          "Instruct as early as possible after grounds of appeal are filed. Allow 2 to 4 weeks for a standard country condition report. Urgent reports (within 72 hours) may be available subject to expert availability. Provide the AIR, RFRL, witness statement, and relevant CPINs with the instruction.",
+          "The asylum interview record, refusal letter, the appellant's witness statement and any CPINs relied on. A standard report usually takes 2 to 4 weeks from full instructions; urgent reports within 72 hours may be possible depending on availability.",
       },
     ],
   },
   {
     slug: "upper-tribunal-south-asia",
-    title: "Upper Tribunal South Asia",
-    metaTitle: "Upper Tribunal South Asia Expert Witness | UT Appeal Reports",
+    title: "Upper Tribunal Appeals",
+    metaTitle: "Country Report for an Upper Tribunal Appeal | South Asia Reports",
     metaDescription:
-      "South Asia expert witness reports for Upper Tribunal appeals. Country guidance analysis, CPIN challenge, and specialist evidence for UT proceedings.",
-    h1: "Upper Tribunal South Asia Expert Witness UK",
+      "Country condition reports for Upper Tribunal asylum appeals from South Asia: addressing grounds of appeal, country guidance and updated conditions.",
+    h1: "Country Reports for Upper Tribunal Appeals",
     content: [
-      "Upper Tribunal (UT) appeals from South Asian asylum claims require expert evidence that addresses the legal errors identified in the FTT decision and provides updated country conditions analysis. UT proceedings demand rigorous, well-sourced expert reports with clear methodology.",
-      "For Sri Lanka Tamil claims, UT appeals frequently engage KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. Expert witnesses must assess whether the FTT correctly applied this country guidance to the appellant's specific profile.",
-      "For Bangladesh, India, Nepal, and Bhutan claims where no current country guidance exists, UT appeals rely heavily on the quality and independence of expert evidence. Expert witnesses provide analysis that addresses both general country conditions and the individual risk profile.",
+      "At the Upper Tribunal the report is usually needed once an error of law has been found and the appeal is to be remade, or where updated evidence is admitted. Its scope follows the grounds: it addresses the country issues the First-tier decision got wrong and brings the evidence up to date.",
+      "For Tamil appellants the report applies KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245 to the appellant's profile and explains any evidence suggesting the risk categories should be read in a particular way.",
+      "For Bangladesh, India, Nepal and Bhutan, where there is no current country guidance, the tribunal relies more heavily on the expert material in front of it. Reports for these countries set out their method in full so that each conclusion can be followed back to its sources.",
     ],
     faqs: [
       {
-        question: "What additional requirements apply to UT expert reports?",
+        question: "Is a new report needed when an appeal reaches the Upper Tribunal?",
         answer:
-          "UT expert reports should address the specific grounds of appeal, cite current country information sources, and provide clear reasoning on risk assessment methodology. Where the FTT erred in applying country guidance or CPIN positions, the expert report should address the correct legal framework.",
+          "Not always. If the earlier report is recent and covers the issues in the grounds, an addendum updating conditions may be enough. A fresh report is better where the issues have shifted or conditions have changed significantly.",
       },
     ],
   },
   {
     slug: "sri-lanka-tamil-claims",
-    title: "Sri Lanka Tamil Claims",
-    metaTitle: "Sri Lanka Tamil Expert Witness | KK [2021] Country Guidance Reports",
+    title: "Sri Lankan Tamil Claims",
+    metaTitle: "Sri Lanka Tamil Country Report | KK [2021] | South Asia Reports",
     metaDescription:
-      "Sri Lanka Tamil expert witness for asylum tribunals. KK [2021] UKUT 00245 framework, LTTE associations, diaspora activism risk, Tamil persecution analysis.",
-    h1: "Sri Lanka Tamil Claims Expert Witness UK",
+      "Country condition reports for Sri Lankan Tamil asylum claims applying KK [2021] UKUT 00245: LTTE association, diaspora activity and risk on return.",
+    h1: "Country Reports for Sri Lankan Tamil Claims",
     content: [
-      "Sri Lanka Tamil asylum claims are governed by KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245, which established that Tamil asylum seekers with certain profiles face real risk on return. Expert witnesses assess the appellant's profile against this country guidance framework.",
-      "Key risk profiles include actual or imputed LTTE associations, high-profile diaspora activists, those who have given evidence against the Sri Lankan government, and individuals whose UK-based Tamil political activities have come to the attention of Sri Lankan intelligence.",
-      "Expert witnesses provide analysis of the appellant's Tamil community profile, political affiliations, diaspora activities, and the current security environment in Sri Lanka for Tamils with similar profiles.",
+      "Every Sri Lankan Tamil report is organised around KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. The report identifies which of the country guidance risk categories the appellant may fall within and gives the evidence for and against each.",
+      "The profiles most often in issue are actual or perceived LTTE links, prominent diaspora activism, people who have given evidence against the Sri Lankan state, and those whose UK activities may be known to the authorities. The report explains how the appellant's history maps onto these.",
+      "The report also updates the tribunal on the current security situation for Tamils and records any developments since KK that bear on how the guidance should be applied.",
     ],
     faqs: [
       {
-        question: "How does KK [2021] affect Sri Lanka Tamil expert evidence?",
+        question: "Can the report depart from KK [2021]?",
         answer:
-          "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245 provides the binding country guidance framework for Tamil claims. Expert witnesses must assess the appellant's profile against the risk categories identified in this case, providing analysis of LTTE associations, diaspora activism, and current conditions for Tamils on return.",
+          "Country guidance must be followed unless there is strong evidence that it no longer applies. A report can set out that evidence, but most reports work within KK and show where the appellant fits.",
       },
     ],
   },
   {
     slug: "bangladesh-political-claims",
-    title: "Bangladesh Political Claims",
-    metaTitle: "Bangladesh Political Expert Witness | Post-August 2024 BNP/AL Reports",
+    title: "Bangladeshi Political Claims",
+    metaTitle: "Bangladesh Political Claim Country Report | South Asia Reports",
     metaDescription:
-      "Bangladesh political persecution expert witness for tribunals. Post-August 2024 transition, BNP/Awami League reversal, Jamaat, Hindu minority, expert evidence.",
-    h1: "Bangladesh Political Claims Expert Witness UK",
+      "Country condition reports for Bangladeshi political asylum claims after August 2024: BNP, Jamaat and Awami League profiles, police and court protection.",
+    h1: "Country Reports for Bangladeshi Political Claims",
     content: [
-      "Bangladesh political asylum claims have been fundamentally reshaped by the August 2024 fall of Sheikh Hasina's Awami League government. Expert witnesses must assess current post-transition conditions rather than relying on pre-2024 country information.",
-      "Former BNP and Jamaat supporters who were genuinely persecuted under the Awami League may now face changed country conditions arguments. Conversely, Awami League supporters and former officials face new risks under the post-transition power structure.",
-      "Expert witnesses provide analysis of the current political landscape, the appellant's party affiliations and visibility, police and judicial complicity, and district-specific risk factors for political persecution in Bangladesh.",
+      "Bangladeshi political reports are written for the situation after August 2024, when the Awami League government fell. Many existing claims were built on evidence from before that date, so the report states clearly how the appellant's party affiliation is treated now.",
+      "For former BNP and Jamaat supporters, the report addresses whether the risk they faced has fallen away or continues locally. For Awami League supporters and former officials, it documents the new risks they face under the changed balance of power.",
+      "The report covers the appellant's role and visibility in the party, the conduct of police and courts towards people of that affiliation, and conditions in the appellant's home district.",
     ],
     faqs: [
       {
-        question: "Why is post-August 2024 expert evidence essential for Bangladesh political claims?",
+        question: "Our client claimed asylum before August 2024. Does the report need updating?",
         answer:
-          "The August 2024 political transition has reversed the persecution dynamic for many Bangladesh political claimants. Expert witnesses must assess conditions as of the current date, not under the previous Awami League government. Pre-2024 country information may no longer accurately reflect risk for either BNP or Awami League supporters.",
+          "Almost certainly. Any report written before the transition describes a different political landscape. An updated report or addendum should address conditions at the date of the hearing.",
       },
     ],
   },
   {
     slug: "india-minority-claims",
-    title: "India Minority Claims",
-    metaTitle: "India Minority Expert Witness | Muslim, Sikh, Christian & Caste Reports",
+    title: "Indian Minority Claims",
+    metaTitle: "India Minority Claim Country Report | South Asia Reports",
     metaDescription:
-      "India minority expert witness for asylum tribunals. Hindutva targeting, Muslim persecution, Sikh Khalistan, Christian minorities, caste discrimination, internal relocation.",
-    h1: "India Minority Claims Expert Witness UK",
+      "Country condition reports for Indian minority asylum claims: Muslims, Sikhs, Christians and Dalits, Hindutva organisations and internal relocation.",
+    h1: "Country Reports for Indian Minority Claims",
     content: [
-      "India minority asylum claims require expert evidence addressing Hindutva and RSS targeting of Muslims, Sikh claims linked to Khalistan associations, Christian minority persecution, caste discrimination against Dalits, and the viability of internal relocation within India.",
-      "The decision-makers frequently argues that internal relocation to major cities is available for Indian appellants. Expert witnesses challenge this where the persecutor has national reach (Hindutva networks, RSS) or where relocation would be unduly harsh given the appellant's profile and resources.",
-      "Expert witnesses assess state protection availability in the specific state and region of origin, the nationwide reach of Hindutva organisations, and the cumulative effect of anti-minority rhetoric and violence on the appellant's specific risk profile.",
+      "Indian minority reports cover Muslim appellants facing Hindutva and RSS-linked violence, Sikh appellants with perceived Khalistan links, Christians, and Dalits facing caste discrimination. The report is limited to the group and region relevant to the appellant.",
+      "Refusals in Indian cases very often rely on relocation to a large city. The report tests that argument directly: whether the people or organisations feared operate nationally, whether the appellant could be traced, and what life would realistically look like for them in the proposed location.",
+      "It also considers protection in the appellant's own state, since police responses to complaints from minorities differ considerably between regions.",
     ],
     faqs: [
       {
-        question: "How do experts challenge internal relocation arguments in India cases?",
+        question: "How does the report respond to an internal relocation finding?",
         answer:
-          "Expert witnesses assess whether the persecutor has national reach (Hindutva networks, RSS), whether the appellant's profile is identifiable nationwide, and whether relocation to a proposed city would be unduly harsh given social networks, economic circumstances, and continuing risk from national-level persecution networks.",
+          "It addresses reach (whether the threat follows the appellant), identifiability (how they would be recognised) and reasonableness (support networks, work and housing in the proposed city), with sources for each.",
       },
     ],
   },
   {
     slug: "deportation-return-south-asia",
-    title: "Deportation Return South Asia",
-    metaTitle: "Deportation Return Expert Witness | South Asia Risk Assessment",
+    title: "Deportation & Return Cases",
+    metaTitle: "Deportation & Return Country Report | South Asia Reports",
     metaDescription:
-      "Deportation and return risk expert witness for South Asian failed asylum seekers. Country-specific return risk analysis for Bangladesh, India, Sri Lanka, Nepal, Bhutan.",
-    h1: "Deportation Return South Asia Expert Witness UK",
+      "Country condition reports on risk on return for South Asian nationals facing deportation or removal: Bangladesh, India, Sri Lanka, Nepal and Bhutan.",
+    h1: "Country Reports for Deportation & Return Cases",
     content: [
-      "Deportation and return proceedings for South Asian nationals require expert evidence on the risk the individual would face on return to their country of origin. Return risk depends on the individual's profile, current country conditions, and any material changes since the original asylum decision.",
-      "Post-August 2024 Bangladesh conditions may mean profiles previously assessed as low risk now face genuine persecution. Expert witnesses provide current country condition analysis for individual return risk assessment.",
-      "Expert witnesses address certification challenges, fresh claim support, and judicial review proceedings where return to South Asia would create a real risk of persecution or serious harm for the specific appellant.",
+      "In deportation and removal cases the report concentrates on what would happen after return: how the person would be received, whether their profile would attract attention, and how conditions have moved since the original asylum decision.",
+      "Bangladesh is the clearest example of changed conditions, with some profiles carrying more risk after August 2024 than before. The report identifies whether the appellant falls into one of those groups.",
+      "Reports for these cases are often used in certification challenges, fresh claims or judicial review, so they are written to stand on their own and to show plainly what has changed.",
     ],
     faqs: [
       {
-        question: "Can expert evidence support a fresh claim after failed South Asian asylum?",
+        question: "Can a return report be used to support a fresh claim?",
         answer:
-          "Yes. Where country conditions have changed materially (such as the August 2024 Bangladesh transition) or new evidence has emerged about the appellant's risk profile, expert witnesses can provide country condition analysis supporting a fresh claim under paragraph 353 of the Immigration Rules.",
+          "Yes. If it shows a material change in conditions or a newly identified risk, it can form part of further submissions considered under paragraph 353 of the Immigration Rules.",
       },
     ],
   },
   {
     slug: "fresh-claims-south-asia",
-    title: "Fresh Claims South Asia",
-    metaTitle: "Fresh Claims Expert Witness | South Asia Country Conditions",
+    title: "Fresh Claims",
+    metaTitle: "Fresh Claim Country Report | South Asia Reports",
     metaDescription:
-      "Fresh claim expert witness for South Asian asylum seekers. Post-2024 Bangladesh conditions, evolving India Hindutva risk, updated country analysis for fresh claims.",
-    h1: "Fresh Claims South Asia Expert Witness UK",
+      "Country condition reports for fresh asylum claims from South Asia: identifying material change since the last decision, including post-2024 Bangladesh.",
+    h1: "Country Reports for Fresh Claims",
     content: [
-      "Fresh asylum claims from South Asian nationals require evidence that was not and could not reasonably have been provided at the time of the original decision. Expert country condition reports can establish that conditions have changed materially or that new risk factors have emerged.",
-      "The August 2024 Bangladesh political transition is a prime example of materially changed country conditions affecting existing claims. Expert witnesses provide updated analysis addressing the current political landscape and its impact on the appellant's specific profile.",
-      "Fresh claims may also arise from new evidence about the appellant's political affiliations, religious visibility, diaspora activities, or caste status that was not previously documented. Expert witnesses assess how this new information affects the risk assessment.",
+      "A fresh claim report has a narrow job: to show what is new. It identifies the date of the last decision, sets out what the country evidence said then, and explains what has changed since, either in conditions or in the appellant's known profile.",
+      "Changed conditions in Bangladesh after August 2024 are the most common basis. New personal factors also qualify, such as newly evidenced political roles, religious activity, UK diaspora activity or caste status that was not documented before.",
+      "Because further submissions are judged on whether they create a realistic prospect of success, the report states its conclusions plainly and links each one to evidence that post-dates the previous decision.",
     ],
     faqs: [
       {
-        question: "What makes a fresh claim expert report different from an appeal report?",
+        question: "How is a fresh claim report different from an appeal report?",
         answer:
-          "Fresh claim reports must address what has changed since the original decision: new country conditions, newly discovered risk factors, or evidence that could not reasonably have been provided earlier. The expert must clearly identify the material change and its impact on the appellant's risk profile.",
+          "It is comparative. Rather than assessing risk from scratch, it focuses on the difference between the position at the last decision and the position now, which is what the decision-maker must consider.",
       },
     ],
   },
   {
     slug: "certification-challenge",
-    title: "Certification Challenge",
-    metaTitle: "Certification Challenge Expert Witness | South Asia Asylum Claims",
+    title: "Certification Challenges",
+    metaTitle: "Country Report to Challenge Certification | South Asia Reports",
     metaDescription:
-      "Certification challenge expert witness for South Asian asylum claims. Challenge clearly unfounded certification with independent country condition analysis.",
-    h1: "Certification Challenge Expert Witness | South Asia",
+      "Urgent country condition reports to challenge clearly unfounded certification under section 94 for asylum claims from Bangladesh, India and Nepal.",
+    h1: "Country Reports for Certification Challenges",
     content: [
-      "The decision-makers may certify South Asian asylum claims as clearly unfounded under section 94 of the Nationality, Immigration and Asylum Act 2002, removing the right of in-country appeal. Certification is inappropriate where a claim has a realistic prospect of success.",
-      "Expert witnesses help solicitors challenge certification by providing independent country condition analysis demonstrating that the claim has merit. This is particularly important for Bangladesh post-2024 claims, India minority claims, and Nepal claims where no country guidance exists.",
-      "Expert reports for certification challenges should address the specific reasons the decision-makers considers the claim unfounded and provide evidence-based analysis of why the appellant's profile creates a realistic prospect of success.",
+      "When a claim is certified as clearly unfounded under section 94 of the Nationality, Immigration and Asylum Act 2002, the in-country right of appeal is lost. The certificate can be challenged if the claim has a realistic prospect of success, and a country report is often the strongest evidence for that.",
+      "The report takes the reasons given for certification and shows, with sources, where the country evidence is genuinely disputed. This is particularly useful for Bangladesh after 2024, Indian minority claims and Nepali claims, where there is no country guidance to rely on.",
+      "These reports are usually urgent and kept focused, addressing only what is needed to show the claim is not bound to fail.",
     ],
     faqs: [
       {
-        question: "How quickly can an expert report be prepared for a certification challenge?",
+        question: "How fast can a certification report be produced?",
         answer:
-          "Urgent certification challenge reports may be available within 72 hours subject to expert availability. Provide the certification notice, RFRL, witness statement, and any relevant CPINs with the instruction. Early instruction is critical given the shortened appeal window.",
+          "Urgent reports within 72 hours may be possible depending on availability. Send the certification decision, refusal letter, witness statement and any CPINs relied on at the outset, because the time limits are short.",
       },
     ],
   },
