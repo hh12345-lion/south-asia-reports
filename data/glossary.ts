@@ -6,213 +6,159 @@ export type GlossaryTerm = {
 
 export const glossaryTerms: GlossaryTerm[] = [
   {
+    term: "Addendum report",
+    slug: "addendum-report",
+    definition:
+      "A short supplementary report that updates an earlier country report, usually because conditions have changed or new questions have been raised. It refers back to the original rather than repeating it.",
+  },
+  {
     term: "Awami League",
     slug: "awami-league",
     definition:
-      "The Bangladesh Awami League is a major political party in Bangladesh, led by Sheikh Hasina until her departure in August 2024. Under Awami League governments, BNP and Jamaat supporters faced persecution. Post-August 2024, Awami League supporters may face new risks under the transitional government.",
-  },
-  {
-    term: "BNP (Bangladesh Nationalist Party)",
-    slug: "bnp",
-    definition:
-      "The Bangladesh Nationalist Party (BNP) is the main opposition party in Bangladesh, historically allied with Jamaat-e-Islami. BNP supporters faced persecution under Awami League governments. The August 2024 political transition has changed the risk dynamic for BNP supporters in asylum claims.",
+      "Bangladeshi political party that governed under Sheikh Hasina until August 2024. Reports now assess the risk to its supporters and former officials under the changed balance of power, reversing the position that applied before the transition.",
   },
   {
     term: "BJP (Bharatiya Janata Party)",
     slug: "bjp",
     definition:
-      "The Bharatiya Janata Party (BJP) is India's ruling party, associated with Hindutva ideology and the RSS. BJP-governed states present higher risk profiles for Muslim, Christian, and other minority asylum claimants from India.",
+      "India's governing party, linked to the RSS and Hindutva politics. India reports note whether the appellant's home state is BJP-governed, as this often bears on how minorities are treated by local authorities.",
   },
   {
-    term: "CAA (Citizenship Amendment Act India)",
+    term: "BNP (Bangladesh Nationalist Party)",
+    slug: "bnp",
+    definition:
+      "Bangladesh's principal opposition party under the Awami League governments and a long-standing ally of Jamaat-e-Islami. Reports for BNP supporters address how their risk has changed since August 2024.",
+  },
+  {
+    term: "CAA (Citizenship Amendment Act 2019)",
     slug: "caa",
     definition:
-      "The Citizenship Amendment Act 2019 provides a fast-track path to Indian citizenship for non-Muslim migrants from Afghanistan, Bangladesh, and Pakistan. Combined with the proposed National Register of Citizens (NRC), it creates particular risk for Muslim residents of Assam and other border states.",
+      "Indian law giving faster citizenship to non-Muslim migrants from Afghanistan, Bangladesh and Pakistan. Reports consider it together with the NRC when assessing the position of Muslims in Assam and other border areas.",
   },
   {
-    term: "Caste (South Asian context)",
+    term: "Caste",
     slug: "caste",
     definition:
-      "The caste system is a hierarchical social stratification system in South Asia, particularly significant in India and Nepal. Dalits (formerly 'untouchables') face systematic discrimination and violence. Caste may constitute a particular social group (PSG) for asylum purposes where persecution reaches the required threshold.",
+      "The hereditary social hierarchy found in India and Nepal. Caste reports document how people of the appellant's caste are treated in their region and whether the harm is serious enough to amount to persecution.",
   },
   {
-    term: "CPIN",
-    slug: "cpin",
-    definition:
-      "Country Policy and Information Note. decision-makers documents providing country conditions information for asylum decision-making. South Asia CPINs cover Bangladesh, India, Sri Lanka, Nepal, and Bhutan, but may not reflect rapidly changing conditions or profile-specific risk factors.",
-  },
-  {
-    term: "Country Guidance Case",
+    term: "Country guidance case",
     slug: "country-guidance-case",
     definition:
-      "A country guidance case is an Upper Tribunal decision designated as providing authoritative guidance on country conditions for a particular nationality or profile. For Sri Lanka Tamil claims, KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245 is the leading country guidance case.",
+      "An Upper Tribunal decision designated as authoritative on conditions for a particular country or profile, which tribunals follow unless strong evidence shows it is out of date. Among the countries covered here, only Sri Lanka has current country guidance.",
+  },
+  {
+    term: "CPIN (Country Policy and Information Note)",
+    slug: "cpin",
+    definition:
+      "Home Office guidance used by decision-makers on asylum claims. Reports often respond to a CPIN directly, pointing out where its sources are dated or where it does not address the appellant's particular profile.",
   },
   {
     term: "Dalit",
     slug: "dalit",
     definition:
-      "Dalits are members of the lowest castes in the South Asian caste hierarchy, formerly known as 'untouchables'. Dalits in India and Nepal face systematic social exclusion, economic deprivation, and violence. Dalit status may constitute a particular social group for asylum purposes.",
-  },
-  {
-    term: "Dzongkha",
-    slug: "dzongkha",
-    definition:
-      "Dzongkha is the official language of Bhutan. Expert witnesses with Dzongkha language capability can verify Bhutanese documents, media sources, and official communications relevant to Lhotshampa and other Bhutan asylum claims.",
-  },
-  {
-    term: "FTT (Immigration & Asylum Chamber)",
-    slug: "ftt",
-    definition:
-      "The First-tier Tribunal (Immigration and Asylum Chamber) is the primary venue for asylum appeals. South Asian asylum appeals are heard in the FTT before potential onward appeal to the Upper Tribunal.",
+      "Members of the communities at the bottom of the caste hierarchy in India and Nepal, formerly referred to as 'untouchables'. Reports address the exclusion and violence they face and whether they form a particular social group.",
   },
   {
     term: "Hindutva",
     slug: "hindutva",
     definition:
-      "Hindutva is a political ideology advocating Hindu cultural nationalism in India, promoted by the BJP and RSS. Hindutva targeting of Muslims, Christians, and other minorities is a primary basis for India asylum claims in tribunals.",
+      "Hindu nationalist political ideology associated with the RSS and BJP. It is central to many India reports on Muslim and Christian appellants, particularly when internal relocation is argued.",
   },
   {
-    term: "HJ (Iran) [2010]",
+    term: "HJ (Iran) [2010] UKSC 31",
     slug: "hj-iran-2010",
     definition:
-      "HJ and HT v Secretary of State for the Home Department [2010] UKSC 31. Leading Supreme Court case on LGBT asylum claims, establishing that concealment of sexual orientation to avoid persecution is not a viable solution. Applied to LGBTQ+ South Asian asylum claims including post-decriminalisation India cases.",
+      "Supreme Court judgment holding that a gay person cannot be expected to conceal their sexuality to avoid persecution. LGBTQ+ reports are written to address the questions this test raises about life on return.",
   },
   {
-    term: "Jamaat-e-Islami Bangladesh",
+    term: "Jamaat-e-Islami (Bangladesh)",
     slug: "jamaat-e-islami-bangladesh",
     definition:
-      "Jamaat-e-Islami is an Islamist political party in Bangladesh, historically allied with the BNP. Jamaat supporters faced persecution under Awami League governments. Post-August 2024 conditions may have changed the risk profile for Jamaat-affiliated claimants.",
-  },
-  {
-    term: "Janajati (Nepal)",
-    slug: "janajati",
-    definition:
-      "Janajati refers to indigenous ethnic groups in Nepal, including various hill and mountain communities. Janajati groups face political marginalisation and discrimination, generating asylum claims alongside Madhesi and Tharu ethnic minority claims.",
-  },
-  {
-    term: "KK and Others [2021]",
-    slug: "kk-and-others-2021",
-    definition:
-      "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. The leading country guidance case on Sri Lanka Tamil asylum claims, establishing risk profiles including actual or imputed LTTE associations, diaspora activists, and those who have given evidence against the government.",
+      "Islamist party in Bangladesh, historically aligned with the BNP and targeted under Awami League rule. Reports for Jamaat-linked appellants assess what has changed for them since August 2024.",
   },
   {
     term: "Khalistan",
     slug: "khalistan",
     definition:
-      "Khalistan is a separatist movement advocating an independent Sikh state in Punjab, India. Sikh asylum claimants with actual or imputed Khalistan associations face risk from Indian security forces and may generate diaspora activity risk on return.",
+      "The movement for a separate Sikh state in Punjab. Reports on Sikh appellants assess the risk from actual or perceived Khalistan links, including activity in the UK.",
   },
   {
-    term: "Legal Aid",
-    slug: "legal-aid",
+    term: "KK and Others [2021]",
+    slug: "kk-and-others-2021",
     definition:
-      "Legal Aid is publicly funded legal assistance for eligible asylum appellants, administered by the Legal Aid Agency (LAA). Expert witness reports in Legal Aid cases require prior authority from the LAA before instruction.",
+      "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245, the country guidance for Tamil appellants. Sri Lanka reports are structured around its risk categories, including LTTE links, prominent diaspora activism and giving evidence against the state.",
+  },
+  {
+    term: "Letter of instruction",
+    slug: "letter-of-instruction",
+    definition:
+      "The document from the instructing solicitor that sets out the questions the report must answer and lists the papers provided. A clear letter keeps the report focused on the issues in dispute.",
   },
   {
     term: "Lhotshampa",
     slug: "lhotshampa",
     definition:
-      "The Lhotshampa are ethnic Nepali-speaking people who were expelled from Bhutan in the 1990s. Approximately 100,000 fled to Nepal following citizenship stripping. Lhotshampa claims form the primary basis for Bhutan-related asylum claims in tribunals.",
+      "Nepali-speaking people of southern Bhutan, around 100,000 of whom left for Nepal in the 1990s after losing citizenship. Most Bhutan reports concern this community.",
   },
   {
     term: "LTTE (Liberation Tigers of Tamil Eelam)",
     slug: "ltte",
     definition:
-      "The Liberation Tigers of Tamil Eelam (LTTE) was a Tamil separatist militant organisation in Sri Lanka, defeated in 2009. Post-civil war, actual or imputed LTTE associations remain a key risk factor for Sri Lanka Tamil asylum claims under KK [2021] country guidance.",
+      "Tamil separatist armed group defeated in 2009. Actual or perceived links to the LTTE remain one of the main risk factors addressed in Sri Lanka reports.",
   },
   {
-    term: "Madhesi (Nepal)",
-    slug: "madhesi",
-    definition:
-      "Madhesi people are ethnic groups inhabiting the Terai plains of southern Nepal, sharing cultural ties with India. Madhesi communities face political marginalisation and discrimination in Nepal, generating ethnic minority asylum claims.",
-  },
-  {
-    term: "Maoist (Nepal CPN-M)",
+    term: "Maoists (Nepal)",
     slug: "maoist-nepal",
     definition:
-      "The Communist Party of Nepal (Maoist) led an armed insurgency from 1996 to 2006. Nepal asylum claims arise from both those persecuted by Maoists during the insurgency and former Maoist combatants facing retaliation from opponents.",
+      "The Communist Party of Nepal (Maoist), which led the 1996–2006 insurgency. Nepal reports deal with claims from people targeted by Maoists and from former combatants facing reprisals.",
   },
   {
-    term: "NRC (National Register of Citizens India)",
+    term: "Navtej Singh Johar v Union of India (2018)",
+    slug: "navtej-singh-johar",
+    definition:
+      "Indian Supreme Court ruling that decriminalised same-sex conduct under section 377. India reports explain that social and family risks continue despite the change in the law.",
+  },
+  {
+    term: "NRC (National Register of Citizens)",
     slug: "nrc",
     definition:
-      "The National Register of Citizens (NRC) is a proposed register of Indian citizens, piloted in Assam. Combined with the Citizenship Amendment Act (CAA), it creates risk for Muslim residents who may be excluded from citizenship and face detention or deportation.",
+      "Indian citizenship register first compiled in Assam. Reports consider the risk of exclusion, detention or removal it creates for Muslim residents, alongside the CAA.",
   },
   {
-    term: "PSG (Particular Social Group)",
-    slug: "psg",
+    term: "Prior authority (Legal Aid)",
+    slug: "prior-authority",
     definition:
-      "A Particular Social Group is one of the five grounds for refugee status under the Refugee Convention 1951. In South Asian asylum claims, PSGs may include Dalits, LGBTQ+ individuals, religious minorities, and women facing gender-based persecution.",
-  },
-  {
-    term: "Refugee Convention 1951",
-    slug: "refugee-convention-1951",
-    definition:
-      "The Convention Relating to the Status of Refugees 1951, as amended by the 1967 Protocol. The foundation of asylum law, defining a refugee as someone with a well-founded fear of persecution for reasons of race, religion, nationality, membership of a particular social group, or political opinion.",
+      "Approval from the Legal Aid Agency needed before a report is commissioned in a legally aided case. The application normally includes the expert's CV, the proposed scope and a fee estimate.",
   },
   {
     term: "RSS (Rashtriya Swayamsevak Sangh)",
     slug: "rss",
     definition:
-      "The Rashtriya Swayamsevak Sangh (RSS) is a Hindu nationalist volunteer organisation, the ideological parent of the BJP. RSS networks have national reach in India, relevant to internal relocation arguments and Muslim minority persecution claims.",
+      "Hindu nationalist organisation regarded as the ideological parent of the BJP. Its presence across India is a key point in reports challenging internal relocation.",
   },
   {
-    term: "s377 IPC/PPC",
+    term: "Section 377",
     slug: "s377",
     definition:
-      "Section 377 of the Indian Penal Code (IPC) and Pakistan/Bangladesh Penal Code (PPC) criminalises 'unnatural offences'. India decriminalised s377 in 2018 (Navtej Singh Johar). Bangladesh retains criminalisation. Sri Lanka retains similar provisions. Expert witnesses assess both legal and social persecution.",
+      "Colonial-era penal provision criminalising same-sex conduct. It remains in force in Bangladesh, similar provisions apply in Sri Lanka, and India's equivalent was struck down in 2018.",
   },
   {
-    term: "Sinhalese",
-    slug: "sinhalese",
-    definition:
-      "The Sinhalese are the majority ethnic group in Sri Lanka, predominantly Buddhist. Sinhalese Buddhist nationalism creates the political context for Tamil persecution and affects risk assessment for political opposition and human rights defender claims in Sri Lanka.",
-  },
-  {
-    term: "State Protection",
+    term: "State protection",
     slug: "state-protection",
     definition:
-      "State protection analysis assesses whether the authorities in the country of origin are willing and able to protect the appellant from persecution. A central issue in South Asian asylum claims, where formal legal protections often exist but practical enforcement is inconsistent for minorities.",
+      "Whether the authorities are willing and able to protect the appellant. In South Asian reports this usually means comparing the laws on paper with how police and courts actually respond.",
   },
   {
     term: "Tamil Eelam",
     slug: "tamil-eelam",
     definition:
-      "Tamil Eelam is the proposed independent Tamil homeland in northern and eastern Sri Lanka, advocated by the LTTE and Tamil diaspora organisations. Tamil Eelam advocacy can create or enhance risk profiles for Sri Lanka Tamil asylum claimants on return.",
+      "The independent Tamil state in northern and eastern Sri Lanka sought by the LTTE and some diaspora groups. Advocacy for it is considered when assessing risk from UK activity.",
   },
   {
-    term: "UNHCR Guidelines",
-    slug: "unhcr-guidelines",
-    definition:
-      "UNHCR issues guidelines on international protection for specific profiles and situations. UNHCR guidelines on gender-based persecution, LGBT persons, and religious minorities are relevant to South Asian asylum claims in tribunals.",
-  },
-  {
-    term: "Upper Tribunal (IAC)",
-    slug: "upper-tribunal",
-    definition:
-      "The Upper Tribunal (Immigration and Asylum Chamber) hears appeals from FTT decisions and issues country guidance cases binding on lower tribunals. KK and Others [2021] is the leading Upper Tribunal country guidance case for Sri Lanka Tamil claims.",
-  },
-  {
-    term: "Valmiki (India caste group)",
-    slug: "valmiki",
-    definition:
-      "Valmiki is a Dalit caste group in India, traditionally associated with sanitation work. Valmiki communities face severe social stigma, economic exclusion, and violence. Caste-based persecution claims from Valmiki appellants require community-specific expert analysis.",
-  },
-  {
-    term: "Well-Founded Fear",
+    term: "Well-founded fear",
     slug: "well-founded-fear",
     definition:
-      "A well-founded fear of persecution is the central test for refugee status under the Refugee Convention 1951. The fear must be subjectively genuine and objectively well-founded, assessed against current country conditions with the benefit of expert evidence.",
-  },
-  {
-    term: "EIN (Expert Inquiry Network)",
-    slug: "ein",
-    definition:
-      "The Expert Inquiry Network (EIN) directory lists country experts covering Bangladesh, Bhutan, India, Myanmar, Nepal, Pakistan, Sri Lanka, and Tibet. South Asia Reports connects counsel with qualified experts from this network.",
-  },
-  {
-    term: "Navtej Singh Johar [2018]",
-    slug: "navtej-singh-johar",
-    definition:
-      "Navtej Singh Johar v Union of India (2018) is the Indian Supreme Court decision decriminalising same-sex conduct under section 377 IPC. Decriminalisation does not eliminate social persecution, and LGBTQ+ India asylum claims remain viable under the HJ (Iran) standard.",
+      "The Refugee Convention test: the fear must be genuinely held and objectively justified. Country reports supply the objective evidence the tribunal uses to decide the second part.",
   },
 ];
