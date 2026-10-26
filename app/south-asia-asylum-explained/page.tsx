@@ -10,9 +10,9 @@ import { articleSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/ui/JsonLd";
 
 export const metadata = createMetadata({
-  title: "South Asian Asylum Claims | Expert Evidence Guide",
+  title: "Country Reports for South Asian Asylum Appeals | A Guide",
   description:
-    "Complete guide to South Asian asylum claims in tribunals: Bangladesh political persecution, India Hindutva/minorities, Sri Lanka Tamil claims, Nepal caste, and expert evidence methodology.",
+    "How country condition reports work in South Asian asylum appeals: what changed in Bangladesh in 2024, India relocation issues, KK [2021] for Sri Lanka, and CPIN gaps.",
   path: "/south-asia-asylum-explained",
 });
 
@@ -27,36 +27,35 @@ export default function SouthAsiaAsylumExplainedPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <JsonLd
         data={articleSchema({
-          title: "South Asian Asylum Claims: The Complete Guide for Solicitors",
+          title: "Commissioning Country Reports in South Asian Asylum Appeals",
           description:
-            "Complete guide to South Asian asylum claims in tribunals covering Bangladesh, India, Sri Lanka, Nepal, and Bhutan.",
+            "A practical guide for counsel on commissioning country condition reports for Bangladesh, India, Sri Lanka, Nepal and Bhutan.",
           path: "/south-asia-asylum-explained",
         })}
       />
       <PageShell
-        title="South Asian Asylum Claims: The Complete Guide for Solicitors"
-        subtitle="Expert evidence, country guidance, CPINs, and profile-specific risk analysis for South Asian asylum appeals."
+        title="Commissioning Country Reports in South Asian Asylum Appeals"
+        subtitle="What each country report needs to address, where official material falls short, and how to get the most from an instruction."
         breadcrumbs={crumbs}
       >
         <p className="text-body leading-relaxed">
-          South Asia is the second most significant asylum claim region after Sub-Saharan Africa. In the year
-          ending September 2025, Bangladesh, India, and Sri Lanka were among the nationalities with the highest number
-          of asylum claims from visa holders. This guide explains the legal landscape, key profiles, country guidance
-          framework, and the critical role of expert evidence for immigration counsel instructing reports for
-          First-tier Tribunal and Upper Tribunal proceedings only.
+          After Sub-Saharan Africa, South Asia is the region producing the most asylum appeals, and in the year to
+          September 2025 Bangladesh, India and Sri Lanka were among the leading nationalities for claims made by visa
+          holders. This page explains, country by country, what a country condition report for these appeals has to
+          deal with and how to frame the instruction so the report answers the questions the tribunal will ask.
         </p>
 
         <UkServiceScope className="mt-8" />
 
-        <h2 className="mt-10 font-display text-xl text-ink">South Asia: Key Asylum Statistics</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">At a Glance: Five Countries</h2>
         <div className="mt-4 table-scroll overflow-x-auto">
           <table className="w-full min-w-[600px] border-collapse text-sm">
             <thead>
               <tr className="border-b border-rule bg-oat">
                 <th className="px-4 py-3 text-left text-ink">Country</th>
-                <th className="px-4 py-3 text-left text-ink">UK Asylum Claim Volume</th>
-                <th className="px-4 py-3 text-left text-ink">Key Profiles</th>
-                <th className="px-4 py-3 text-left text-ink">Country Guidance?</th>
+                <th className="px-4 py-3 text-left text-ink">Appeal Volume</th>
+                <th className="px-4 py-3 text-left text-ink">Profiles Reports Most Often Cover</th>
+                <th className="px-4 py-3 text-left text-ink">Country Guidance</th>
               </tr>
             </thead>
             <tbody>
@@ -76,68 +75,62 @@ export default function SouthAsiaAsylumExplainedPage() {
           </table>
         </div>
 
-        <h2 className="mt-10 font-display text-xl text-ink">Bangladesh: The Post-2024 Landscape</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">Bangladesh: Reports Must Post-Date August 2024</h2>
         <p className="mt-4 text-body leading-relaxed">
-          The most important recent development in South Asian asylum case law is the August 2024 fall of Sheikh
-          Hasina&apos;s Awami League government. Following mass student protests, Hasina fled to India, fundamentally
-          altering the asylum landscape. Former BNP and Jamaat supporters who were genuinely persecuted under the
-          Awami League may now face changed country conditions arguments. Conversely, Awami League supporters and
-          former officials face new risks under the transitional government.
+          When student-led protests forced Sheikh Hasina from office and she left for India, the political position
+          of the main parties was turned around. A report on a Bangladeshi political claim now has to say where the
+          appellant&apos;s affiliation stands under the new arrangements: Awami League supporters and former officials
+          may face risks they did not face before, while BNP and Jamaat supporters may meet the argument that their
+          circumstances have improved.
         </p>
         <p className="mt-4 text-body leading-relaxed">
-          Expert witnesses must assess post-August 2024 conditions in all Bangladesh claims. Pre-2024 country
-          information may no longer accurately reflect risk for either BNP or Awami League supporters. Hindu minority
-          persecution and LGBTQ+ criminalisation under section 377 PPC remain significant independent claim bases.
-        </p>
-
-        <h2 className="mt-10 font-display text-xl text-ink">India: The Hindutva Question</h2>
-        <p className="mt-4 text-body leading-relaxed">
-          India generates growing asylum claim volumes driven by Hindutva and RSS targeting of Muslims, Sikh claims,
-          Christian minority persecution, caste discrimination, and political dissident persecution. The decision-makers
-          frequently deploys internal relocation arguments given India&apos;s size, but expert evidence can challenge
-          this where Hindutva networks have national reach.
-        </p>
-        <p className="mt-4 text-body leading-relaxed">
-          CAA and NRC concerns affect Muslim appellants from Assam and border states. Expert witnesses assess
-          state-level variation in risk, the nationwide reach of Hindutva organisations, and the gap between formal
-          legal protections and practical enforcement for minority communities.
+          Reports written before the transition should be updated before a hearing. Claims based on Hindu minority
+          status, or on LGBTQ+ identity under section 377 of the Penal Code, need their own analysis and do not depend
+          on the political change.
         </p>
 
-        <h2 className="mt-10 font-display text-xl text-ink">Sri Lanka: The KK Country Guidance Framework</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">India: Answering the Relocation Argument</h2>
         <p className="mt-4 text-body leading-relaxed">
-          KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245 remains the leading country guidance for Tamil
-          asylum claims. It established that Tamil asylum seekers with actual or imputed LTTE associations, high-profile
-          diaspora activists, and those who have given evidence against the government face real risk on return.
-          Expert witnesses assess individual profiles against this binding framework.
+          Indian appeals cover Muslims facing Hindutva and RSS-linked hostility, Sikhs, Christians, Dalits and political
+          dissidents. Because India is so large, refusal letters almost always propose relocation to another city, so a
+          useful India report spends real time on that issue: who the persecutors are, whether they operate nationally,
+          and how the appellant would manage in the place suggested.
+        </p>
+        <p className="mt-4 text-body leading-relaxed">
+          Muslim appellants from Assam and border areas may also need the CAA and NRC addressed. The report should deal
+          with the appellant&apos;s own state, since protection on the ground varies widely between states.
         </p>
 
-        <h2 className="mt-10 font-display text-xl text-ink">Expert Evidence Without Country Guidance</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">Sri Lanka: Working Within KK [2021]</h2>
         <p className="mt-4 text-body leading-relaxed">
-          For Bangladesh, India, Nepal, and Bhutan, where no current country guidance exists, independent expert
-          evidence is especially important. Expert reports provide detailed, country-specific analysis that goes beyond
-          what official CPINs or standard country information covers, addressing the individual risk profile from
-          the start. Tribunals must assess these claims on the merits of expert analysis rather than country guidance
-          presumptions.
+          Tamil appeals are governed by KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. A Sri Lanka report should
+          take the risk categories in that decision, including LTTE links, prominent diaspora activism and giving
+          evidence against the state, and show with evidence which of them apply to the appellant.
         </p>
 
-        <h2 className="mt-10 font-display text-xl text-ink">CPIN Coverage for South Asia</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">Bangladesh, India, Nepal and Bhutan: No Guidance to Fall Back On</h2>
         <p className="mt-4 text-body leading-relaxed">
-          official CPINs cover political parties and religious minorities for Bangladesh, Sikh separatism and
-          Muslims for India, Tamils and LTTE for Sri Lanka, and general background for Nepal. Bhutan has limited
-          coverage. CPINs may lag behind rapidly changing conditions, particularly for post-August 2024 Bangladesh.
-          See our{" "}
+          There is no current country guidance for these four countries. The tribunal has no settled starting point,
+          so the report&apos;s method matters: it should name its sources, explain how reliable each is, and connect
+          every conclusion to the appellant&apos;s circumstances rather than to the country in general.
+        </p>
+
+        <h2 className="mt-10 font-display text-xl text-ink">Where CPINs Fall Short</h2>
+        <p className="mt-4 text-body leading-relaxed">
+          Home Office CPINs exist for Bangladeshi political parties and religious minorities, Sikh separatism and
+          Muslims in India, and Tamils in Sri Lanka, with more general coverage of Nepal and very little on Bhutan.
+          They are updated slowly, which is a particular problem for Bangladesh after 2024. Our{" "}
           <Link href="/cpin-country-guidance" className="font-semibold text-ochre hover:underline">
             CPIN & Country Guidance page
           </Link>{" "}
-          for the full South Asia CPIN table.
+          lists them by country and notes what each one leaves out.
         </p>
 
-        <h2 className="mt-10 font-display text-xl text-ink">The Role of Expert Evidence</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">Getting the Most from an Instruction</h2>
         <p className="mt-4 text-body leading-relaxed">
-          Expert witnesses provide independent, objective country condition reports compliant with CPR Part 35 and
-          Immigration Tribunal Practice Direction paragraph 10. Reports address profile-specific risk, challenge generic
-          CPIN positions, assess internal relocation viability, and provide current analysis of evolving conditions.
-          Early instruction allows sufficient time for granular country analysis consistent with tribunal timetables.
+          Reports are prepared under CPR Part 35 principles and the tribunal&apos;s practice direction on expert
+          evidence. The most effective instructions identify the disputed country issues from the refusal letter, ask
+          specific questions about them, and leave enough time before the hearing for an up-to-date analysis.
         </p>
 
         <RelatedLinks links={getPillarRelatedLinks()} />

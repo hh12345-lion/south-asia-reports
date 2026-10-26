@@ -15,26 +15,26 @@ import { getCpinRelatedLinks } from "@/data/related-links";
 
 const cpinFaqs = [
   {
-    question: "What is a CPIN in asylum law?",
+    question: "How much weight does a tribunal give a CPIN?",
     answer:
-      "A Country Policy Information Note (CPIN) is a decision-makers document setting out the UK government's position on country conditions for asylum decision-making. CPINs are not binding on immigration tribunals but carry significant weight. South Asia has CPINs covering Bangladesh, India, Sri Lanka, Nepal, and Bhutan.",
+      "CPINs set out the Home Office's view of country conditions. They are not binding on the tribunal, but they are often the first source a judge reads, so a country report usually needs to engage with the relevant CPIN directly.",
   },
   {
-    question: "Which South Asian countries have country guidance?",
+    question: "Which of the five countries has country guidance?",
     answer:
-      "Only Sri Lanka has current UK Upper Tribunal country guidance: KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. Bangladesh, India, Nepal, and Bhutan have no current binding country guidance, making expert evidence especially important for these countries.",
+      "Only Sri Lanka, through KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245. Appeals for Bangladesh, India, Nepal and Bhutan are decided without a guidance case, so the country report is often the main evidence on conditions.",
   },
   {
-    question: "Can expert evidence challenge decision-makers CPIN findings on South Asia?",
+    question: "How does a report respond to a CPIN?",
     answer:
-      "Yes. Expert witnesses provide independent analysis beyond CPIN reproduction. Where the CPIN does not reflect the appellant's profile or current conditions (such as post-August 2024 Bangladesh), the expert may challenge findings with field research, UN reports, and profile-specific evidence.",
+      "It identifies the CPIN passages the refusal relies on, checks their dates and sources, and sets out more recent or more specific evidence where the CPIN is out of date or does not address the appellant's profile, as is common for Bangladesh after August 2024.",
   },
 ];
 
 export const metadata = createMetadata({
-  title: "South Asia CPIN & Country Guidance 2025",
+  title: "South Asia CPINs & Country Guidance for Report Instructions",
   description:
-    "Current official CPINs and country guidance on South Asia for asylum practitioners: Bangladesh, India, Sri Lanka KK [2021], Nepal, Bhutan, and expert evidence gaps.",
+    "Which Home Office CPINs and country guidance cases apply to Bangladesh, India, Sri Lanka, Nepal and Bhutan, and where country reports fill the gaps.",
   path: "/cpin-country-guidance",
 });
 
@@ -46,30 +46,30 @@ export default function CpinCountryGuidancePage() {
       <PageJsonLd breadcrumbs={crumbs} faqs={cpinFaqs} />
       <JsonLd
         data={articleSchema({
-          title: "South Asia CPIN & Country Guidance 2025: A Guide for UK Asylum Solicitors",
+          title: "South Asia CPINs and Country Guidance: What Your Country Report Must Address",
           description:
-            "Current official CPINs and country guidance on South Asia for asylum practitioners.",
+            "The Home Office CPINs and country guidance relevant to South Asian asylum appeals, and where country reports fill the gaps.",
           path: "/cpin-country-guidance",
         })}
       />
       <PageShell
-        title="South Asia CPIN & Country Guidance 2025: A Guide for UK Asylum Solicitors"
-        subtitle="Current official CPINs, country guidance cases, and the expert witness role beyond generic country policy."
+        title="South Asia CPINs and Country Guidance: What Your Country Report Must Address"
+        subtitle="The official material a refusal letter is likely to rely on, and the points a country report should answer."
         breadcrumbs={crumbs}
       >
         <p className="text-body leading-relaxed">
-          South Asia is the second most significant asylum claim region after Sub-Saharan Africa. Multiple
-          CPINs cover Bangladesh, India, Sri Lanka, Nepal, and Bhutan, but only Sri Lanka has binding UK Upper Tribunal
-          country guidance. Expert evidence is essential to fill gaps in CPIN coverage and address rapidly changing
-          conditions, particularly post-August 2024 Bangladesh.
+          Refusal letters in South Asian cases lean heavily on Home Office CPINs. There are CPINs touching all five
+          countries covered here, but only Sri Lanka also has a country guidance case. Knowing what the official
+          material says, and what it leaves out, is the starting point for a focused report instruction, especially
+          for Bangladesh, where conditions have moved faster than the CPINs since August 2024.
         </p>
 
-        <h2 className="mt-10 font-display text-xl text-ink">Current South Asia CPINs</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">CPIN Topics by Country</h2>
         <div className="mt-4">
           <ResponsiveTableWrap>
             <table className="w-full min-w-[500px] border-collapse text-sm">
               <caption className="mb-3 text-left text-base text-ink">
-                South Asia CPIN quick reference for asylum practitioners (2025)
+                CPIN topics a South Asia report may need to engage with
               </caption>
               <thead>
                 <tr className="border-b border-rule bg-oat">
@@ -90,7 +90,7 @@ export default function CpinCountryGuidancePage() {
         </div>
         <p className="mt-4 text-sm text-body italic">{cpinNote}</p>
 
-        <h2 className="mt-10 font-display text-xl text-ink">Country Guidance Cases</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">Country Guidance in Force</h2>
         <ul className="mt-4 space-y-4">
           {countryGuidanceCases.map((cg) => (
             <li key={cg.citation} className="rounded-[12px] border border-rule bg-oat p-4">
@@ -100,28 +100,27 @@ export default function CpinCountryGuidancePage() {
           ))}
         </ul>
         <p className="mt-4 text-body">
-          For a detailed analysis of South Asian asylum claims, see our{" "}
+          For a country-by-country guide to what reports in these appeals need to cover, see{" "}
           <Link href="/south-asia-asylum-explained" className="font-semibold text-ochre hover:underline">
-            South Asia asylum explained pillar page
+            commissioning country reports in South Asian appeals
           </Link>
           .
         </p>
 
-        <h2 className="mt-10 font-display text-xl text-ink">Post-August 2024 Bangladesh CPIN Gap</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">Bangladesh: Where the CPINs Lag Behind</h2>
         <p className="mt-4 text-body leading-relaxed">
-          The August 2024 fall of Sheikh Hasina&apos;s government has materially changed Bangladesh country conditions.
-          Existing CPINs on political parties may not reflect post-transition dynamics where Awami League supporters now
-          face risk and BNP supporters may have changed country conditions arguments. Expert witnesses provide current
-          analysis beyond CPIN publication dates.
+          The Bangladesh CPINs on political parties were written for a country governed by the Awami League. Since
+          Sheikh Hasina&apos;s government fell in August 2024, the same parties sit in very different positions, so a
+          refusal relying on those CPINs may misdescribe the risk for both Awami League and BNP supporters. Reports
+          address conditions at the date they are written and flag where the CPIN no longer matches them.
         </p>
 
-        <h2 className="mt-10 font-display text-xl text-ink">How Expert Reports Relate to CPINs</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">Using a Report Alongside the CPIN</h2>
         <p className="mt-4 text-body leading-relaxed">
-          Expert witnesses do not simply reproduce CPIN content. The expert&apos;s role is to provide independent,
-          objective analysis of whether the appellant&apos;s specific profile creates a real risk, applying current field
-          research and source citations beyond the CPIN. Where the CPIN supports the appellant, the expert confirms and
-          applies it to the individual profile. Where it does not, the expert challenges CPIN findings with verifiable
-          evidence.
+          A country report should not repeat the CPIN. It should take the passages the decision-maker relied on and
+          test them: are the sources current, do they cover someone with the appellant&apos;s profile, and does other
+          evidence point the other way? Where the CPIN helps the appellant, the report shows how it applies to them;
+          where it does not, the report explains why, with sources the tribunal can check.
         </p>
 
         <div className="mt-10 space-y-6">

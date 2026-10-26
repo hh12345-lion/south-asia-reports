@@ -6,9 +6,9 @@ import { createMetadata } from "@/lib/metadata";
 import { glossaryTerms } from "@/data/glossary";
 
 export const metadata = createMetadata({
-  title: "South Asia Expert Witness Glossary",
+  title: "Country Report Glossary: South Asian Asylum Terms",
   description:
-    "Definitions of key South Asia expert witness and asylum law terms: Hindutva, KK [2021], CPIN, BNP, Awami League, caste, LTTE, HJ (Iran), and more.",
+    "Plain-English definitions of terms that appear in South Asian country reports and instructions: KK [2021], CPIN, Hindutva, Awami League, Dalit, prior authority and more.",
   path: "/glossary",
 });
 
@@ -23,8 +23,8 @@ export default function GlossaryPage() {
     <>
       <PageJsonLd breadcrumbs={crumbs} faqs={faqItems} />
       <PageShell
-        title="South Asia Expert Witness & Asylum Law Glossary"
-        subtitle="35 definition-first terms for immigration practitioners."
+        title="Country Report Glossary"
+        subtitle={`${glossaryTerms.length} terms you will meet in South Asian country reports and instructions.`}
         breadcrumbs={crumbs}
       >
         <Suspense fallback={null}>

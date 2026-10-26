@@ -6,47 +6,47 @@ import { UkServiceScope } from "@/components/ui/UkServiceScope";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "How to Instruct a South Asia Expert Witness UK",
+  title: "How to Commission a South Asia Country Report",
   description:
-    "Step-by-step guide for counsel on instructing a South Asia expert witness for asylum appeals, Legal Aid cases, and immigration tribunal proceedings.",
+    "Seven steps to commissioning a country condition report for a South Asian asylum appeal: scope, Legal Aid prior authority, documents, timing and follow-up.",
   path: "/how-to-instruct",
 });
 
 const steps = [
   {
     n: 1,
-    title: "Identify the Country and Profile",
-    body: "Determine the appellant's country of origin (Bangladesh, India, Sri Lanka, Nepal, or Bhutan) and asylum profile (political persecution, religious minority, LGBTQ+, caste, journalist/HRD, diaspora activity). This determines the expert specialism and report scope.",
+    title: "Pin Down What the Report Must Answer",
+    body: "Start from the refusal letter. Note the country (Bangladesh, India, Sri Lanka, Nepal or Bhutan), the profile the claim rests on, and every country-related reason for refusal. These become the questions the report is commissioned to answer.",
   },
   {
     n: 2,
-    title: "Legal Aid or Privately Funded?",
-    body: "Most South Asia expert reports in asylum proceedings are Legal Aid funded. Confirm funding status before instruction. Privately funded cases follow a different fee structure.",
+    title: "Confirm How the Report Is Funded",
+    body: "Most reports in these appeals are paid for under Legal Aid, but some are private. Tell us which at the outset, as the fee basis and paperwork differ.",
   },
   {
     n: 3,
-    title: "Prior Authority from LAA (if Legal Aid)",
-    body: "Apply for LAA prior authority before instructing the expert. Include the expert's CV, proposed scope, estimated hours, and fee. Typical LAA rates are £50 to £100 per hour for report preparation.",
+    title: "Obtain Prior Authority (Legal Aid Cases)",
+    body: "Apply to the Legal Aid Agency before the report is commissioned. We can provide the author's CV, a proposed scope, estimated hours and a fee quote. Hourly rates for report preparation typically fall between £50 and £100.",
   },
   {
     n: 4,
-    title: "Letter of Instruction",
-    body: "Provide a detailed letter of instruction specifying the expert's role, questions to address, hearing date, and funding arrangements. Reference relevant country guidance (KK [2021] for Sri Lanka) and current CPINs.",
+    title: "Write the Letter of Instruction",
+    body: "List the questions, the hearing or deadline date and the funding position. Mention any country guidance that applies, such as KK [2021] for Tamil appellants, and the CPINs relied on in the refusal.",
   },
   {
     n: 5,
-    title: "Provide All Relevant Materials",
-    body: "Include the screening record, Asylum Interview Record (AIR), decision-makers refusal letter (RFRL), client witness statement, any previous expert reports, and relevant CPINs and country guidance decisions.",
+    title: "Send the Case Papers",
+    body: "The screening and asylum interview records, refusal letter, the appellant's statement, any earlier country reports, and the CPINs and guidance cases referred to. Missing papers are the most common cause of delay.",
   },
   {
     n: 6,
-    title: "Expert Analysis and Report",
-    body: "The expert prepares an independent report addressing the letter of instruction. Standard reports take 2 to 4 weeks. Urgent reports available within 72 hours subject to expert availability.",
+    title: "Receive the Report",
+    body: "A standard report is delivered 2 to 4 weeks after full instructions. Where a deadline is very tight, a report within 72 hours may be possible depending on author availability.",
   },
   {
     n: 7,
-    title: "Written Questions and Oral Evidence",
-    body: "If required, respond to written questions from the opposing party. Oral evidence is common in complex political persecution cases, KK [2021] Sri Lanka claims, or where the tribunal directs expert attendance.",
+    title: "Follow-Up Questions and Hearing Attendance",
+    body: "The author can answer written questions on the report and, where the tribunal directs, attend to give oral evidence, which is most likely in complex political cases and Tamil appeals under KK [2021].",
   },
 ];
 
@@ -57,8 +57,8 @@ export default function HowToInstructPage() {
     <>
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
-        title="How to Instruct a South Asia Expert Witness"
-        subtitle="Seven steps for immigration counsel and Legal Aid practitioners."
+        title="How to Commission a South Asia Country Report"
+        subtitle="From refusal letter to finished report: seven steps for immigration counsel and Legal Aid practitioners."
         breadcrumbs={crumbs}
       >
         <UkServiceScope className="mb-8" />

@@ -6,9 +6,9 @@ import { createMetadata } from "@/lib/metadata";
 import { asylumProfiles } from "@/data/asylum-profiles";
 
 export const metadata = createMetadata({
-  title: "South Asian Asylum Profiles | Expert Witness Evidence UK",
+  title: "Country Reports by Asylum Profile | South Asia Reports",
   description:
-    "All major South Asian asylum profiles covered by qualified expert witnesses: political persecution, religious minorities, LGBTQ+, caste, GBV, journalists, diaspora, and failed asylum seekers.",
+    "What a South Asia country condition report covers for each type of claim: political, religious minority, LGBTQ+, caste, gender-based violence, journalists, diaspora and return.",
   path: "/asylum-profiles",
 });
 
@@ -19,14 +19,14 @@ export default function AsylumProfilesPage() {
     <>
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
-        title="South Asian Asylum Profiles"
-        subtitle="Dedicated expert witness evidence for each major South Asian asylum profile in immigration tribunals."
+        title="Country Reports by Asylum Profile"
+        subtitle="The scope, sources and supporting documents for a report on each type of South Asian claim."
         breadcrumbs={crumbs}
       >
         <p className="mb-8 text-body leading-relaxed">
-          South Asia generates significant asylum claim volumes across Bangladesh, India, Sri Lanka, Nepal, and Bhutan.
-          Each profile below links to a dedicated page with country-specific analysis, CPIN references, and
-          profile-specific expert evidence guidance for solicitors and Legal Aid practitioners.
+          The kind of claim shapes the report. Choose the profile closest to your client&apos;s case to see what a
+          country report for Bangladesh, India, Sri Lanka, Nepal or Bhutan would address, which sources it draws on
+          and what to send with the instruction.
         </p>
         <CardGrid
           items={asylumProfiles.map((p) => ({

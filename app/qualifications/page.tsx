@@ -3,9 +3,9 @@ import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "South Asia Expert Witness Qualifications UK",
+  title: "Who Writes Our South Asia Country Reports | Report Author Standards",
   description:
-    "What qualifications should a South Asia expert witness hold? Bengali, Hindi, Tamil, Nepali language expertise, field research, academic credentials, and tribunal acceptance.",
+    "The standards South Asia Reports applies to report authors: research background, fieldwork, language skills, tribunal experience and the duties every report must meet.",
   path: "/qualifications",
 });
 
@@ -15,54 +15,51 @@ export default function QualificationsPage() {
   return (
     <>
       <PageJsonLd breadcrumbs={crumbs} />
-      <PageShell title="South Asia Expert Witness Qualifications UK" breadcrumbs={crumbs}>
-        <h2 className="font-display text-xl text-ink">What Makes a Qualified South Asia Expert</h2>
+      <PageShell title="Who Writes Our South Asia Country Reports" breadcrumbs={crumbs}>
+        <h2 className="font-display text-xl text-ink">Our Standards for Report Authors</h2>
         <p className="mt-4 text-body leading-relaxed">
-          A qualified South Asia expert witness holds academic credentials (PhD, MA, or equivalent research background) in
-          South Asian Studies, Political Science, Anthropology, International Relations, Religious Studies, or a related
-          discipline. Field research experience in the relevant South Asian country is essential, not optional. Experts
-          instructed through this service are matched for UK Immigration and Asylum Chamber proceedings and Upper Tribunal
-          appeals.
+          A report is only as good as the person who writes it. Authors instructed through South Asia Reports have
+          postgraduate research experience (typically a PhD or MA) in a relevant field such as South Asian studies,
+          politics, anthropology, international relations or religious studies, and they have spent time researching in
+          the country they write about. Reports are prepared for the Immigration and Asylum Chamber at both First-tier
+          and Upper Tribunal level.
         </p>
         <p className="mt-4 text-body leading-relaxed">
-          Language expertise demonstrates the ability to assess conditions beyond English-language sources. Current
-          knowledge of country conditions, including post-August 2024 Bangladesh dynamics, India Hindutva developments,
-          KK [2021] for Sri Lanka, and Nepal/Bhutan conditions, is required. Prior tribunal acceptance in South Asia
-          cases demonstrates evidential reliability.
+          Authors must follow current developments, including Bangladesh since August 2024, Hindutva politics in India,
+          the application of KK [2021] in Sri Lanka, and conditions in Nepal and Bhutan, and should be able to read
+          local-language sources rather than relying on English-language summaries. A record of reports accepted by
+          tribunals in South Asian cases is a strong indicator of reliability.
         </p>
 
-        <h2 className="mt-10 font-display text-xl text-ink">Key Qualifications for South Asia Experts</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">What We Look For</h2>
         <ul className="mt-4 list-disc space-y-2 pl-6 text-body">
-          <li>Language expertise: Bengali, Hindi, Tamil, Nepali, Sinhala, Dzongkha</li>
-          <li>Field research experience in South Asian countries</li>
-          <li>Academic expertise in South Asian politics, religion, caste, or law</li>
-          <li>Prior tribunal acceptance in South Asia asylum cases</li>
-          <li>Current CPIN and country guidance knowledge (KK [2021], post-2024 Bangladesh)</li>
-          <li>EIN directory listing or equivalent professional recognition</li>
+          <li>Working knowledge of Bengali, Hindi, Tamil, Nepali, Sinhala or Dzongkha, as relevant</li>
+          <li>Research carried out in the country concerned</li>
+          <li>Published or academic work on the region&apos;s politics, religion, caste or law</li>
+          <li>Reports previously relied on by tribunals in South Asian appeals</li>
+          <li>Up-to-date familiarity with the relevant CPINs and KK [2021]</li>
+          <li>Listing in the EIN directory or comparable professional recognition</li>
         </ul>
 
-        <h2 className="mt-10 font-display text-xl text-ink">
-          Immigration Tribunal Practice Direction: Expert Duties
-        </h2>
+        <h2 className="mt-10 font-display text-xl text-ink">The Duties Every Report Meets</h2>
         <p className="mt-4 text-body leading-relaxed">
-          An expert&apos;s paramount duty is to the tribunal: to assist it in reaching a decision by providing an
-          objective, unbiased opinion on matters within their expertise, not to advocate for either the appellant or
-          the decision-makers. Expert evidence should be the independent product of the expert, uninfluenced by the
-          pressures of litigation.
+          Under the tribunal&apos;s practice direction, a report author owes their duty to the tribunal, not to the party
+          paying for the report. Their task is to help the tribunal with an objective opinion within their field, and
+          the report must be their own independent work, not shaped by the needs of either side.
         </p>
         <p className="mt-4 text-body leading-relaxed">
-          Reports must address matters within the expert&apos;s expertise, cite verifiable sources, and distinguish
-          fact from opinion. The expert must not express views on the credibility of the appellant or the ultimate
-          legal conclusion on refugee status.
+          In practice this means each report keeps to the author&apos;s expertise, gives sources that can be checked,
+          and marks clearly which statements are facts and which are opinions. Reports do not comment on whether the
+          appellant is credible or whether they qualify as a refugee; those are decisions for the tribunal.
         </p>
 
-        <h2 className="mt-10 font-display text-xl text-ink">Red Flags</h2>
+        <h2 className="mt-10 font-display text-xl text-ink">Warning Signs in a Country Report</h2>
         <ul className="mt-4 list-disc space-y-2 pl-6 text-body">
-          <li>Expert without current knowledge of the relevant South Asian country</li>
-          <li>Reports that simply reproduce CPIN without independent analysis</li>
-          <li>No field research or in-country experience</li>
-          <li>Cannot distinguish between country-specific conditions (Bangladesh post-2024 vs India Hindutva)</li>
-          <li>No prior tribunal acceptance in South Asia cases</li>
+          <li>Sources that are out of date for the country concerned</li>
+          <li>Long passages copied from the CPIN with no independent analysis</li>
+          <li>An author with no first-hand research in the region</li>
+          <li>Generic material that does not engage with the appellant&apos;s profile or home area</li>
+          <li>No history of the author&apos;s reports being accepted in South Asian cases</li>
         </ul>
       </PageShell>
     </>

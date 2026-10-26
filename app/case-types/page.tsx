@@ -6,9 +6,9 @@ import { createMetadata } from "@/lib/metadata";
 import { caseTypes } from "@/data/case-types";
 
 export const metadata = createMetadata({
-  title: "South Asia Asylum Case Types | Expert Witness UK",
+  title: "Country Reports by Case Type | South Asia Reports",
   description:
-    "South Asia expert witness evidence for FTT appeals, Upper Tribunal, Bangladesh political claims, India minority claims, Sri Lanka Tamil, deportation, and fresh claims.",
+    "Country condition reports for First-tier and Upper Tribunal appeals, fresh claims, certification challenges and deportation cases involving South Asian nationals.",
   path: "/case-types",
 });
 
@@ -19,14 +19,14 @@ export default function CaseTypesPage() {
     <>
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
-        title="South Asia Asylum Case Types"
-        subtitle="Expert witness evidence for all major immigration tribunal proceedings involving South Asian nationals."
+        title="Country Reports by Case Type"
+        subtitle="How the stage and type of proceedings change what a country report needs to do."
         breadcrumbs={crumbs}
       >
         <p className="mb-8 text-body leading-relaxed">
-          South Asia Reports provides qualified country expert witnesses for First-tier Tribunal appeals, Upper Tribunal
-          proceedings, Bangladesh political claims, India minority claims, Sri Lanka Tamil claims under KK [2021],
-          deportation and removal, fresh claims, and certification challenges.
+          A report for a first appeal, a fresh claim or a certification challenge each has a different job. The pages
+          below explain what the report should focus on at each stage, from First-tier and Upper Tribunal appeals to
+          Tamil claims under KK [2021], Bangladeshi and Indian claims, and removal cases.
         </p>
         <CardGrid
           items={caseTypes.map((c) => ({

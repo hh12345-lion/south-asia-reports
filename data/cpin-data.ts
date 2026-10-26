@@ -15,9 +15,9 @@ export const countryGuidanceCases = [
   {
     citation: "KK and Others (Sri Lanka: Tamil) CG [2021] UKUT 00245",
     summary:
-      "Leading country guidance on Sri Lanka Tamil asylum claims. Establishes risk profiles including actual or imputed LTTE associations, diaspora activists, and those who have given evidence against the government.",
+      "The country guidance for Tamil appellants. Sri Lanka reports are organised around its risk categories, which include actual or perceived LTTE links, prominent diaspora activism and giving evidence against the state.",
   },
 ];
 
 export const cpinNote =
-  "For Bangladesh, India, Nepal, and Bhutan, there is no current country guidance Upper Tribunal. Expert evidence is particularly valuable to supplement CPIN positions and provide profile-specific risk analysis.";
+  "Bangladesh, India, Nepal and Bhutan have no current Upper Tribunal country guidance, so for these countries the country report is often the most detailed evidence before the tribunal.";
